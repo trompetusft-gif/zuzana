@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ochrana osobných údajov a cookies | Svet Krásy – kozmetický salón Nitra</title>
+<meta name="description" content="Informácie o spracúvaní osobných údajov a používaní cookies na webe kozmetického salónu Svet Krásy v Nitre.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#FBEDEC">
+<link rel="canonical" href="https://svetkrasy.netlify.app/ochrana-osobnych-udajov.html">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="preload" href="fonts/cormorant-garamond-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>/* Písma hostované lokálne (bez Google Fonts – GDPR). Licencia SIL OFL 1.1 */
+@font-face{font-family:"Cinzel";font-style:normal;font-weight:500;font-display:swap;src:url("fonts/cinzel-latin-ext-500-normal.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Cinzel";font-style:normal;font-weight:500;font-display:swap;src:url("fonts/cinzel-latin-500-normal.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Cinzel";font-style:normal;font-weight:600;font-display:swap;src:url("fonts/cinzel-latin-ext-600-normal.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Cinzel";font-style:normal;font-weight:600;font-display:swap;src:url("fonts/cinzel-latin-600-normal.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:500;font-display:swap;src:url("fonts/cormorant-garamond-latin-ext-500-normal.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:500;font-display:swap;src:url("fonts/cormorant-garamond-latin-500-normal.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:700;font-display:swap;src:url("fonts/cormorant-garamond-latin-ext-700-normal.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:700;font-display:swap;src:url("fonts/cormorant-garamond-latin-700-normal.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Cormorant Garamond";font-style:italic;font-weight:500;font-display:swap;src:url("fonts/cormorant-garamond-latin-ext-500-italic.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Cormorant Garamond";font-style:italic;font-weight:500;font-display:swap;src:url("fonts/cormorant-garamond-latin-500-italic.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Pinyon Script";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/pinyon-script-latin-ext-400-normal.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Pinyon Script";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/pinyon-script-latin-400-normal.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+</style>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:#FFFBFA;color:#3A2A2D;font-family:"Cormorant Garamond",Georgia,serif;font-size:19px;line-height:1.6;font-weight:500;font-variant-numeric:lining-nums;-webkit-font-smoothing:antialiased}
+a{color:#74263A}a:hover{color:#5A1828}
+:focus-visible{outline:2px solid #74263A;outline-offset:3px;border-radius:6px}
+.top{background:#FBEEEC url("img/mramor.webp") center/cover;border-bottom:1px solid #EAD5C3}
+.top__in{max-width:860px;margin:0 auto;padding:18px 20px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:#5A1828}
+.brand img{width:46px;height:46px;border-radius:50%;box-shadow:0 0 0 1px rgba(185,138,79,.55)}
+.brand span{font-family:"Cinzel",Georgia,serif;letter-spacing:.12em;font-weight:600;font-size:17px}
+.back{font-family:"Cinzel",Georgia,serif;font-size:13px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border:1px solid #B98A4F;border-radius:999px;padding:10px 16px;background:rgba(255,255,255,.75);min-height:44px;display:inline-flex;align-items:center}
+main{max-width:860px;margin:0 auto;padding:44px 20px 80px}
+h1{font-family:"Cinzel",Georgia,serif;font-weight:500;color:#5A1828;font-size:clamp(28px,6vw,42px);line-height:1.15;letter-spacing:.04em;margin:0 0 6px}
+.script{font-family:"Pinyon Script",cursive;color:#8A5E2A;font-size:clamp(30px,6vw,42px);line-height:1;display:block;margin-bottom:10px}
+.updated{color:#6B5559;font-size:16px;margin:0 0 30px}
+h2{font-family:"Cinzel",Georgia,serif;font-weight:500;color:#5A1828;font-size:clamp(20px,4.4vw,25px);letter-spacing:.04em;margin:42px 0 10px;padding-top:18px;border-top:1px solid #EAD5C3}
+h3{font-size:21px;color:#5A1828;margin:22px 0 4px}
+p,li{margin:0 0 12px}
+ul{padding-left:22px}
+.card{background:#fff;border:1px solid #EAD5C3;border-radius:16px;padding:18px 20px;margin:16px 0}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:14px 0}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:17px;background:#fff}
+th,td{border:1px solid #EAD5C3;padding:9px 12px;text-align:left;vertical-align:top}
+th{background:#FBEEEC;color:#5A1828;font-family:"Cinzel",Georgia,serif;font-weight:500;font-size:13.5px;letter-spacing:.08em;text-transform:uppercase}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 22px;border-radius:999px;background:#5A1828;color:#FFF6F2;text-decoration:none;font-family:"Cinzel",Georgia,serif;font-size:13.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:600}
+.btn:hover{background:#74263A;color:#fff}
+footer{background:#3E1019;color:#F1DCD8;text-align:center;padding:30px 20px;font-size:16px}
+footer a{color:#F6E2C6}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="top__in">
+    <a class="brand" href="index.html"><img src="img/logo-mala.webp" width="46" height="46" alt="Logo Svet Krásy"><span>SVET KRÁSY</span></a>
+    <a class="back" href="index.html">← Späť na web</a>
+  </div>
+</header>
+
+<main id="obsah">
+  <!-- TODO: vzorový text podľa GDPR a zákona č. 452/2021 Z. z. – pred spustením doplniť e-mail a nechať skontrolovať klientkou -->
+  <h1>Ochrana osobných údajov</h1>
+  <span class="script">a súbory cookies</span>
+  <p class="updated">Posledná aktualizácia: 2. 10. 2026</p>
+
+  <p>Na tejto stránke vysvetľujem, aké osobné údaje spracúvam, prečo to robím, ako dlho ich uchovávam a aké máte práva. Snažím sa spracúvať len to, čo je naozaj potrebné.</p>
+
+  <h2>1. Prevádzkovateľ</h2>
+  <div class="card">
+    <p><strong>Mgr. Zuzana Machovičová – Svet Krásy kozmetický salón</strong><br>
+    Miesto podnikania: Štiavnická 20, Nitra<br>
+    IČO: 50367439<br>
+    Prevádzka: 7. pešieho pluku 1415/2, 949 01 Nitra<br>
+    Telefón: <a href="tel:+421918797408">0918&nbsp;797&nbsp;408</a><br>
+    <!-- TODO: doplniť e-mail klientky -->
+    E-mail: [DOPLNIŤ E-MAIL]</p>
+  </div>
+  <p>Zodpovednú osobu (DPO) som neurčila, pretože mi to zákon pri rozsahu mojej činnosti neukladá. So všetkými otázkami sa môžete obrátiť priamo na mňa.</p>
+
+  <h2>2. Aké údaje spracúvam a prečo</h2>
+
+  <h3>Rezervácia termínu a poskytnutie služby</h3>
+  <p>Keď si rezervujete termín telefonicky alebo cez rezervačný systém, spracúvam vaše meno, telefónne číslo, termín a zvolenú službu. Pri ošetrení si môžem poznačiť aj informácie o stave pleti, aby som ošetrenie vybrala správne.</p>
+  <ul>
+    <li><strong>Právny základ:</strong> plnenie zmluvy a opatrenia pred jej uzatvorením (čl. 6 ods. 1 písm. b) GDPR). Informácie o stave pleti spracúvam len s vaším súhlasom (čl. 9 ods. 2 písm. a) GDPR).</li>
+    <li><strong>Doba uchovávania:</strong> kontaktné údaje počas trvania nášho vzťahu, najdlhšie 2 roky od poslednej návštevy. Účtovné doklady 10 rokov podľa zákona o účtovníctve.</li>
+  </ul>
+
+  <h3>Online rezervácie cez Notino</h3>
+  <p>Ak si termín rezervujete cez rezervačný systém Notino, údaje, ktoré zadáte, spracúva aj prevádzkovateľ tejto platformy podľa vlastných zásad ochrany osobných údajov.</p>
+
+  <h3>Návšteva webu (technické údaje)</h3>
+  <p>Pri každej návšteve webu ukladá poskytovateľ hostingu (Netlify, Inc.) krátkodobo technické záznamy, napríklad IP adresu, typ prehliadača a čas prístupu. Slúžia na bezpečnú a spoľahlivú prevádzku webu.</p>
+  <ul>
+    <li><strong>Právny základ:</strong> oprávnený záujem na bezpečnej prevádzke webu (čl. 6 ods. 1 písm. f) GDPR).</li>
+  </ul>
+
+  <h3>Štatistika návštevnosti – Google Analytics 4</h3>
+  <p>Len ak na to dáte súhlas v cookie lište, meriam štatistiku návštevnosti cez Google Analytics 4 (údaje sú pseudonymizované, nie úplne anonymné): ktoré časti webu si prezeráte, z akého typu zariadenia a približne z akej oblasti prichádzate a či ste klikli na tlačidlo rezervácie. Google Analytics 4 neukladá vašu IP adresu.</p>
+  <ul>
+    <li><strong>Právny základ:</strong> váš súhlas (čl. 6 ods. 1 písm. a) GDPR a § 109 ods. 8 zákona č. 452/2021 Z. z. o elektronických komunikáciách).</li>
+    <!-- TODO: v Google Analytics nastaviť Správca → Uchovávanie údajov → 2 mesiace -->
+    <li><strong>Doba uchovávania:</strong> 2 mesiace.</li>
+    <li><strong>Príjemca:</strong> Google Ireland Limited. Údaje sa môžu prenášať do USA na základe rámca EÚ – USA na ochranu údajov (EU-U.S. Data Privacy Framework).</li>
+  </ul>
+
+  <h3>Mapa Google</h3>
+  <p>Mapa v sekcii Kontakt sa načíta až po vašom kliknutí alebo po súhlase s externým obsahom. Potom môže spoločnosť Google spracúvať vašu IP adresu a ukladať vlastné cookies podľa svojich zásad.</p>
+
+  <h3>Odkazy na Instagram, Facebook a Notino</h3>
+  <p>Odkazy na sociálne siete a rezervačný systém sú bežné odkazy. Kým na ne nekliknete, žiadne údaje týmto službám neodosielajú. Po kliknutí sa riadite zásadami danej služby.</p>
+
+  <h3>Fotografie a videá klientok</h3>
+  <p>Fotografie a videá z ošetrení zverejňujem len so súhlasom zobrazených osôb. Ak ste na niektorej z nich a chcete ju odstrániť, stačí mi zavolať alebo napísať a odstránim ju bez zbytočného odkladu.</p>
+
+  <h2 id="cookies">3. Súbory cookies</h2>
+  <p>Cookies a podobné technológie sú malé súbory, ktoré si web ukladá vo vašom prehliadači. Nevyhnutné používam vždy, ostatné len s vaším súhlasom.</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Názov</th><th>Kategória</th><th>Účel</th><th>Platnosť</th></tr></thead>
+      <tbody>
+        <tr><td>svetkrasy_cookie_consent_v2<br><small>(lokálne úložisko)</small></td><td>Nevyhnutné</td><td>Zapamätá si vašu voľbu v cookie lište.</td><td>12 mesiacov</td></tr>
+        <tr><td>_ga, _ga_&lt;ID&gt;</td><td>Analytické</td><td>Google Analytics 4 – rozlíšenie návštevníkov pre štatistiku.</td><td>do 2 rokov</td></tr>
+        <tr><td>Cookies Google<br><small>(napr. NID)</small></td><td>Externý obsah</td><td>Zobrazenie mapy Google Maps.</td><td>podľa Google</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Svoj súhlas môžete kedykoľvek zmeniť alebo odvolať. Odvolanie súhlasu nemá vplyv na zákonnosť spracúvania pred jeho odvolaním.</p>
+  <p><a class="btn" href="index.html#cookies-nastavenia">Zmeniť nastavenia cookies</a></p>
+
+  <h2>4. Komu údaje poskytujem</h2>
+  <ul>
+    <li>Netlify, Inc. – hosting webu (USA, EU-U.S. Data Privacy Framework a štandardné zmluvné doložky).</li>
+    <li>Google Ireland Limited – Google Analytics a Google Maps, len so súhlasom.</li>
+    <li>Prevádzkovateľ rezervačného systému Notino – ak rezervujete online.</li>
+    <li>Účtovníčka a štátne orgány – len ak to vyžaduje zákon.</li>
+  </ul>
+  <p>Automatizované rozhodovanie ani profilovanie s právnymi účinkami nevykonávam.</p>
+
+  <h2>5. Vaše práva</h2>
+  <ul>
+    <li>právo na prístup k svojim údajom,</li>
+    <li>právo na opravu nesprávnych údajov,</li>
+    <li>právo na vymazanie („právo na zabudnutie“),</li>
+    <li>právo na obmedzenie spracúvania,</li>
+    <li>právo na prenosnosť údajov,</li>
+    <li>právo namietať proti spracúvaniu na základe oprávneného záujmu,</li>
+    <li>právo kedykoľvek odvolať súhlas.</li>
+  </ul>
+  <p>Ak sa domnievate, že s vašimi údajmi nezaobchádzam správne, môžete podať návrh na začatie konania na <strong>Úrad na ochranu osobných údajov Slovenskej republiky</strong>, Hraničná 12, 820 07 Bratislava, <a href="https://dataprotection.gov.sk/uoou/sk" target="_blank" rel="noopener">dataprotection.gov.sk</a>.</p>
+</main>
+
+<footer>
+  <p>© 2026 Mgr. Zuzana Machovičová – Svet Krásy kozmetický salón · IČO: 50367439 · <a href="index.html">Späť na web</a></p>
+</footer>
+</body>
+</html>

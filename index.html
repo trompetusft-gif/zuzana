@@ -1,0 +1,1607 @@
+<!doctype html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kozmetický salón Nitra | Svet Krásy – ošetrenia pleti, anti-age, obočie</title>
+<meta name="description" content="Svet Krásy – kozmetický salón v Nitre (Mestská tržnica, 7. pešieho pluku). Hĺbkové čistenie pleti, luxusné a anti-age ošetrenia, chemický peeling, WOW lifting, laminácia obočia a depilácia. Rezervácie: 0918 797 408.">
+<meta name="keywords" content="kozmetika Nitra, kozmetický salón Nitra, ošetrenie pleti Nitra, hĺbkové čistenie pleti Nitra, anti-age Nitra, chemický peeling Nitra, laminácia obočia Nitra, WOW lifting Nitra, Svet Krásy">
+<meta name="author" content="Mgr. Zuzana Machovičová – Svet Krásy kozmetický salón">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#FBEDEC">
+<!-- Adresa webu sa nastavuje v build skripte (SITE). TODO: po kúpe domény prepnúť na vlastnú doménu -->
+<link rel="canonical" href="https://svetkrasy.netlify.app/">
+
+<!-- Open Graph / sociálne siete -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="sk_SK">
+<meta property="og:site_name" content="Svet Krásy – kozmetický salón">
+<meta property="og:title" content="Svet Krásy – kozmetický salón Nitra">
+<meta property="og:description" content="Profesionálne hĺbkové a omladzujúce ošetrenia pleti, obočie a mihalnice, depilácia. Nitra, Mestská tržnica oproti Mlynom.">
+<meta property="og:url" content="https://svetkrasy.netlify.app/">
+<!-- TODO: nahrať súbor og-image.jpg (1200×630, pribalený vedľa index.html) do koreňa webu na Netlify -->
+<meta property="og:image" content="https://svetkrasy.netlify.app/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Logo Svet Krásy – kozmetický salón Nitra">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="preload" as="image" href="img/logo.webp" fetchpriority="high">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+<!-- Písma: Cinzel (nadpisy), Cormorant Garamond (text, ceny), Pinyon Script (kaligrafický akcent) – vložené v súbore -->
+<link rel="preload" href="fonts/cormorant-garamond-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/cinzel-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>/* Písma hostované lokálne (bez Google Fonts – GDPR). Licencia SIL OFL 1.1 */
+@font-face{font-family:"Cinzel";font-style:normal;font-weight:500;font-display:swap;src:url("fonts/cinzel-latin-ext-500-normal.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Cinzel";font-style:normal;font-weight:500;font-display:swap;src:url("fonts/cinzel-latin-500-normal.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Cinzel";font-style:normal;font-weight:600;font-display:swap;src:url("fonts/cinzel-latin-ext-600-normal.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Cinzel";font-style:normal;font-weight:600;font-display:swap;src:url("fonts/cinzel-latin-600-normal.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:500;font-display:swap;src:url("fonts/cormorant-garamond-latin-ext-500-normal.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:500;font-display:swap;src:url("fonts/cormorant-garamond-latin-500-normal.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:700;font-display:swap;src:url("fonts/cormorant-garamond-latin-ext-700-normal.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:700;font-display:swap;src:url("fonts/cormorant-garamond-latin-700-normal.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Cormorant Garamond";font-style:italic;font-weight:500;font-display:swap;src:url("fonts/cormorant-garamond-latin-ext-500-italic.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Cormorant Garamond";font-style:italic;font-weight:500;font-display:swap;src:url("fonts/cormorant-garamond-latin-500-italic.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Pinyon Script";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/pinyon-script-latin-ext-400-normal.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Pinyon Script";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/pinyon-script-latin-400-normal.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "Svet Krásy – kozmetický salón",
+  "legalName": "Mgr. Zuzana Machovičová – Svet Krásy kozmetický salón",
+  "description": "Kozmetický salón v Nitre zameraný na profesionálne hĺbkové a omladzujúce ošetrenia pleti, obočie a mihalnice a depiláciu voskom.",
+  "url": "https://svetkrasy.netlify.app/",
+  "image": "https://svetkrasy.netlify.app/og-image.jpg",
+  "logo": "https://svetkrasy.netlify.app/og-image.jpg",
+  "telephone": "+421918797408",
+  "priceRange": "5 € – 369 €",
+  "currenciesAccepted": "EUR",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "7. pešieho pluku 1415/2",
+    "addressLocality": "Nitra",
+    "postalCode": "949 01",
+    "addressCountry": "SK"
+  },
+  "areaServed": "Nitra",
+  "founder": { "@type": "Person", "name": "Mgr. Zuzana Machovičová" },
+  "sameAs": [
+    "https://www.instagram.com/kozmeticky_salon_svet_krasy/",
+    "https://www.facebook.com/kozmetikasvetkrasy/"
+  ],
+  "keywords": "kozmetika Nitra, kozmetický salón Nitra",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Cenník služieb (platný od 1. 10. 2026)",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lux Skin Ritual Hydra + Royal Spicule 2 v 1" }, "price": "132", "priceCurrency": "EUR" },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lux Skin Ritual Hydra + ošetrenie s efektom podobným botoxu 2 v 1" }, "price": "123", "priceCurrency": "EUR" },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lux Skin Ritual 3 Mesotherapy" }, "price": "110", "priceCurrency": "EUR" },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Prémiové hĺbkové čistenie pleti" }, "price": "76", "priceCurrency": "EUR" },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Protiakné ošetrenie pleti" }, "price": "66", "priceCurrency": "EUR" },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Relax Harmony" }, "price": "63", "priceCurrency": "EUR" },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lift & Glow" }, "price": "76", "priceCurrency": "EUR" },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lifting Radiance + Stem Cells" }, "price": "66", "priceCurrency": "EUR" },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bio Impulse" }, "price": "76", "priceCurrency": "EUR" },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Chemický peeling Medi Lift" }, "price": "40", "priceCurrency": "EUR" },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "WOW lifting" }, "price": "50", "priceCurrency": "EUR" },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Laminácia obočia" }, "price": "40", "priceCurrency": "EUR" }
+    ]
+  }
+}
+</script>
+
+<style>
+:root{
+  --marble:url("img/mramor.webp");
+  --ivory:#FFFBFA;
+  --white:#FFFFFF;
+  --blush:#FBEEEC;
+  --blush-2:#F6E0DF;
+  --rose:#E9B3BA;
+  --rose-deep:#C97E8A;
+  --wine:#5A1828;
+  --wine-2:#74263A;
+  --gold:#B98A4F;
+  --gold-light:#E4C590;
+  --gold-text:#8A5E2A;
+  --text:#3A2A2D;
+  --muted:#75585A;
+  --line:#EAD5C3;
+  --shadow:0 18px 40px -24px rgba(90,24,40,.35);
+  --radius:18px;
+  --f-display:"Cinzel", "Trajan Pro", Georgia, serif;
+  --f-serif:"Cormorant Garamond", "Garamond", Georgia, serif;
+  --f-script:"Pinyon Script", "Brush Script MT", cursive;
+  --header-h:68px;
+  --gold-grad:linear-gradient(135deg,#9C6B33 0%,#D9B276 28%,#F3DDAE 50%,#C79A5C 72%,#8E5F2B 100%);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 12px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ivory);color:var(--text);font-family:var(--f-serif);font-size:19px;line-height:1.6;font-weight:500;-webkit-font-smoothing:antialiased;overflow-x:hidden;font-variant-numeric:lining-nums}
+img{max-width:100%;display:block;height:auto}
+a{color:var(--wine-2)}
+a:hover{color:var(--wine)}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--wine-2);outline-offset:3px;border-radius:6px}
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip{position:absolute;left:12px;top:-60px;z-index:200;background:var(--wine);color:#fff;padding:10px 16px;border-radius:10px;text-decoration:none}
+.skip:focus{top:12px;color:#fff}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 20px}
+section{position:relative}
+.section{padding:84px 0}
+.section--blush{background:var(--blush)}
+.section--marble{background:var(--blush) var(--marble) center/cover}
+.icon{width:1em;height:1em;flex:none;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.icon--fill{fill:currentColor;stroke:none}
+
+/* ---------- Typografia a ornamenty ---------- */
+.eyebrow{font-family:var(--f-display);font-size:13px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold-text);margin:0 0 10px}
+.h2{font-family:var(--f-display);font-weight:500;color:var(--wine);font-size:clamp(27px,6.6vw,46px);line-height:1.14;letter-spacing:.04em;margin:0}
+.h2__pre{font-family:var(--f-serif);font-style:italic;font-weight:500;letter-spacing:0;text-transform:none;font-size:.82em;color:var(--gold-text)}
+.script{font-family:var(--f-script);font-weight:400;color:var(--gold);font-size:clamp(34px,7vw,50px);line-height:1;display:block;margin-top:2px}
+.section-head{text-align:center;max-width:720px;margin:0 auto 46px}
+.section-head p.lead{color:var(--muted);margin:18px auto 0;max-width:620px}
+.ornament{display:flex;align-items:center;justify-content:center;gap:12px;margin:16px auto 0;color:var(--gold)}
+.ornament::before,.ornament::after{content:"";height:1px;width:clamp(48px,14vw,110px);background:linear-gradient(90deg,transparent,var(--gold))}
+.ornament::after{background:linear-gradient(270deg,transparent,var(--gold))}
+.ornament svg{width:56px;height:18px;fill:none;stroke:currentColor;stroke-width:1.3;stroke-linecap:round}
+
+/* ---------- Tlacidla ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:12px 26px;border-radius:999px;font-family:var(--f-display);font-size:14px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;font-weight:600;cursor:pointer;border:1px solid transparent;transition:transform .25s ease,box-shadow .25s ease,background-color .25s ease,color .25s ease}
+.btn .icon{width:18px;height:18px}
+.btn--primary{background:var(--wine);color:#FFF6F2;box-shadow:inset 0 0 0 3px var(--wine),inset 0 0 0 4px rgba(228,197,144,.75),0 14px 30px -16px rgba(90,24,40,.8)}
+.btn--primary:hover{background:var(--wine-2);color:#fff;transform:translateY(-2px)}
+.btn--ghost{background:rgba(255,255,255,.7);color:var(--wine);border-color:var(--gold)}
+.btn--ghost:hover{background:#fff;color:var(--wine);transform:translateY(-2px)}
+.btn--sm{min-height:44px;padding:8px 18px;font-size:12.5px}
+
+/* ---------- Hlavicka ---------- */
+.header{position:sticky;top:0;z-index:60;background:rgba(255,251,250,.9);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .3s, box-shadow .3s}
+.header.is-scrolled{border-bottom-color:var(--line);box-shadow:0 10px 30px -26px rgba(90,24,40,.5)}
+.header__in{display:flex;align-items:center;justify-content:space-between;gap:16px;height:var(--header-h)}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--wine)}
+.brand img{width:46px;height:46px;border-radius:50%;box-shadow:0 0 0 1px rgba(185,138,79,.55),0 6px 14px -8px rgba(90,24,40,.6)}
+.brand__name{font-family:var(--f-display);font-size:18px;letter-spacing:.12em;line-height:1;font-weight:600}
+.brand__sub{display:block;font-family:var(--f-script);font-size:19px;color:var(--gold-text);letter-spacing:0;margin-top:2px;font-weight:400}
+.nav{display:none}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;gap:6px}
+.nav a{display:block;padding:10px 12px;font-family:var(--f-display);font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--text);text-decoration:none;position:relative}
+.nav a::after{content:"";position:absolute;left:12px;right:12px;bottom:4px;height:1px;background:var(--gold);transform:scaleX(0);transition:transform .3s}
+.nav a:hover{color:var(--wine)}
+.nav a:hover::after,.nav a.is-active::after{transform:scaleX(1)}
+.header__cta{display:none}
+.burger{width:48px;height:48px;border:1px solid var(--line);background:#fff;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;color:var(--wine)}
+.burger span{display:block;width:20px;height:1.5px;background:currentColor;position:relative;transition:background .2s}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:20px;height:1.5px;background:currentColor;transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.burger[aria-expanded="true"] span{background:transparent}
+.burger[aria-expanded="true"] span::before{transform:translateY(6px) rotate(45deg)}
+.burger[aria-expanded="true"] span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:var(--header-h) 0 0 0;z-index:55;background:var(--ivory) var(--marble) center/cover;padding:28px 24px calc(28px + env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:6px;overflow:auto;opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity .3s,transform .3s,visibility 0s .3s}
+.mnav.is-open{opacity:1;visibility:visible;transform:none;transition:opacity .3s,transform .3s}
+.mnav ul{list-style:none;margin:0;padding:0}
+.mnav li{border-bottom:1px solid rgba(185,138,79,.35)}
+.mnav ul a{display:flex;justify-content:space-between;align-items:center;padding:16px 4px;font-family:var(--f-display);font-size:20px;letter-spacing:.12em;text-transform:uppercase;color:var(--wine);text-decoration:none}
+.mnav ul a::after{content:"›";font-family:var(--f-serif);color:var(--gold);font-size:26px}
+.mnav__foot{margin-top:auto;padding-top:28px;display:grid;gap:12px;text-align:center}
+.mnav__foot .btn{width:100%}
+.mnav__phone{font-size:22px;font-weight:600;color:var(--wine);text-decoration:none}
+body.nav-open{overflow:hidden}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;overflow:hidden;background:var(--blush) var(--marble) center/cover;padding:34px 0 64px;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse 70% 62% at 50% 50%,rgba(255,251,250,.95) 0%,rgba(255,251,250,.82) 55%,rgba(255,251,250,.35) 100%)}
+.hero__frame{position:absolute;inset:12px;border:1px solid rgba(185,138,79,.55);pointer-events:none;border-radius:4px}
+.hero__frame::before{content:"";position:absolute;inset:5px;border:1px solid rgba(185,138,79,.25);border-radius:2px}
+.corner{position:absolute;width:44px;height:44px;color:var(--gold);fill:none;stroke:currentColor;stroke-width:1.2}
+.corner--tl{top:4px;left:4px}.corner--tr{top:4px;right:4px;transform:scaleX(-1)}
+.corner--bl{bottom:4px;left:4px;transform:scaleY(-1)}.corner--br{bottom:4px;right:4px;transform:scale(-1,-1)}
+.hero__in{display:grid;gap:26px;align-items:center;text-align:center;position:relative}
+.hero__logo{width:min(32vw,124px);margin:0 auto;border-radius:50%;box-shadow:0 0 0 1px rgba(185,138,79,.6),0 0 0 9px rgba(255,255,255,.55),0 0 0 10px rgba(185,138,79,.35),0 30px 60px -30px rgba(90,24,40,.55)}
+.hero h1{margin:0;font-family:var(--f-display);font-weight:500;color:var(--wine);font-size:clamp(42px,11vw,76px);letter-spacing:.12em;line-height:1.02}
+.hero h1 .script{font-size:clamp(36px,9vw,58px);margin-top:6px;letter-spacing:0}
+.hero__slogan{font-family:var(--f-serif);font-style:italic;font-size:clamp(22px,5.2vw,28px);color:var(--wine-2);margin:14px 0 0;line-height:1.3}
+.hero__text{color:var(--text);margin:14px auto 0;max-width:560px;font-size:19px}
+.hero__ctas{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:26px}
+.hero__ctas .btn{flex:1 1 220px;max-width:300px}
+.hero__info{list-style:none;margin:26px auto 0;padding:16px 0 0;display:grid;gap:8px;justify-items:center;border-top:1px solid rgba(185,138,79,.4);max-width:520px;font-size:18px}
+.hero__info li{display:flex;align-items:center;gap:10px;color:var(--text);text-align:left}
+.hero__info small{display:block;font-size:15.5px;color:var(--muted)}
+.hero__info .icon{color:var(--gold);width:20px;height:20px}
+.hero__info a{color:var(--wine);font-weight:600;text-decoration:none}
+.hero__info a:hover{text-decoration:underline}
+
+/* ---------- Sluzby ---------- */
+.intro{max-width:780px;margin:0 auto 44px;text-align:center;color:var(--muted)}
+.intro p{margin:0 0 14px}
+.cards{display:grid;gap:18px;grid-template-columns:1fr}
+.card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:24px 22px 20px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px;position:relative;transition:transform .3s ease, box-shadow .3s ease}
+.card:hover{transform:translateY(-4px);box-shadow:0 26px 50px -28px rgba(90,24,40,.45)}
+.medal{width:62px;height:62px;border-radius:50%;display:grid;place-items:center;color:var(--gold-text);background:radial-gradient(circle at 35% 30%,#fff 0%,#FBF0EA 70%);box-shadow:inset 0 0 0 1px rgba(185,138,79,.7),inset 0 0 0 4px #fff,inset 0 0 0 5px rgba(185,138,79,.35)}
+.medal .icon{width:30px;height:30px;stroke-width:1.2}
+.card h3{font-family:var(--f-display);font-weight:500;font-size:20px;letter-spacing:.06em;color:var(--wine);margin:6px 0 0;line-height:1.25}
+.card p{margin:0;color:var(--muted);font-size:18px;line-height:1.5}
+.card__foot{margin-top:auto;padding-top:14px;border-top:1px dashed rgba(185,138,79,.5);display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.from{font-size:16px;color:var(--gold-text)}
+.from strong{font-family:var(--f-serif);font-size:30px;font-weight:700;color:var(--wine);margin-left:4px}
+.card__link{font-family:var(--f-display);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--wine-2);text-decoration:none;padding:10px 0;display:inline-flex;align-items:center;gap:6px}
+.card__link:hover{color:var(--wine);text-decoration:underline}
+.card__link::after{content:"";position:absolute;inset:0;border-radius:var(--radius)}
+
+.motto{text-align:center;padding:64px 20px;background:var(--wine);color:#FBEDE8;position:relative;overflow:hidden}
+.motto::before,.motto::after{content:"";position:absolute;left:50%;transform:translateX(-50%);width:min(560px,80%);height:1px;background:linear-gradient(90deg,transparent,var(--gold-light),transparent)}
+.motto::before{top:22px}.motto::after{bottom:22px}
+.motto q{font-family:var(--f-script);font-size:clamp(36px,8vw,62px);line-height:1.15;color:var(--gold-light);quotes:none;display:block}
+.motto p{margin:14px auto 0;max-width:620px;font-size:19px;color:#F3DCD9}
+
+/* ---------- O mne ---------- */
+.about{display:grid;gap:36px;align-items:center}
+.about__photo{position:relative;max-width:440px;margin:0 auto;width:100%}
+.about__photo img,.about__photo .ph{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:220px 220px 18px 18px}
+.about__photo::before{content:"";position:absolute;inset:-12px -12px 12px 12px;border:1px solid var(--gold);border-radius:228px 228px 22px 22px;z-index:-1}
+.about__sign{font-family:var(--f-script);font-size:40px;color:var(--gold-text);margin:22px 0 0;line-height:1}
+.about__role{font-family:var(--f-display);font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:6px}
+.about__text p{margin:0 0 16px}
+.about__text .h2{text-align:left}
+.about__text .script{text-align:left}
+
+/* Zastupne miesta (placeholder) */
+.ph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;padding:20px;background:repeating-linear-gradient(135deg,#FFF7F5 0 14px,#FBEDEC 14px 28px);border:1.5px dashed rgba(185,138,79,.75);border-radius:16px;color:var(--gold-text);font-size:17px;line-height:1.35}
+.ph .icon{width:34px;height:34px;stroke-width:1.2}
+.ph small{font-size:14px;color:var(--muted)}
+
+/* ---------- Certifikaty ---------- */
+.certs{display:grid;gap:14px;grid-template-columns:repeat(2,1fr)}
+.cert{margin:0;background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px;box-shadow:var(--shadow)}
+.cert button{display:block;width:100%;padding:0;border:0;background:none;cursor:zoom-in;border-radius:8px;overflow:hidden}
+.cert img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center 60%;background:#F7ECEA}
+.cert--wide img{object-fit:contain;object-position:center}
+.cert .ph{aspect-ratio:1.414/1;border-radius:8px}
+.cert figcaption{font-size:15px;line-height:1.35;color:var(--wine-2);text-align:center;padding:10px 6px 4px}
+
+/* ---------- Cennik ---------- */
+.pricebox{background:rgba(255,255,255,.94);border:1px solid rgba(185,138,79,.55);border-radius:22px;box-shadow:0 30px 60px -40px rgba(90,24,40,.6);padding:12px;position:relative}
+.pricebox__in{border:1px solid rgba(185,138,79,.3);border-radius:16px;padding:22px 16px 26px}
+.valid{display:table;margin:0 auto 22px;padding:6px 20px;border:1px solid var(--gold);border-radius:999px;font-family:var(--f-display);font-size:13px;letter-spacing:.16em;color:var(--wine);text-transform:uppercase;background:#fff}
+.tabs{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;padding:4px 2px 12px;margin:0 0 18px}
+.tab{flex:none;scroll-snap-align:start;min-height:44px;padding:10px 16px;border-radius:999px;border:1px solid var(--line);background:#fff;font-family:var(--f-display);font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--text);cursor:pointer;white-space:nowrap;transition:background .25s,color .25s,border-color .25s}
+.tab:hover{border-color:var(--gold)}
+.tab[aria-selected="true"]{background:var(--wine);color:#FFF4EF;border-color:var(--wine)}
+.panel h3{display:flex;align-items:center;gap:14px;margin:0 0 6px;font-family:var(--f-display);font-weight:500;font-size:clamp(20px,4.6vw,26px);letter-spacing:.06em;color:var(--wine);line-height:1.2}
+.panel h3 .medal{width:52px;height:52px}
+.panel h3 .medal .icon{width:26px;height:26px}
+.panel__note{margin:0 0 10px;color:var(--muted);font-style:italic}
+.plist{list-style:none;margin:0;padding:0}
+.pitem{display:grid;grid-template-columns:1fr auto;gap:2px 16px;padding:16px 0;border-bottom:1px dotted rgba(185,138,79,.7)}
+.pitem:last-child{border-bottom:0}
+.pitem__name{font-weight:700;color:var(--wine);font-size:21px;line-height:1.25}
+.pitem__price{font-family:var(--f-serif);font-weight:700;color:var(--wine);font-size:28px;line-height:1.05;text-align:right;white-space:nowrap}
+.pitem__meta{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center;margin-top:4px}
+.pitem__desc{grid-column:1/-1;color:var(--muted);font-size:17.5px;line-height:1.45;margin:2px 0 0}
+.dur{display:inline-flex;align-items:center;gap:6px;font-size:15px;color:var(--gold-text);font-family:var(--f-display);letter-spacing:.08em}
+.dur .icon{width:15px;height:15px}
+.extra{display:inline-block;margin-top:8px;grid-column:1/-1;justify-self:start;font-size:16px;padding:4px 12px;border:1px solid var(--rose-deep);border-radius:8px;color:var(--wine-2);background:#FFF6F6}
+.dots{list-style:none;margin:0;padding:0}
+.dots li{display:flex;align-items:baseline;gap:8px;padding:9px 0;font-size:19px}
+.dots li .n{flex:none;max-width:72%}
+.dots li .n small{color:var(--muted);font-size:15.5px}
+.dots li::after{content:none}
+.dots .lead-dots{flex:1;border-bottom:1.5px dotted rgba(185,138,79,.8);transform:translateY(-5px);min-width:16px}
+.dots .p{flex:none;font-weight:700;color:var(--wine);font-size:22px}
+.price-foot{display:grid;gap:14px;margin-top:26px}
+.notice{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;border:1px solid rgba(185,138,79,.55);border-radius:14px;background:#FFF8F6;font-size:17.5px;line-height:1.45}
+.notice .icon{width:26px;height:26px;color:var(--gold-text);margin-top:2px}
+.notice strong{font-family:var(--f-display);font-weight:600;letter-spacing:.08em;color:var(--wine);font-size:14.5px;text-transform:uppercase;display:block;margin-bottom:2px}
+html.js .panel[hidden]{display:none}
+html:not(.js) .tabs{display:none}
+html:not(.js) .panel{margin-bottom:34px}
+
+/* ---------- Balicky ---------- */
+.packs{display:grid;gap:18px;grid-template-columns:1fr}
+.pack{background:#fff;border:1px solid rgba(185,138,79,.6);border-radius:20px;padding:30px 24px 26px;text-align:center;position:relative;box-shadow:var(--shadow)}
+.pack::before{content:"";position:absolute;inset:6px;border:1px solid rgba(185,138,79,.25);border-radius:15px;pointer-events:none}
+.pack__badge{display:inline-block;padding:6px 16px;border-radius:999px;background:var(--wine);color:#FFF1EA;font-family:var(--f-display);font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+.pack h3{font-family:var(--f-display);font-weight:500;font-size:22px;color:var(--wine);margin:16px 0 0;letter-spacing:.05em;line-height:1.25}
+.pack h3 small{display:block;font-family:var(--f-serif);font-size:17px;color:var(--gold-text);letter-spacing:0;margin-top:4px;text-transform:none}
+.pack__price{font-family:var(--f-serif);font-weight:700;font-size:54px;line-height:1;color:var(--wine);margin:18px 0 6px}
+.pack__old{color:var(--muted);font-size:18px}
+.pack__old s{text-decoration-color:var(--rose-deep);text-decoration-thickness:1.5px}
+.pack__save{display:inline-block;margin-top:12px;font-weight:700;color:var(--gold-text);font-size:18px;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);padding:4px 14px}
+
+/* ---------- Poukazka ---------- */
+.voucher{position:relative;border-radius:24px;overflow:hidden;background:var(--blush) var(--marble) center/cover;padding:12px;box-shadow:0 30px 60px -40px rgba(90,24,40,.6)}
+.voucher__in{background:rgba(255,251,250,.92);border:1px solid rgba(185,138,79,.6);border-radius:16px;padding:34px 22px;display:grid;gap:18px;justify-items:center;text-align:center}
+.voucher__icon{width:74px;height:74px}
+.voucher h2{margin:0;font-family:var(--f-script);font-weight:400;color:var(--wine);font-size:clamp(44px,10vw,66px);line-height:1}
+.voucher__price{font-family:var(--f-serif);font-size:22px;color:var(--text);margin:0}
+.voucher__price strong{font-size:44px;color:var(--wine);font-weight:700;margin-left:6px}
+.voucher p{margin:0;max-width:520px;color:var(--muted)}
+
+/* ---------- Recenzie ---------- */
+.reviews{display:grid;grid-auto-flow:column;grid-auto-columns:86%;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 20px 22px;margin:0 -20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.reviews::-webkit-scrollbar{display:none}
+.rcard{margin:0;scroll-snap-align:center;position:relative;display:flex;flex-direction:column;gap:14px;background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px 24px 22px;box-shadow:0 22px 44px -30px rgba(90,24,40,.45);overflow:hidden}
+.rcard::before{content:"\201D";position:absolute;bottom:-92px;right:12px;font-family:var(--f-serif);font-size:170px;line-height:1;color:var(--blush-2);pointer-events:none}
+.reviews__hint{text-align:center;font-size:15px;color:var(--muted);margin:-6px 0 0}
+.rcard>*{position:relative}
+.rcard__top{display:flex;align-items:center;justify-content:space-between;position:relative}
+.rcard .stars{display:flex;gap:3px;color:var(--gold)}
+.rcard .stars .icon{width:18px;height:18px}
+.rcard__src{font-family:var(--f-display);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:4px 10px;background:var(--ivory)}
+.rcard blockquote{margin:0;position:relative;flex:1}
+.rcard blockquote p{margin:0;font-size:18.5px;line-height:1.55;color:var(--text)}
+.rcard figcaption{display:flex;align-items:center;gap:12px;padding-top:14px;border-top:1px dashed rgba(185,138,79,.5)}
+.rcard__av{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;flex:none;font-family:var(--f-display);font-weight:600;font-size:18px;color:var(--wine);background:radial-gradient(circle at 35% 30%,#fff 0%,var(--blush-2) 75%);box-shadow:inset 0 0 0 1px rgba(185,138,79,.7)}
+.rcard figcaption strong{display:block;color:var(--wine);font-size:18px;line-height:1.2}
+.rcard figcaption small{display:block;color:var(--muted);font-size:14px}
+.rcard--featured{background:var(--wine);border-color:var(--wine);box-shadow:0 30px 60px -30px rgba(62,16,25,.8)}
+.rcard--featured::before{color:rgba(228,197,144,.18)}
+.rcard--featured .stars{color:var(--gold-light)}
+.rcard--featured .rcard__src{background:transparent;color:#EFD6CF;border-color:rgba(228,197,144,.45)}
+.rcard--featured blockquote p{color:#FFF1EC;font-size:20px;font-style:italic}
+.rcard--featured figcaption{border-top-color:rgba(228,197,144,.45)}
+.rcard--featured figcaption strong{color:#F6E2C6}
+.rcard--featured figcaption small{color:#E5C9C3}
+.rcard--featured .rcard__av{color:var(--wine);background:radial-gradient(circle at 35% 30%,#FFF6EC 0%,var(--gold-light) 80%);box-shadow:none}
+.center{text-align:center;margin-top:30px}
+
+/* ---------- Galeria ---------- */
+.filters{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:-14px 0 26px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.gitem{margin:0;position:relative;border-radius:14px;overflow:hidden;background:var(--blush-2)}
+.gitem button{display:block;width:100%;padding:0;border:0;background:none;cursor:zoom-in}
+.gitem img{width:100%;aspect-ratio:1/1;object-fit:cover;transition:transform .6s ease}
+.gitem button:hover img{transform:scale(1.05)}
+.gitem figcaption{position:absolute;left:6px;bottom:6px;pointer-events:none;font-size:12.5px;line-height:1.3;color:#fff;background:rgba(90,24,40,.82);padding:4px 10px;border-radius:999px;width:fit-content;max-width:calc(100% - 12px);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gitem .ph{aspect-ratio:1/1;border-radius:14px;font-size:15px}
+.gitem[hidden]{display:none}
+.lightbox{border:0;padding:0;background:transparent;max-width:min(94vw,980px);max-height:92vh;width:100%;overflow:visible}
+.lightbox::backdrop{background:rgba(40,12,20,.88)}
+.lightbox figure{margin:0;display:grid;gap:10px;justify-items:center}
+.lightbox img{max-height:80vh;width:auto;max-width:100%;border-radius:12px;box-shadow:0 30px 80px -20px rgba(0,0,0,.6);background:#fff}
+.lightbox figcaption{color:#FBEDE8;font-size:18px;text-align:center}
+.lb-btn{position:fixed;width:52px;height:52px;border-radius:50%;border:1px solid rgba(228,197,144,.7);background:rgba(90,24,40,.65);color:#fff;display:grid;place-items:center;cursor:pointer}
+.lb-btn .icon{width:24px;height:24px}
+.lb-close{top:14px;right:14px}
+.lb-prev{left:10px;top:50%;transform:translateY(-50%)}
+.lb-next{right:10px;top:50%;transform:translateY(-50%)}
+
+/* ---------- Kontakt ---------- */
+.contact{display:grid;gap:22px}
+.cbox{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px 22px;box-shadow:var(--shadow)}
+.clist{list-style:none;margin:0;padding:0;display:grid;gap:18px}
+.clist li{display:flex;gap:14px;align-items:flex-start}
+.clist .medal{width:48px;height:48px}
+.clist .medal .icon{width:22px;height:22px}
+.clist h3{margin:0;font-family:var(--f-display);font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-text);font-weight:600}
+.clist p{margin:2px 0 0;font-size:19px;line-height:1.4}
+.clist a:not(.btn){color:var(--wine);font-weight:700;text-decoration:none}
+.clist a:not(.btn):hover{text-decoration:underline}
+.hours{border-collapse:collapse;margin-top:4px;font-size:18px}
+.hours td{padding:2px 16px 2px 0}
+.social{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+.social a{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 16px;border:1px solid var(--line);border-radius:999px;text-decoration:none;color:var(--wine);font-size:17px;font-weight:600}
+.social a:hover{border-color:var(--gold);background:#FFF8F6}
+.social .icon{width:20px;height:20px}
+.map{position:relative;border-radius:20px;overflow:hidden;border:1px solid var(--line);min-height:340px;background:var(--blush) var(--marble) center/cover;box-shadow:var(--shadow)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.map__ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;padding:24px;background:rgba(255,251,250,.84)}
+.map__ph p{margin:0;max-width:340px;color:var(--muted);font-size:17px}
+.map__ph strong{color:var(--wine);font-size:20px}
+
+/* ---------- Paticka ---------- */
+.footer{background:#3E1019;color:#F1DCD8;padding:56px 0 calc(110px + env(safe-area-inset-bottom));font-size:17px}
+.footer__in{display:grid;gap:26px;justify-items:center;text-align:center}
+.footer img{width:96px;height:96px;border-radius:50%;box-shadow:0 0 0 1px rgba(228,197,144,.7),0 0 0 6px rgba(228,197,144,.12)}
+.footer p{margin:0;line-height:1.6}
+.footer a{color:#F6E2C6}
+.footer a:hover{color:#fff}
+.footer .fname{font-family:var(--f-display);letter-spacing:.14em;color:#F6E2C6;font-size:15px;text-transform:uppercase}
+.footer__line{width:min(420px,80%);height:1px;background:linear-gradient(90deg,transparent,var(--gold-light),transparent)}
+.footer__bottom{display:flex;flex-wrap:wrap;gap:8px 22px;justify-content:center;align-items:center;font-size:15.5px;color:#D9BDB8}
+.linkbtn{background:none;border:0;padding:0 2px;line-height:inherit;font-family:inherit;cursor:pointer;color:#F6E2C6;text-decoration:underline;font-size:15.5px}
+.linkbtn:hover{color:#fff}
+
+/* ---------- Plavajuce tlacidlo (mobil) ---------- */
+.fab{position:fixed;left:50%;bottom:calc(14px + env(safe-area-inset-bottom));z-index:50;transform:translate(-50%,140%);transition:transform .4s cubic-bezier(.2,.8,.2,1);width:min(92vw,360px);box-shadow:inset 0 0 0 3px var(--wine),inset 0 0 0 4px rgba(228,197,144,.8),0 18px 40px -12px rgba(62,16,25,.7)}
+.fab.is-visible{transform:translate(-50%,0)}
+.fab:hover{transform:translate(-50%,-2px)}
+
+/* ---------- Cookie lista ---------- */
+.cookie{position:fixed;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom));z-index:90;background:#fff;border:1px solid rgba(185,138,79,.6);border-radius:16px;padding:14px 16px;max-height:80vh;overflow:auto;box-shadow:0 30px 70px -20px rgba(62,16,25,.55);max-width:640px;margin:0 auto}
+.cookie[hidden]{display:none}
+.cookie h2{font-family:var(--f-display);font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--wine);margin:0 0 4px;font-weight:600}
+.cookie p{margin:0 0 12px;font-size:15.5px;line-height:1.4;color:var(--text)}
+.cookie__btns{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.cookie__btns .btn{min-height:44px;padding:8px 10px;font-size:12px;letter-spacing:.1em}
+.cookie__btns .cookie__more{grid-column:1/-1;justify-self:center;background:none;border:0;color:var(--wine-2);text-decoration:underline;font-size:15px;padding:6px 8px;min-height:36px;cursor:pointer;font-family:var(--f-serif)}
+#cookie-save{grid-column:1/-1}
+
+
+/* ---------- Videa ---------- */
+.videos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;align-items:start;margin:0 auto 46px;max-width:980px}
+.videos__text{grid-column:1/-1;text-align:center}
+.videos__text h3{font-family:var(--f-display);font-weight:500;color:var(--wine);font-size:clamp(22px,5vw,30px);letter-spacing:.05em;margin:0 0 8px}
+.videos__text p{margin:0 0 16px;color:var(--muted)}
+.vid{margin:0;display:grid;gap:8px}
+.vid__frame{position:relative;border-radius:18px;overflow:hidden;background:#2a1418;box-shadow:0 0 0 1px rgba(185,138,79,.6),0 24px 50px -30px rgba(90,24,40,.8);aspect-ratio:9/16}
+.vid video{width:100%;height:100%;object-fit:cover;display:block}
+.vid__play{position:absolute;inset:0;margin:auto;width:72px;height:72px;border-radius:50%;border:1px solid rgba(228,197,144,.9);background:rgba(90,24,40,.72);color:#FFF4EF;display:grid;place-items:center;cursor:pointer;transition:transform .25s,background .25s;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+.vid__play:hover{transform:scale(1.06);background:rgba(90,24,40,.88)}
+.vid__play .icon{width:30px;height:30px;margin-left:4px}
+.vid__frame.is-playing .vid__play{opacity:0;pointer-events:none}
+.vid figcaption{text-align:center;font-size:16.5px;color:var(--muted)}
+.vid figcaption strong{color:var(--wine);font-family:var(--f-display);font-weight:500;letter-spacing:.06em;font-size:14px;text-transform:uppercase;display:block}
+.vid figcaption a{font-size:15px}
+.gitem__ig{position:absolute;top:8px;right:8px;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:rgba(255,251,250,.92);color:var(--wine);box-shadow:0 6px 16px -8px rgba(62,16,25,.6);transition:transform .25s,background .25s}
+.gitem__ig:hover{transform:scale(1.08);background:#fff;color:var(--wine)}
+.gitem__ig .icon{width:20px;height:20px}
+@media (max-width:639px){.gitem__ig{width:38px;height:38px;top:6px;right:6px}.gitem__ig .icon{width:18px;height:18px}}
+.lb-ig{background:rgba(255,251,250,.95)!important}
+.lb-ig[hidden]{display:none}
+/* ---------- Cookie nastavenia ---------- */
+.cookie a{color:var(--wine-2)}
+.cookie__prefs{display:grid;gap:10px;margin:0 0 14px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:#FFF8F6}
+.cookie__prefs[hidden]{display:none}
+.switch{display:flex;gap:10px;align-items:flex-start;font-size:15.5px;line-height:1.4;cursor:pointer}
+.switch input{width:20px;height:20px;margin:2px 0 0;accent-color:var(--wine);flex:none}
+.cookie__btns [hidden]{display:none}
+@media (min-width:640px){
+  .videos{grid-template-columns:1.1fr 1fr 1fr;gap:22px;align-items:center}
+  .videos__text{grid-column:auto;text-align:left}
+}
+@media (min-width:900px){.grid{grid-template-columns:repeat(3,1fr);gap:16px}}
+@media (min-width:900px){.videos{grid-template-columns:1fr 250px 250px;gap:28px}
+  .reviews{grid-auto-flow:row;grid-template-columns:repeat(3,minmax(0,1fr));overflow:visible;margin:0;padding:6px 0 0;gap:20px}
+  .rcard--featured{grid-column:span 2}
+  .reviews__hint{display:none}
+  .rcard--featured blockquote p{font-size:23px;line-height:1.5}}
+
+/* ---------- Animacie ---------- */
+html.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+html.js .reveal.in{opacity:1;transform:none}
+html.js .reveal.d1{transition-delay:.08s}html.js .reveal.d2{transition-delay:.16s}html.js .reveal.d3{transition-delay:.24s}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;transition-delay:0s!important}
+  html.js .reveal{opacity:1;transform:none}
+}
+
+/* ---------- Breakpointy ---------- */
+@media (min-width:640px){
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .certs{grid-template-columns:repeat(2,1fr)}
+  .grid{grid-template-columns:repeat(3,1fr);gap:14px}
+  .reviews{grid-auto-columns:46%}
+  .packs{grid-template-columns:repeat(3,1fr)}
+  .pricebox{padding:14px}
+  .pricebox__in{padding:34px 34px 34px}
+  .tabs{flex-wrap:wrap;justify-content:center;overflow:visible}
+  .cookie{left:24px;right:auto;bottom:24px}
+}
+@media (min-width:900px){
+  body{font-size:20px}
+  .section{padding:112px 0}
+  .hero{padding:70px 0 96px}
+  .hero__in{grid-template-columns:1.15fr .85fr;text-align:left;gap:56px}
+  .hero__logo{order:2;width:min(100%,300px);justify-self:center}
+  .hero__ctas{justify-content:flex-start}
+  .hero__ctas .btn{flex:0 0 auto}
+  .hero__info{justify-items:start;margin-left:0}
+  .hero__text{margin-left:0}
+  .about{grid-template-columns:.9fr 1.1fr;gap:72px}
+  .contact{grid-template-columns:1fr 1.2fr;align-items:stretch}
+  .map{min-height:100%}
+  .cards{grid-template-columns:repeat(3,1fr);gap:22px}
+  .certs{grid-template-columns:repeat(4,1fr)}
+  .grid{grid-template-columns:repeat(3,1fr);gap:16px}
+  .footer{padding-bottom:48px}
+  .footer__in{grid-template-columns:auto 1fr auto;text-align:left;justify-items:start;align-items:center}
+}
+@media (min-width:1080px){
+  .nav{display:block}
+  .header__cta{display:inline-flex}
+  .burger{display:none}
+  .mnav{display:none}
+  .fab{display:none}
+}
+
+/* ---------- Doplnky v3 ---------- */
+.card--wide{grid-column:1/-1}
+.card--wide .card__body h3{margin-top:6px}
+.glossary{margin:34px auto 0;max-width:980px;display:grid;gap:12px;padding:20px 22px;border:1px solid var(--line);border-radius:18px;background:var(--blush)}
+.glossary div{display:grid;gap:2px}
+.glossary dt{font-family:var(--f-display);font-weight:600;font-size:13.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--wine)}
+.glossary dd{margin:0;font-size:17.5px;line-height:1.5;color:var(--text)}
+.voucher__valid{font-size:17px;color:var(--gold-text)!important}
+.voucher__valid strong{color:var(--wine)}
+.gal-note{text-align:center;font-style:italic;color:var(--gold-text);font-size:16.5px;margin:-12px 0 18px}
+.hours__note{margin:6px 0 0!important;font-size:16px!important;color:var(--muted)}
+.faq{max-width:820px;margin:0 auto;display:grid;gap:12px}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 14px 30px -26px rgba(90,24,40,.45);overflow:hidden}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 20px;min-height:56px;font-weight:700;color:var(--wine);font-size:19px;line-height:1.3}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";flex:none;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--gold);color:var(--gold-text);font-family:var(--f-serif);font-size:22px;line-height:1;transition:transform .3s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{margin:0;padding:0 20px 18px;color:var(--text);font-size:18px;line-height:1.55}
+.vid video{cursor:pointer}
+/* Mobilná lišta Zavolať / Rezervovať */
+.fabbar{position:fixed;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom));z-index:50;display:grid;grid-template-columns:1fr 1.3fr;gap:8px;padding:8px;background:rgba(255,251,250,.96);border:1px solid rgba(185,138,79,.55);border-radius:999px;box-shadow:0 18px 40px -14px rgba(62,16,25,.55);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);transform:translateY(160%);transition:transform .4s cubic-bezier(.2,.8,.2,1)}
+.fabbar.is-visible{transform:none}
+.fabbar .btn{min-height:46px;padding:8px 12px;font-size:12.5px}
+/* Vycentrované mriežky (flex – posledný riadok je v strede) */
+.grid,.certs{display:flex!important;flex-wrap:wrap;justify-content:center}
+.grid{gap:10px}
+.gitem{flex:0 0 calc(50% - 5px)}
+.certs{gap:14px}
+.cert{flex:0 0 calc(50% - 7px)}
+@media (min-width:640px){
+  .gitem{flex-basis:calc(33.333% - 10px)}
+  .grid{gap:14px}
+  .card--wide{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:6px 22px}
+  .card--wide .card__foot{margin:0;padding:0 0 0 22px;border-top:0;border-left:1px dashed rgba(185,138,79,.5);flex-direction:column;align-items:flex-start;gap:4px}
+  .glossary{grid-template-columns:repeat(3,1fr);gap:22px}
+}
+@media (min-width:900px){
+  .grid{gap:16px}
+  .gitem{flex-basis:calc(33.333% - 11px)}
+  .cert{flex-basis:calc(25% - 11px)}
+}
+@media (min-width:1080px){.fabbar{display:none}}
+.hours td:first-child{white-space:nowrap;vertical-align:top}
+.lb-igwrap{text-align:center;margin:12px 0 0}
+.notice--cta{background:#fff;border-color:var(--wine-2)}
+.notice--cta a{font-weight:700;white-space:nowrap}
+@media (max-width:899px){.hero{padding:22px 0 54px}.hero__in{gap:14px}}
+
+@media (max-width:639px){.tabs{flex-direction:column;align-items:stretch;max-width:340px;margin-left:auto;margin-right:auto}.tab{white-space:normal}}
+
+/* Recenzie: od 640 px mriežka, text o potiahnutí len na dotykových zariadeniach */
+@media (hover:hover) and (pointer:fine){.reviews__hint{display:none}}
+@media (min-width:640px){
+  .reviews{grid-auto-flow:row;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible;margin:0;padding:6px 0 0;gap:18px}
+  .rcard--featured{grid-column:span 2}
+  .reviews__hint{display:none}
+}
+@media (min-width:900px){.reviews{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}}
+</style>
+</head>
+<body>
+<a class="skip" href="#obsah">Preskočiť na obsah</a>
+
+<!-- Ikony (SVG sprite) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-diamond" viewBox="0 0 32 32"><path d="M9 6h14l6 7-13 14L3 13z"/><path d="M3 13h26M12 6l-3 7 7 14 7-14-3-7M9 13l7-7 7 7"/></symbol>
+  <symbol id="i-lotus" viewBox="0 0 32 32"><path d="M16 25c-3-3-4-7-4-10s2-6 4-8c2 2 4 5 4 8s-1 7-4 10z"/><path d="M16 25c-4 0-9-2-11-7 3-1 6 0 8 1M16 25c4 0 9-2 11-7-3-1-6 0-8 1"/><path d="M16 25c-6 1-11-1-13-3M16 25c6 1 11-1 13-3"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 32 32"><path d="M14 4c.8 5.5 3.5 8.2 9 9-5.5.8-8.2 3.5-9 9-.8-5.5-3.5-8.2-9-9 5.5-.8 8.2-3.5 9-9z"/><path d="M25 19c.4 2.6 1.4 3.6 4 4-2.6.4-3.6 1.4-4 4-.4-2.6-1.4-3.6-4-4 2.6-.4 3.6-1.4 4-4z"/></symbol>
+  <symbol id="i-flask" viewBox="0 0 32 32"><path d="M12 4h8M13 4v8L6 25a2 2 0 0 0 2 3h16a2 2 0 0 0 2-3l-7-13V4"/><path d="M9 20h14"/><circle cx="14" cy="24" r="1"/><circle cx="18.5" cy="22.5" r=".8"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 32 32"><path d="M4 15c3 4 7 6 12 6s9-2 12-6"/><path d="M8 18.5l-2 3M12 20.3l-1 3.4M16 21v3.6M20 20.3l1 3.4M24 18.5l2 3"/><path d="M7 9c3-2 6-2.6 9-2.6S22 7 25 9"/></symbol>
+  <symbol id="i-drop" viewBox="0 0 32 32"><path d="M16 4c4 6 8 10.5 8 15a8 8 0 0 1-16 0c0-4.5 4-9 8-15z"/><path d="M12.5 20a4 4 0 0 0 3.5 4"/></symbol>
+  <symbol id="i-gift" viewBox="0 0 32 32"><rect x="5" y="12" width="22" height="16" rx="1.5"/><path d="M3 8h26v4H3zM16 8v20"/><path d="M16 8c-2-4-7-5-7-2s5 2 7 2zM16 8c2-4 7-5 7-2s-5 2-7 2z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h3.5l1.8 4.5-2.3 1.4a11 11 0 0 0 5.1 5.1l1.4-2.3L19 13.5V17a2 2 0 0 1-2 2A15 15 0 0 1 3 5a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/><path d="M9 14.5l2 2 4-4"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H7v4h3v7h4v-7h3l1-4h-4V8z"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8-5.3-2.8-5.3 2.8 1-5.8-4.2-4.1 5.9-.9z"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v6M12 16.5v.5"/></symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 8h3l1.5-2.5h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.5"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5.5"/><path d="M8.5 13.5L7 21l5-2.5 5 2.5-1.5-7.5"/></symbol>
+  <symbol id="i-quote" viewBox="0 0 24 24"><path d="M10 7H6a2 2 0 0 0-2 2v4h5v5H4M20 7h-4a2 2 0 0 0-2 2v4h5v5h-5"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+  <symbol id="i-nav" viewBox="0 0 24 24"><path d="M3 11l18-8-8 18-2-8z"/></symbol>
+  <symbol id="i-flourish" viewBox="0 0 92 28"><path d="M46 6c-4 0-6 3-6 6s3 5 6 5 6-2 6-5-2-6-6-6zM46 6c0 4-2 8-6 10M46 6c0 4 2 8 6 10M40 12c-8-6-18-6-26 0 6-1 10 1 12 4M52 12c8-6 18-6 26 0-6-1-10 1-12 4M14 12c-4 3-9 3-12 1M78 12c4 3 9 3 12 1M46 17v5"/></symbol>
+  <symbol id="i-corner" viewBox="0 0 44 44"><path d="M2 42V12C2 6 6 2 12 2h30"/><path d="M8 34V16c0-5 3-8 8-8h18"/><path d="M14 20c0-4 2-6 6-6M20 20a2 2 0 1 1-2-2"/></symbol>
+</svg>
+
+<!-- ================= HLAVIČKA ================= -->
+<header class="header" id="top">
+  <div class="wrap header__in">
+    <a class="brand" href="#top">
+      <img src="img/logo-mala.webp" width="46" height="46" alt="">
+      <span><span class="brand__name">SVET KRÁSY</span><span class="brand__sub">kozmetický salón</span></span>
+    </a>
+    <nav class="nav" aria-label="Hlavné menu">
+      <ul>
+        <li><a href="#sluzby">Služby</a></li>
+        <li><a href="#recenzie">Recenzie</a></li>
+        <li><a href="#o-mne">O mne</a></li>
+        <li><a href="#cennik">Cenník</a></li>
+        <li><a href="#balicky">Balíčky</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--primary btn--sm header__cta" href="tel:+421918797408" data-booking data-loc="hlavicka"><svg class="icon"><use href="#i-cal"/></svg>Rezervovať</a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Otvoriť menu"><span></span></button>
+  </div>
+</header>
+
+<nav class="mnav" id="mnav" aria-label="Mobilné menu" inert>
+  <ul>
+    <li><a href="#sluzby">Služby</a></li>
+    <li><a href="#recenzie">Recenzie</a></li>
+    <li><a href="#o-mne">O mne</a></li>
+    <li><a href="#cennik">Cenník</a></li>
+    <li><a href="#balicky">Balíčky</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
+  </ul>
+  <div class="mnav__foot">
+    <a class="btn btn--primary" href="tel:+421918797408" data-booking data-loc="mobilne_menu"><svg class="icon"><use href="#i-cal"/></svg>Rezervovať termín</a>
+    <a class="mnav__phone" href="tel:+421918797408" data-phone>0918&nbsp;797&nbsp;408</a>
+  </div>
+</nav>
+
+<main id="obsah">
+
+<!-- ================= HERO ================= -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero__frame" aria-hidden="true">
+    <svg class="corner corner--tl"><use href="#i-corner"/></svg><svg class="corner corner--tr"><use href="#i-corner"/></svg>
+    <svg class="corner corner--bl"><use href="#i-corner"/></svg><svg class="corner corner--br"><use href="#i-corner"/></svg>
+  </div>
+  <div class="wrap hero__in">
+    <img class="hero__logo reveal" src="img/logo.webp" width="400" height="400" fetchpriority="high" alt="Logo kozmetického salónu Svet Krásy – zlatý monogram SK s korunkou na ružovom mramore">
+    <div>
+      <p class="eyebrow reveal">Kozmetický salón · Nitra</p>
+      <h1 id="hero-title" class="reveal d1">SVET KRÁSY<span class="script">kozmetický salón</span></h1>
+      <p class="hero__text reveal d2">Profesionálne hĺbkové ošetrenia pleti pre ženy, ktoré chcú mať čistú, hydratovanú, hladšiu a viditeľne sviežejšiu pleť. Pomáham ženám dostať ich pleť do lepšej kondície a potom ju cielene omladzovať.</p>
+      <div class="hero__ctas reveal d3">
+        <a class="btn btn--primary" href="tel:+421918797408" data-booking data-loc="hero"><svg class="icon"><use href="#i-cal"/></svg>Rezervovať termín</a>
+        <a class="btn btn--ghost" href="#cennik">Pozrieť cenník</a>
+      </div>
+      <ul class="hero__info reveal d3">
+        <li><svg class="icon"><use href="#i-pin"/></svg><span>7. pešieho pluku 1415/2, Nitra<small>Mestská tržnica, oproti Mlynom</small></span></li>
+        <li><svg class="icon"><use href="#i-phone"/></svg><a href="tel:+421918797408" data-phone>0918&nbsp;797&nbsp;408</a></li>
+        <!-- TODO: hodnotenie a počet recenzií priebežne aktualizovať podľa Google profilu -->
+        <li><svg class="icon"><use href="#i-award"/></svg><a href="https://www.google.com/search?sca_esv=42b7bc95fdf18e3f&amp;sxsrf=APpeQnuMgw1oej3Nf3fsmNtbKUsJg9_l4A:1791026998066&amp;q=Svet+Kr%C3%A1sy+kozmetick%C3%BD+sal%C3%B3n+Nitra&amp;si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_84lEH3s6a43OeXeYuK90ZuIEVTy8EjIyalRY2wb3lctndTIGtiQetXO3pkWpZ98p-FQLFk%3D&amp;uds=AJ5uw195omnGJ76DOhPThDoE1qc-R4sjJjzkHozle2KJJik7AQ0ZrgvgR1tH6YZVPoBu0mmdQLG7qfwaFBAcWLNDBKZtpx_UPv3pBZh7op2g6Uc1daXmiU7GtbqsQtkqWDihw1C7DN7zly5SW-8S__0dEvzp3Rcc9w&amp;sa=X&amp;ved=2ahUKEwj2m4LA352XAxUWhP0HHYTEGNsQ3PALegQIHBAE&amp;biw=1920&amp;bih=945&amp;dpr=1#sv=CAESzQEKuQEStgEKd0FKaVQ0dEkxdy1BeXExTG5MclpYMmZWUjJVRDFqN0NpUW5mV19Udy1rcGgxMElSSkFyeXI2OUVFSHFBS2xSalBZMGZfc0ttTERpbEUyMks4MXhNamZ2MXNES1JBTGJYLS1CandTU1JjT3pETnRTZVhrVHItX3drEhdPdWZBYXNYek83bkJ3UEFQMi1lN2lRVRoiQURzcjlmVFBtaXpQYXFfdE8wajhxVTBsanBZTFljQ2Q2URIEODA1MRoBMyoAMAA4AUAAGAAgjZ6mowNKAhAB" target="_blank" rel="noopener" data-social="google" data-loc="hero">5,0 ★ · 24 recenzií na Google</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SLUŽBY ================= -->
+<section class="section" id="sluzby" aria-labelledby="sluzby-title">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <p class="eyebrow">Služby</p>
+      <h2 class="h2" id="sluzby-title">Starostlivosť o pleť,</h2>
+      <span class="script">ktorá začína jej správnou prípravou</span>
+      <div class="ornament" aria-hidden="true"><svg><use href="#i-flourish"/></svg></div>
+    </header>
+    <div class="intro reveal">
+      <p>V salóne Svet Krásy sa špecializujem na komplexnú starostlivosť o pleť – od hĺbkového čistenia až po intenzívnu hydratáciu, obnovu, lifting a omladenie. Každé ošetrenie prispôsobujem aktuálnemu stavu a potrebám pleti.</p>
+      <p>Základom je dôkladné hĺbkové čistenie pleti, pri ktorom využívam rôzne profesionálne metódy, ako Hydrafacial, dermabráziu, skin scrubber či naparovanie. Čistá a správne pripravená pleť je totiž základom toho, aby následná starostlivosť priniesla čo najlepší výsledok.</p>
+      <p>Pre pleť, ktorá potrebuje viac, ponúkam luxusné hydratačné, liftingové a omladzujúce ošetrenia vrátane neinvazívnej mezoterapie, rádiofrekvencie a biomicroneedlingu.</p>
+    </div>
+    <div class="cards">
+      <article class="card reveal">
+        <div class="medal"><svg class="icon"><use href="#i-diamond"/></svg></div>
+        <h3>Luxusné ošetrenia pleti</h3>
+        <p>Kombinácia dvoch ošetrení (2 v 1) pre rozjasnenie, hydratáciu, lifting a celkovú revitalizáciu pleti.</p>
+        <div class="card__foot"><span class="from">od<strong>110 €</strong></span><a class="card__link" href="#cennik" data-tab="tab-lux">Cenník<span class="sr-only"> – luxusné ošetrenia pleti</span></a></div>
+      </article>
+      <article class="card reveal d1">
+        <div class="medal"><svg class="icon"><use href="#i-lotus"/></svg></div>
+        <h3>Základné ošetrenia pleti</h3>
+        <p>Prémiové hĺbkové čistenie s Hydrafacialom, protiakné ošetrenie a relaxačné ošetrenie s masážou.</p>
+        <div class="card__foot"><span class="from">od<strong>63 €</strong></span><a class="card__link" href="#cennik" data-tab="tab-zakl">Cenník<span class="sr-only"> – základné ošetrenia pleti</span></a></div>
+      </article>
+      <article class="card reveal d2">
+        <div class="medal"><svg class="icon"><use href="#i-sparkle"/></svg></div>
+        <h3>Anti-age ošetrenia</h3>
+        <p>Rozjasnenie, spevnenie a pozdvihnutie kontúr tváre, krku a dekoltu – rádiofrekvencia, ultrazvuk, Spicule.</p>
+        <div class="card__foot"><span class="from">od<strong>66 €</strong></span><a class="card__link" href="#cennik" data-tab="tab-age">Cenník<span class="sr-only"> – anti-age ošetrenia</span></a></div>
+      </article>
+      <article class="card reveal">
+        <div class="medal"><svg class="icon"><use href="#i-flask"/></svg></div>
+        <h3>Chemický peeling</h3>
+        <p>Omladzujúci peeling na vrásky a hyperpigmentáciu aj peeling pre pleť so sklonom k akné.</p>
+        <div class="card__foot"><span class="from">od<strong>40 €</strong></span><a class="card__link" href="#cennik" data-tab="tab-peel">Cenník<span class="sr-only"> – chemický peeling</span></a></div>
+      </article>
+      <article class="card reveal d1">
+        <div class="medal"><svg class="icon"><use href="#i-eye"/></svg></div>
+        <h3>Obočie a mihalnice</h3>
+        <p>WOW lifting, laminácia obočia, úprava a farbenie obočia, farbenie mihalníc.</p>
+        <div class="card__foot"><span class="from">od<strong>15 €</strong></span><a class="card__link" href="#cennik" data-tab="tab-oboc">Cenník<span class="sr-only"> – obočie a mihalnice</span></a></div>
+      </article>
+      <article class="card reveal d2">
+        <div class="medal"><svg class="icon"><use href="#i-drop"/></svg></div>
+        <h3>Depilácia voskom</h3>
+        <p>Depilácia pre ženy – nohy, ruky, bikiny, podpazušie aj malé časti tváre.</p>
+        <div class="card__foot"><span class="from">od<strong>7 €</strong></span><a class="card__link" href="#cennik" data-tab="tab-depi">Cenník<span class="sr-only"> – depilácia voskom</span></a></div>
+      </article>
+      <article class="card card--wide reveal">
+        <div class="medal"><svg class="icon"><use href="#i-lotus"/></svg></div>
+        <div class="card__body">
+          <h3>Doplnkové služby</h3>
+          <p>Úprava a farbenie obočia, farbenie mihalníc či depilácia malej časti tváre ako doplnok ku kozmetickému ošetreniu.</p>
+        </div>
+        <div class="card__foot"><span class="from">od<strong>5 €</strong></span><a class="card__link" href="#cennik" data-tab="tab-dopl">Cenník<span class="sr-only"> – doplnkové služby</span></a></div>
+      </article>
+    </div>
+    <dl class="glossary reveal">
+      <div><dt>Hydrafacial</dt><dd>Hĺbkové čistenie pleti, pri ktorom hlavica súčasne odsáva nečistoty z pórov a vpravuje do pleti hydratačné séra.</dd></div>
+      <div><dt>Spicule</dt><dd>Biomicroneedling, pri ktorom mikroskopické prírodné častice jemne narušia povrch pokožky a podporia jej obnovu – bez injekcií.</dd></div>
+      <div><dt>WOW lifting</dt><dd>Technika liftingu mihalníc, ktorá vlastné mihalnice nadvihne a natočí od korienkov – bez predlžovania.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ================= RECENZIE ================= -->
+<section class="section section--blush" id="recenzie" aria-labelledby="recenzie-title">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <p class="eyebrow">Recenzie z Google</p>
+      <h2 class="h2" id="recenzie-title">Recenzie –</h2>
+      <span class="script">čo hovoria klientky</span>
+      <div class="ornament" aria-hidden="true"><svg><use href="#i-flourish"/></svg></div>
+    </header>
+    <!-- Recenzie prevzaté z Google profilu salónu (text bez úprav obsahu, mená skrátené kvôli súkromiu) -->
+    <div class="reviews reveal">
+      <figure class="rcard rcard--featured">
+        <div class="rcard__top"><span class="stars" role="img" aria-label="Hodnotenie 5 z 5 hviezdičiek"><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg></span><span class="rcard__src">Google</span></div>
+        <blockquote><p>Maximálna spokojnosť! Pani kozmetička je skutočná odborníčka, ktorá pleti naozaj rozumie. Po každom ošetrení odchádzam oddýchnutá s pocitom rozjasnenej a dokonale vyčistenej pleti. Oceňujem aj profesionálne poradenstvo pri výbere domácej starostlivosti. Určite prídem opäť.</p></blockquote>
+        <figcaption><span class="rcard__av" aria-hidden="true">K</span><span><strong>K. Koprdová</strong><small>recenzia na Google</small></span></figcaption>
+      </figure>
+      <figure class="rcard">
+        <div class="rcard__top"><span class="stars" role="img" aria-label="Hodnotenie 5 z 5 hviezdičiek"><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg></span><span class="rcard__src">Google</span></div>
+        <blockquote><p>Najlepší salón v Nitre, aký som navštívila, profesionálna a komplexná starostlivosť o tvár aj telo, ďakujem za super relax.</p></blockquote>
+        <figcaption><span class="rcard__av" aria-hidden="true">M</span><span><strong>Monika</strong><small>recenzia na Google</small></span></figcaption>
+      </figure>
+      <figure class="rcard">
+        <div class="rcard__top"><span class="stars" role="img" aria-label="Hodnotenie 5 z 5 hviezdičiek"><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg></span><span class="rcard__src">Google</span></div>
+        <blockquote><p>K Zuzke chodím pravidelne každý mesiac už niekoľko rokov. Je to šikovná kozmetička, rozumie tomu, čo robí, jej výsledky práce sú viditeľné. Robí aj masáže, odporúča krémy a v prvom rade precízne a profesionálne ošetruje pleť.</p></blockquote>
+        <figcaption><span class="rcard__av" aria-hidden="true">A</span><span><strong>Alena P.</strong><small>recenzia na Google</small></span></figcaption>
+      </figure>
+      <figure class="rcard">
+        <div class="rcard__top"><span class="stars" role="img" aria-label="Hodnotenie 5 z 5 hviezdičiek"><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg></span><span class="rcard__src">Google</span></div>
+        <blockquote><p>Zuzka je najlepšia kozmetička, akú som doteraz mala, neustále sa vzdeláva a obohacuje svoj salón o novinky. Chodím k nej pravidelne na čistenie pleti a tvarovanie obočia, farbenie obočia a mihalníc.</p></blockquote>
+        <figcaption><span class="rcard__av" aria-hidden="true">A</span><span><strong>Andrea Z.</strong><small>recenzia na Google</small></span></figcaption>
+      </figure>
+      <figure class="rcard">
+        <div class="rcard__top"><span class="stars" role="img" aria-label="Hodnotenie 5 z 5 hviezdičiek"><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg></span><span class="rcard__src">Google</span></div>
+        <blockquote><p>K Zuzke chodím pravidelne už niekoľko rokov, jej práca je veľmi profesionálna ako aj osobný prístup k zákazníčkam. Odporúčam všetkými hviezdičkami.</p></blockquote>
+        <figcaption><span class="rcard__av" aria-hidden="true">I</span><span><strong>Ingrid S.</strong><small>recenzia na Google</small></span></figcaption>
+      </figure>
+    </div>
+    <p class="reviews__hint" aria-hidden="true">← potiahnite prstom pre ďalšie recenzie →</p>
+    <p class="center reveal">
+      <a class="btn btn--ghost" id="google-reviews" href="https://www.google.com/search?sca_esv=42b7bc95fdf18e3f&amp;sxsrf=APpeQnuMgw1oej3Nf3fsmNtbKUsJg9_l4A:1791026998066&amp;q=Svet+Kr%C3%A1sy+kozmetick%C3%BD+sal%C3%B3n+Nitra&amp;si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_84lEH3s6a43OeXeYuK90ZuIEVTy8EjIyalRY2wb3lctndTIGtiQetXO3pkWpZ98p-FQLFk%3D&amp;uds=AJ5uw195omnGJ76DOhPThDoE1qc-R4sjJjzkHozle2KJJik7AQ0ZrgvgR1tH6YZVPoBu0mmdQLG7qfwaFBAcWLNDBKZtpx_UPv3pBZh7op2g6Uc1daXmiU7GtbqsQtkqWDihw1C7DN7zly5SW-8S__0dEvzp3Rcc9w&amp;sa=X&amp;ved=2ahUKEwj2m4LA352XAxUWhP0HHYTEGNsQ3PALegQIHBAE&amp;biw=1920&amp;bih=945&amp;dpr=1#sv=CAESzQEKuQEStgEKd0FKaVQ0dEkxdy1BeXExTG5MclpYMmZWUjJVRDFqN0NpUW5mV19Udy1rcGgxMElSSkFyeXI2OUVFSHFBS2xSalBZMGZfc0ttTERpbEUyMks4MXhNamZ2MXNES1JBTGJYLS1CandTU1JjT3pETnRTZVhrVHItX3drEhdPdWZBYXNYek83bkJ3UEFQMi1lN2lRVRoiQURzcjlmVFBtaXpQYXFfdE8wajhxVTBsanBZTFljQ2Q2URIEODA1MRoBMyoAMAA4AUAAGAAgjZ6mowNKAhAB" target="_blank" rel="noopener"><svg class="icon icon--fill" style="color:var(--gold)"><use href="#i-star"/></svg>Recenzie na Google</a>
+    </p>
+  </div>
+</section>
+
+<div class="motto reveal" role="note">
+  <q>Najprv pleť pripraviť, potom omladzovať.</q>
+  <p>Mojím cieľom je, aby bola pleť nielen krásna na pohľad, ale predovšetkým čistá, hydratovaná, revitalizovaná a zdravšie pôsobiaca.</p>
+</div>
+
+<!-- ================= O MNE ================= -->
+<section class="section" id="o-mne" aria-labelledby="omne-title">
+  <div class="wrap about">
+    <div class="about__photo reveal">
+      <!-- TODO: ak klientka pošle portrétovú fotku, nahradiť touto (pomer 4:5) -->
+      <img src="img/o-mne.webp" width="800" height="1000" loading="lazy" decoding="async" alt="Mgr. Zuzana Machovičová počas ošetrenia pleti v salóne Svet Krásy">
+    </div>
+    <div class="about__text reveal d1">
+      <p class="eyebrow">O mne</p>
+      <h2 class="h2" id="omne-title"><span class="h2__pre">Mgr.</span> Zuzana Machovičová</h2>
+      <span class="script">majiteľka salónu</span>
+      <div style="height:22px"></div>
+      <!-- TODO: text je prevzatý z podkladov klientky („Čo má obsahovať web“) – dať jej ho na finálne odsúhlasenie -->
+      <p>Volám sa Zuzana Machovičová. Ako kozmetička pracujem už vyše 10 rokov a som majiteľkou salónu Svet Krásy v Nitre. O kozmetiku som sa zaujímala už odmalička. V puberte som si sama prešla náročným a zdĺhavým procesom liečby akné, čo môj záujem o kozmetickú profesiu ešte viac prehĺbilo.</p>
+      <p>Hoci som ukončila vysokú školu, dnes sa venujem ženám, ktoré netúžia vyzerať na dvadsať, ale chcú vyzerať dobre na svoj vek a pri pohľade do zrkadla vidieť oddýchnutejšiu verziu seba. Mám za sebou roky praxe, niekoľko desiatok školení a neprestajne sa vzdelávam v beauty sfére.</p>
+      <p>Kozmetické trendy sledujem, ale nie sú pre mňa určujúce. Pre pleť vyberám vždy to, čo aktuálne potrebuje.</p>
+      <p class="about__sign">Zuzana Machovičová</p>
+      <p class="about__role">kozmetička · majiteľka salónu Svet Krásy</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CERTIFIKÁTY ================= -->
+<section class="section section--blush" id="certifikaty" aria-labelledby="cert-title">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <p class="eyebrow">Vzdelávanie</p>
+      <h2 class="h2" id="cert-title">Certifikáty</h2>
+      <div class="ornament" aria-hidden="true"><svg><use href="#i-flourish"/></svg></div>
+    </header>
+    <div class="certs">
+      <figure class="cert cert--wide reveal">
+        <button type="button" data-lightbox data-full="img/cert-wow.webp" data-caption="WOW lifting – lash-lifting technika" aria-label="Zväčšiť certifikát: WOW lifting – lash-lifting technika">
+          <img src="img/cert-wow-nahlad.webp" width="700" height="495" loading="lazy" decoding="async" alt="Certifikát pre Mgr. Zuzanu Machovičovú o absolvovaní online školenia lash-lifting techniky WOW LIFTING">
+        </button>
+        <figcaption>WOW lifting – lash-lifting technika</figcaption>
+      </figure>
+      <figure class="cert reveal d1">
+        <button type="button" data-lightbox data-full="img/cert-hydrafacial.webp" data-caption="Hydrafacial – multifunkčný systém" aria-label="Zväčšiť certifikát: Hydrafacial – multifunkčný systém">
+          <img src="img/cert-hydrafacial-nahlad.webp" width="394" height="700" loading="lazy" decoding="async" alt="Certifikát o odbornom školení Mgr. Zuzany Machovičovej na prácu s multifunkčným systémom Hydrafacial">
+        </button>
+        <figcaption>Hydrafacial – multifunkčný systém</figcaption>
+      </figure>
+      <figure class="cert reveal d2">
+        <button type="button" data-lightbox data-full="img/cert-janssen-1.webp" data-caption="Janssen Cosmetics – odborné školenie" aria-label="Zväčšiť certifikát: Janssen Cosmetics – odborné školenie">
+          <img src="img/cert-janssen-1-nahlad.webp" width="390" height="700" loading="lazy" decoding="async" alt="Certifikát Janssen Cosmetics pre Mgr. Zuzanu Machovičovú z odborného školenia">
+        </button>
+        <figcaption>Janssen Cosmetics – odborné školenie</figcaption>
+      </figure>
+      <figure class="cert reveal d3">
+        <button type="button" data-lightbox data-full="img/cert-janssen-2.webp" data-caption="Janssen Cosmetics – Exfoliation System" aria-label="Zväčšiť certifikát: Janssen Cosmetics – Exfoliation System">
+          <img src="img/cert-janssen-2-nahlad.webp" width="390" height="700" loading="lazy" decoding="async" alt="Certifikát Janssen Cosmetics pre Mgr. Zuzanu Machovičovú – produktová línia Exfoliation System">
+        </button>
+        <figcaption>Janssen Cosmetics – Exfoliation System</figcaption>
+      </figure>
+      <!-- TODO: ďalšie certifikáty stačí pridať ako ďalší <figure class="cert"> (fotku uložiť do priečinka img/) -->
+    </div>
+  </div>
+</section>
+
+<!-- ================= CENNÍK ================= -->
+<section class="section section--marble" id="cennik" aria-labelledby="cennik-title">
+  <div class="wrap">
+    <header class="section-head reveal" style="background:rgba(255,251,250,.86);padding:22px 18px;border-radius:18px">
+      <p class="eyebrow">Svet Krásy</p>
+      <h2 class="h2" id="cennik-title">CENNÍK</h2>
+      <span class="script">služieb</span>
+      <div class="ornament" aria-hidden="true"><svg><use href="#i-flourish"/></svg></div>
+    </header>
+
+    <div class="pricebox reveal">
+      <div class="pricebox__in">
+
+        <div class="tabs" role="tablist" aria-label="Kategórie cenníka">
+          <button class="tab" type="button" role="tab" id="tab-lux" aria-controls="p-lux" aria-selected="true">Luxusné ošetrenia</button>
+          <button class="tab" type="button" role="tab" id="tab-zakl" aria-controls="p-zakl" aria-selected="false" tabindex="-1">Základné ošetrenia pleti</button>
+          <button class="tab" type="button" role="tab" id="tab-age" aria-controls="p-age" aria-selected="false" tabindex="-1">Anti-age</button>
+          <button class="tab" type="button" role="tab" id="tab-peel" aria-controls="p-peel" aria-selected="false" tabindex="-1">Chemický peeling</button>
+          <button class="tab" type="button" role="tab" id="tab-oboc" aria-controls="p-oboc" aria-selected="false" tabindex="-1">Obočie a mihalnice</button>
+          <button class="tab" type="button" role="tab" id="tab-dopl" aria-controls="p-dopl" aria-selected="false" tabindex="-1">Doplnkové služby</button>
+          <button class="tab" type="button" role="tab" id="tab-depi" aria-controls="p-depi" aria-selected="false" tabindex="-1">Depilácia</button>
+        </div>
+
+        <!-- Luxusné ošetrenia pleti -->
+        <div class="panel" role="tabpanel" id="p-lux" aria-labelledby="tab-lux" tabindex="0">
+          <h3><span class="medal" aria-hidden="true"><svg class="icon"><use href="#i-diamond"/></svg></span>Luxusné ošetrenia pleti</h3>
+          <p class="panel__note">kombinácia dvoch ošetrení (2 v 1)</p>
+          <ul class="plist">
+            <li class="pitem">
+              <span class="pitem__name">Lux Skin Ritual Hydra + Royal Spicule 2 v 1</span><span class="pitem__price">132 €</span>
+              <span class="pitem__meta"><span class="dur"><svg class="icon"><use href="#i-clock"/></svg>90 min</span></span>
+              <p class="pitem__desc">Luxusné ošetrenie pre pleť, ktorá túži po rozjasnení, hydratácii a sviežom vzhľade.</p>
+            </li>
+            <li class="pitem">
+              <span class="pitem__name">Lux Skin Ritual Hydra + ošetrenie s efektom podobným botoxu 2 v 1</span><span class="pitem__price">123 €</span>
+              <span class="pitem__meta"><span class="dur"><svg class="icon"><use href="#i-clock"/></svg>90 min</span></span>
+              <p class="pitem__desc">Luxusné ošetrenie pleti, ktorá potrebuje lifting a vyhladenie vrások s efektom podobným botoxu.</p>
+            </li>
+            <li class="pitem">
+              <span class="pitem__name">Lux Skin Ritual 3 Mesotherapy</span><span class="pitem__price">110 €</span>
+              <span class="pitem__meta"><span class="dur"><svg class="icon"><use href="#i-clock"/></svg>75 min</span></span>
+              <p class="pitem__desc">Luxusné ošetrenie – trojitý impulz pre celkové omladenie, obnovu a revitalizáciu pleti.</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Základné ošetrenia pleti -->
+        <div class="panel" role="tabpanel" id="p-zakl" aria-labelledby="tab-zakl" tabindex="0" hidden>
+          <h3><span class="medal" aria-hidden="true"><svg class="icon"><use href="#i-lotus"/></svg></span>Základné ošetrenia pleti</h3>
+          <ul class="plist">
+            <li class="pitem">
+              <span class="pitem__name">Prémiové hĺbkové čistenie pleti</span><span class="pitem__price">76 €</span>
+              <span class="pitem__meta"><span class="dur"><svg class="icon"><use href="#i-clock"/></svg>75 min</span></span>
+              <p class="pitem__desc">Peeling + hĺbkové čistenie pleti s Hydrafacialom + neinvazívna mezoterapia.</p>
+              <span class="extra">príplatok k ošetreniu: +20 € manuálne čistenie pleti</span>
+            </li>
+            <li class="pitem">
+              <span class="pitem__name">Protiakné ošetrenie pleti</span><span class="pitem__price">66 €</span>
+              <span class="pitem__meta"><span class="dur"><svg class="icon"><use href="#i-clock"/></svg>75 min</span></span>
+              <p class="pitem__desc">Hĺbkové čistenie pleti naparovaním / dermabráziou / scrubberom.</p>
+              <span class="extra">príplatok k ošetreniu: +15 € ručná masáž tváre a krku</span>
+            </li>
+            <li class="pitem">
+              <span class="pitem__name">Relax Harmony</span><span class="pitem__price">63 €</span>
+              <span class="pitem__meta"><span class="dur"><svg class="icon"><use href="#i-clock"/></svg>70 min</span></span>
+              <p class="pitem__desc">Ultrazvuk + ručná relaxačná masáž tváre, krku a dekoltu.</p>
+              <span class="extra">príplatok k ošetreniu: +12 € anti-age fleece mask</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Anti-age -->
+        <div class="panel" role="tabpanel" id="p-age" aria-labelledby="tab-age" tabindex="0" hidden>
+          <h3><span class="medal" aria-hidden="true"><svg class="icon"><use href="#i-sparkle"/></svg></span>Anti-age ošetrenia pleti</h3>
+          <ul class="plist">
+            <li class="pitem">
+              <span class="pitem__name">Lift &amp; Glow <small style="font-weight:500">(OxyGeneo, RF, ultrazvuk)</small></span><span class="pitem__price">76 €</span>
+              <span class="pitem__meta"><span class="dur"><svg class="icon"><use href="#i-clock"/></svg>75 min</span></span>
+              <p class="pitem__desc">Rozjasnenie a spevnenie pre každý typ pleti.</p>
+            </li>
+            <li class="pitem">
+              <span class="pitem__name">Lifting Radiance + Stem Cells</span><span class="pitem__price">66 €</span>
+              <span class="pitem__meta"><span class="dur"><svg class="icon"><use href="#i-clock"/></svg>75 min</span></span>
+              <p class="pitem__desc">Pozdvihnutie a spevnenie kontúr tváre, krku a dekoltu rádiofrekvenciou s kmeňovými bunkami.</p>
+            </li>
+            <li class="pitem">
+              <span class="pitem__name">Bio Impulse</span><span class="pitem__price">76 €</span>
+              <span class="pitem__meta"><span class="dur"><svg class="icon"><use href="#i-clock"/></svg>60 min</span></span>
+              <p class="pitem__desc">Ošetrenie Spicule (biomicroneedling) pre obnovu a revitalizáciu pleti.</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Chemický peeling -->
+        <div class="panel" role="tabpanel" id="p-peel" aria-labelledby="tab-peel" tabindex="0" hidden>
+          <h3><span class="medal" aria-hidden="true"><svg class="icon"><use href="#i-flask"/></svg></span>Chemický peeling</h3>
+          <ul class="plist">
+            <li class="pitem">
+              <span class="pitem__name">Medi Lift</span><span class="pitem__price">40 €</span>
+              <span class="pitem__meta"><span class="dur"><svg class="icon"><use href="#i-clock"/></svg>30 min</span></span>
+              <p class="pitem__desc">Omladzujúci chemický peeling zameraný na redukciu vrások a hyperpigmentácií.</p>
+            </li>
+            <li class="pitem">
+              <span class="pitem__name">Medi Glow</span><span class="pitem__price">40 €</span>
+              <span class="pitem__meta"><span class="dur"><svg class="icon"><use href="#i-clock"/></svg>30 min</span></span>
+              <p class="pitem__desc">Protiakný chemický peeling.</p>
+            </li>
+            <li class="pitem">
+              <span class="pitem__name">Medi Glow + protiakné ošetrenie pleti</span><span class="pitem__price">70 €</span>
+              <span class="pitem__meta"><span class="dur"><svg class="icon"><use href="#i-clock"/></svg>75 min</span></span>
+              <p class="pitem__desc">Chemický peeling + hĺbkové čistenie pleti.</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Obočie a mihalnice -->
+        <div class="panel" role="tabpanel" id="p-oboc" aria-labelledby="tab-oboc" tabindex="0" hidden>
+          <h3><span class="medal" aria-hidden="true"><svg class="icon"><use href="#i-eye"/></svg></span>Obočie a mihalnice</h3>
+          <ul class="dots">
+            <li><span class="n">WOW lifting</span><span class="lead-dots" aria-hidden="true"></span><span class="p">50 €</span></li>
+            <li><span class="n">Laminácia obočia</span><span class="lead-dots" aria-hidden="true"></span><span class="p">40 €</span></li>
+            <li><span class="n">Úprava a farbenie obočia</span><span class="lead-dots" aria-hidden="true"></span><span class="p">26 €</span></li>
+            <li><span class="n">Úprava obočia samostatne</span><span class="lead-dots" aria-hidden="true"></span><span class="p">15 €</span></li>
+            <li><span class="n">Náročná úprava obočia – doplatok</span><span class="lead-dots" aria-hidden="true"></span><span class="p">+10 €</span></li>
+            <li><span class="n">Farbenie mihalníc</span><span class="lead-dots" aria-hidden="true"></span><span class="p">15 €</span></li>
+          </ul>
+        </div>
+
+        <!-- Doplnkové služby -->
+        <div class="panel" role="tabpanel" id="p-dopl" aria-labelledby="tab-dopl" tabindex="0" hidden>
+          <h3><span class="medal" aria-hidden="true"><svg class="icon"><use href="#i-lotus"/></svg></span>Doplnkové služby</h3>
+          <p class="panel__note">pri kozmetickom ošetrení</p>
+          <ul class="dots">
+            <li><span class="n">Úprava a farbenie obočia</span><span class="lead-dots" aria-hidden="true"></span><span class="p">10 €</span></li>
+            <li><span class="n">Farbenie mihalníc</span><span class="lead-dots" aria-hidden="true"></span><span class="p">10 €</span></li>
+            <li><span class="n">Depilácia 1 malej časti tváre</span><span class="lead-dots" aria-hidden="true"></span><span class="p">5 €</span></li>
+          </ul>
+        </div>
+
+        <!-- Depilácia -->
+        <div class="panel" role="tabpanel" id="p-depi" aria-labelledby="tab-depi" tabindex="0" hidden>
+          <h3><span class="medal" aria-hidden="true"><svg class="icon"><use href="#i-drop"/></svg></span>Depilácia voskom – ženy</h3>
+          <ul class="dots">
+            <li><span class="n">Celé nohy</span><span class="lead-dots" aria-hidden="true"></span><span class="p">40 €</span></li>
+            <li><span class="n">Celé ruky</span><span class="lead-dots" aria-hidden="true"></span><span class="p">30 €</span></li>
+            <li><span class="n">Bikiny</span><span class="lead-dots" aria-hidden="true"></span><span class="p">20 €</span></li>
+            <li><span class="n">Podpazušie</span><span class="lead-dots" aria-hidden="true"></span><span class="p">15 €</span></li>
+            <li><span class="n">1 malá časť tváre <small>(horná pera, brada, líce)</small></span><span class="lead-dots" aria-hidden="true"></span><span class="p">7 €</span></li>
+          </ul>
+        </div>
+
+        <div class="price-foot">
+          <div class="notice notice--cta"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><div><strong>Neviete, ktoré ošetrenie vybrať?</strong>Zavolajte, rada vám poradím, čo vaša pleť práve potrebuje. <a href="tel:+421918797408" data-phone>0918&nbsp;797&nbsp;408</a></div></div>
+          <div class="notice"><svg class="icon" aria-hidden="true"><use href="#i-gift"/></svg><div><strong>Darčeková poukážka</strong>od 30 € – <a href="#poukazka">viac o poukážke</a></div></div>
+          <div class="notice"><svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg><div><strong>Storno podmienky</strong><a href="#storno">Pozrieť storno podmienky v sekcii Kontakt</a></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BALÍČKY ================= -->
+<section class="section" id="balicky" aria-labelledby="balicky-title">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <p class="eyebrow">Výhodné ponuky</p>
+      <h2 class="h2" id="balicky-title">Balíčky –</h2>
+      <span class="script">viac ošetrení za nižšiu cenu</span>
+      <div class="ornament" aria-hidden="true"><svg><use href="#i-flourish"/></svg></div>
+    </header>
+    <div class="packs">
+      <article class="pack reveal">
+        <span class="pack__badge">3 + 1 zadarmo</span>
+        <h3>Neinvazívne ošetrenie s efektom podobným botoxu</h3>
+        <p class="pack__price">369 €</p>
+        <p class="pack__old">namiesto <s>492 €</s></p>
+        <span class="pack__save">úspora 123 €</span>
+      </article>
+      <article class="pack reveal d1">
+        <span class="pack__badge">5 + 2 zadarmo</span>
+        <h3>Rádiofrekvencia<small>tvár a krk</small></h3>
+        <!-- TODO: overiť s klientkou cenu 1 ošetrenia RF (54 €) – 5 × 54 € = 270 €, 7 × 54 € = 378 € -->
+        <p class="pack__price">270 €</p>
+        <p class="pack__old">namiesto <s>378 €</s></p>
+        <span class="pack__save">úspora 108 €</span>
+      </article>
+      <article class="pack reveal d2">
+        <span class="pack__badge">3 + 1 zadarmo</span>
+        <h3>Chemický peeling</h3>
+        <p class="pack__price">120 €</p>
+        <p class="pack__old">namiesto <s>160 €</s></p>
+        <span class="pack__save">úspora 40 €</span>
+      </article>
+    </div>
+    <p class="center reveal"><a class="btn btn--primary" href="tel:+421918797408" data-booking data-loc="balicky"><svg class="icon"><use href="#i-cal"/></svg>Rezervovať termín</a></p>
+  </div>
+</section>
+
+<!-- ================= DARČEKOVÁ POUKÁŽKA ================= -->
+<section class="section section--blush" id="poukazka" aria-labelledby="poukazka-title" style="padding-top:64px;padding-bottom:64px">
+  <div class="wrap">
+    <div class="voucher reveal">
+      <div class="voucher__in">
+        <span class="medal voucher__icon" aria-hidden="true"><svg class="icon" style="width:36px;height:36px"><use href="#i-gift"/></svg></span>
+        <h2 id="poukazka-title">Darčeková poukážka</h2>
+        <p class="voucher__price">v hodnote od<strong>30 €</strong></p>
+        <p>Darujte chvíľu starostlivosti a oddychu. O darčekovú poukážku sa informujte telefonicky alebo priamo v salóne.</p>
+        <!-- TODO: doplniť platnosť poukážky -->
+        <p class="voucher__valid">Platnosť poukážky: <strong>[DOPLNIŤ]</strong></p>
+        <a class="btn btn--ghost" href="tel:+421918797408" data-phone><svg class="icon"><use href="#i-phone"/></svg>0918&nbsp;797&nbsp;408</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALÉRIA ================= -->
+<section class="section section--blush" id="galeria" aria-labelledby="galeria-title">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <p class="eyebrow">Galéria</p>
+      <h2 class="h2" id="galeria-title">Výsledky a salón</h2>
+      <span class="script">pred a po</span>
+      <div class="ornament" aria-hidden="true"><svg><use href="#i-flourish"/></svg></div>
+    </header>
+    <div class="videos reveal">
+      <div class="videos__text">
+        <p class="eyebrow">Nahliadnite ku mne</p>
+        <h3>Ako to vyzerá v salóne</h3>
+        <p>Krátka ukážka ošetrenia Hydrafacial a prechádzka salónom. Viac videí a výsledkov nájdete na Instagrame.</p>
+        <a class="btn btn--ghost btn--sm" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="videa"><svg class="icon"><use href="#i-ig"/></svg>Instagram salónu</a>
+      </div>
+      <figure class="vid">
+        <div class="vid__frame">
+          <video poster="img/poster-hydrafacial.webp" preload="none" muted playsinline loop width="468" height="832" data-video="hydrafacial" title="Video: priebeh ošetrenia Hydrafacial"><source src="video/hydrafacial.mp4" type="video/mp4"><source src="video/hydrafacial.webm" type="video/webm"></video>
+          <button class="vid__play" type="button" aria-label="Prehrať video Hydrafacial"><svg class="icon icon--fill"><use href="#i-play"/></svg></button>
+        </div>
+        <figcaption><strong>Hydrafacial</strong> <a href="https://www.instagram.com/stories/highlights/18385547857206259/" target="_blank" rel="noopener" data-social="instagram" data-loc="video">na Instagrame</a></figcaption>
+      </figure>
+      <figure class="vid">
+        <div class="vid__frame">
+          <video poster="img/poster-salon.webp" preload="none" muted playsinline loop width="464" height="832" data-video="salon" title="Video: prechádzka salónom Svet Krásy"><source src="video/salon.mp4" type="video/mp4"><source src="video/salon.webm" type="video/webm"></video>
+          <button class="vid__play" type="button" aria-label="Prehrať video zo salónu"><svg class="icon icon--fill"><use href="#i-play"/></svg></button>
+        </div>
+        <figcaption><strong>Salón</strong> <a href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="video">na Instagrame</a></figcaption>
+      </figure>
+    </div>
+    <div class="filters" role="group" aria-label="Filtrovať galériu">
+      <button class="tab" type="button" data-filter="all" aria-pressed="true">Všetko</button>
+      <button class="tab" type="button" data-filter="po" aria-pressed="false">Pred a po</button>
+      <button class="tab" type="button" data-filter="osetrenia" aria-pressed="false">Ošetrenia</button>
+      <button class="tab" type="button" data-filter="salon" aria-pressed="false">Salón</button>
+    </div>
+    <p class="gal-note">Výsledky sú individuálne.</p>
+    <div class="grid" id="gal">
+      <figure class="gitem reveal" data-cat="po">
+        <button type="button" data-lightbox data-full="img/po-plet.webp" data-caption="Pleť – pred a po" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Pleť – pred a po"><img src="img/po-plet-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Porovnanie pleti klientky pred a po ošetrení – vyhladenie a rozjasnenie"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Pleť – pred a po"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <figcaption>Pleť – pred a po</figcaption>
+      </figure>
+      <figure class="gitem reveal" data-cat="po">
+        <button type="button" data-lightbox data-full="img/po-wow-1.webp" data-caption="WOW lifting – pred a po" data-ig="https://www.instagram.com/stories/highlights/17926294203144073/" aria-label="Zväčšiť fotografiu: WOW lifting – pred a po"><img src="img/po-wow-1-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Mihalnice klientky pred a po WOW liftingu"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/stories/highlights/17926294203144073/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: WOW lifting – pred a po"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <figcaption>WOW lifting – pred a po</figcaption>
+      </figure>
+      <figure class="gitem reveal" data-cat="po">
+        <button type="button" data-lightbox data-full="img/po-obocie.webp" data-caption="Obočie – pred a po" data-ig="https://www.instagram.com/stories/highlights/17924867373164888/" aria-label="Zväčšiť fotografiu: Obočie – pred a po"><img src="img/po-obocie-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Obočie klientky pred a po úprave"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/stories/highlights/17924867373164888/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Obočie – pred a po"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <figcaption>Obočie – pred a po</figcaption>
+      </figure>
+      <figure class="gitem reveal" data-cat="po">
+        <button type="button" data-lightbox data-full="img/po-spicule.webp" data-caption="Spicule biomicroneedling – pred a po" data-ig="https://www.instagram.com/stories/highlights/17880015354616297/" aria-label="Zväčšiť fotografiu: Spicule biomicroneedling – pred a po"><img src="img/po-spicule-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Pleť klientky pred a po ošetrení Spicule biomicroneedling"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/stories/highlights/17880015354616297/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Spicule biomicroneedling – pred a po"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <figcaption>Spicule biomicroneedling – pred a po</figcaption>
+      </figure>
+      <figure class="gitem reveal" data-cat="osetrenia">
+        <button type="button" data-lightbox data-full="img/os-hydrafacial.webp" data-caption="Hydrafacial – hĺbkové čistenie" data-ig="https://www.instagram.com/stories/highlights/18385547857206259/" aria-label="Zväčšiť fotografiu: Hydrafacial – hĺbkové čistenie"><img src="img/os-hydrafacial-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Hĺbkové čistenie pleti hlavicou Hydrafacial počas ošetrenia"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/stories/highlights/18385547857206259/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Hydrafacial – hĺbkové čistenie"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <figcaption>Hydrafacial – hĺbkové čistenie</figcaption>
+      </figure>
+      <figure class="gitem reveal" data-cat="osetrenia">
+        <button type="button" data-lightbox data-full="img/os-zuzana.webp" data-caption="Zuzana pri ošetrení prístrojom" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Zuzana pri ošetrení prístrojom"><img src="img/os-zuzana-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Mgr. Zuzana Machovičová pri ošetrení pleti prístrojom"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Zuzana pri ošetrení prístrojom"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <figcaption>Zuzana pri ošetrení prístrojom</figcaption>
+      </figure>
+      <figure class="gitem reveal" data-cat="osetrenia">
+        <button type="button" data-lightbox data-full="img/os-svetlo.webp" data-caption="LED terapia – červené svetlo" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: LED terapia – červené svetlo"><img src="img/os-svetlo-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Klientka počas LED terapie červeným svetlom"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: LED terapia – červené svetlo"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <figcaption>LED terapia – červené svetlo</figcaption>
+      </figure>
+      <figure class="gitem reveal" data-cat="osetrenia">
+        <button type="button" data-lightbox data-full="img/os-po-osetreni.webp" data-caption="Klientka po ošetrení pleti" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Klientka po ošetrení pleti"><img src="img/os-po-osetreni-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Oddýchnutá klientka po ošetrení pleti"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Klientka po ošetrení pleti"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <figcaption>Klientka po ošetrení pleti</figcaption>
+      </figure>
+      <figure class="gitem reveal" data-cat="osetrenia">
+        <button type="button" data-lightbox data-full="img/os-zuzana-2.webp" data-caption="Zuzana nanáša pleťovú masku" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Zuzana nanáša pleťovú masku"><img src="img/os-zuzana-2-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Mgr. Zuzana Machovičová nanáša klientke pleťovú masku"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Zuzana nanáša pleťovú masku"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <figcaption>Zuzana nanáša pleťovú masku</figcaption>
+      </figure>
+
+      <figure class="gitem reveal" data-cat="salon">
+        <button type="button" data-lightbox data-full="img/salon-kreslo.webp" data-caption="Čakáreň salónu" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Čakáreň salónu"><img src="img/salon-kreslo-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Čakáreň salónu Svet Krásy s ružovým zamatovým kreslom a stolíkom"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Čakáreň salónu"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <figcaption>Čakáreň salónu</figcaption>
+      </figure>
+      <figure class="gitem reveal" data-cat="salon">
+        <button type="button" data-lightbox data-full="img/salon-osetrovna.webp" data-caption="Ošetrovňa" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Ošetrovňa"><img src="img/salon-osetrovna-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Ošetrovňa salónu Svet Krásy s klientkou počas LED terapie"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Ošetrovňa"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <figcaption>Ošetrovňa</figcaption>
+      </figure>
+      <figure class="gitem reveal" data-cat="salon">
+        <button type="button" data-lightbox data-full="img/salon-osetrovna-2.webp" data-caption="Ošetrovňa – LED maska" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Ošetrovňa – LED maska"><img src="img/salon-osetrovna-2-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Ošetrovňa salónu Svet Krásy – klientka pod LED maskou"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Ošetrovňa – LED maska"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <figcaption>Ošetrovňa – LED maska</figcaption>
+      </figure>
+    </div>
+    <p class="center reveal"><a class="btn btn--primary" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria_cta"><svg class="icon"><use href="#i-ig"/></svg>Ďalšie výsledky na Instagrame</a></p>
+  </div>
+</section>
+
+<!-- ================= ČASTÉ OTÁZKY ================= -->
+<!-- TODO: odpovede (bolestivosť, kontraindikácie, príprava, platba) dať odsúhlasiť klientke -->
+<section class="section" id="otazky" aria-labelledby="faq-title">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <p class="eyebrow">Časté otázky</p>
+      <h2 class="h2" id="faq-title">Otázky a odpovede</h2>
+      <div class="ornament" aria-hidden="true"><svg><use href="#i-flourish"/></svg></div>
+    </header>
+    <div class="faq reveal">
+      <details>
+        <summary>Ako dlho trvá ošetrenie?</summary>
+        <p>Podľa typu ošetrenia približne 30 až 90 minút. Chemický peeling trvá okolo 30 minút, luxusné ošetrenia 2 v 1 do 90 minút. Presný čas nájdete pri každej službe v cenníku.</p>
+      </details>
+      <details>
+        <summary>Je ošetrenie bolestivé?</summary>
+        <p>Väčšina ošetrení je príjemná a relaxačná. Pri chemickom peelingu alebo ošetrení Spicule môžete cítiť jemné štípanie či pálenie, ktoré rýchlo odznie. Intenzitu vždy prispôsobím vašej pleti.</p>
+      </details>
+      <details>
+        <summary>Kedy sa ošetrenie neodporúča?</summary>
+        <p>Niektoré ošetrenia nie sú vhodné napríklad v tehotenstve a počas dojčenia, pri akútnom zápale kože, otvorených ranách, opare alebo krátko po inom kozmetickom či estetickom zákroku. Pred prvým ošetrením si spolu prejdeme váš zdravotný stav a vyberieme bezpečný postup.</p>
+      </details>
+      <details>
+        <summary>Ako sa mám na ošetrenie pripraviť?</summary>
+        <p>Ideálne je prísť bez make-upu. Pred chemickým peelingom a ošetrením Spicule je vhodné niekoľko dní vynechať opaľovanie, peelingy a prípravky s retinolom. Presné odporúčania dostanete pri objednaní.</p>
+      </details>
+      <details>
+        <summary>Môžem platiť kartou?</summary>
+        <p>[DOPLNIŤ – možnosti platby v salóne]</p>
+      </details>
+      <details>
+        <summary>Čo ak nemôžem prísť na dohodnutý termín?</summary>
+        <p>Dajte mi prosím vedieť čo najskôr. Pri zrušení termínu na poslednú chvíľu platia <a href="#storno">storno podmienky</a>.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= KONTAKT ================= -->
+<section class="section" id="kontakt" aria-labelledby="kontakt-title">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <p class="eyebrow">Kontakt</p>
+      <h2 class="h2" id="kontakt-title">Teším sa na vás</h2>
+      <span class="script">v Nitre</span>
+      <div class="ornament" aria-hidden="true"><svg><use href="#i-flourish"/></svg></div>
+    </header>
+    <div class="contact">
+      <div class="cbox reveal">
+        <ul class="clist">
+          <li><span class="medal" aria-hidden="true"><svg class="icon"><use href="#i-pin"/></svg></span><div><h3>Adresa prevádzky</h3><p>7. pešieho pluku 1415/2<br>949 01 Nitra<br><small style="color:var(--muted)">Mestská tržnica, oproti Mlynom</small></p><p><a href="https://www.google.com/maps/dir/?api=1&amp;destination=7.+pe%C5%A1ieho+pluku+1415%2F2%2C+949+01+Nitra" target="_blank" rel="noopener">Navigovať <span aria-hidden="true">→</span></a></p></div></li>
+          <li><span class="medal" aria-hidden="true"><svg class="icon"><use href="#i-phone"/></svg></span><div><h3>Telefón a rezervácie</h3><p><a href="tel:+421918797408" data-phone>0918&nbsp;797&nbsp;408</a></p><p style="margin-top:10px"><a class="btn btn--primary btn--sm" href="tel:+421918797408" data-booking data-loc="kontakt"><svg class="icon"><use href="#i-cal"/></svg>Rezervovať</a></p></div></li>
+          <li><span class="medal" aria-hidden="true"><svg class="icon"><use href="#i-clock"/></svg></span><div><h3>Otváracie hodiny</h3>
+            <!-- Hodiny sa nastavujú v skripte na konci súboru: premenná OPENING_HOURS -->
+            <table class="hours" id="hours"><tbody><tr><td>Po–Pi</td><td>na objednávku</td></tr><tr><td>So–Ne</td><td>zatvorené</td></tr></tbody></table></div></li>
+          <li><span class="medal" aria-hidden="true"><svg class="icon"><use href="#i-sparkle"/></svg></span><div><h3>Sociálne siete</h3>
+            <div class="social">
+              <a href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram"><svg class="icon"><use href="#i-ig"/></svg>Instagram</a>
+              <a href="https://www.facebook.com/kozmetikasvetkrasy/" target="_blank" rel="noopener" data-social="facebook"><svg class="icon"><use href="#i-fb"/></svg>Facebook</a>
+            </div></div></li>
+        </ul>
+        <div class="notice" id="storno" style="margin-top:24px"><svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg><div><strong>Storno podmienky</strong>Za zrušenie termínu menej ako 24 h vopred sa účtuje 75 % z ceny ošetrenia.</div></div>
+      </div>
+      <div class="map reveal d1" id="map">
+        <div class="map__ph" id="map-ph">
+          <span class="medal" aria-hidden="true"><svg class="icon"><use href="#i-pin"/></svg></span>
+          <strong>Mapa prevádzky</strong>
+          <p>Mapa sa načíta zo služby Google Maps (Google môže pri tom použiť vlastné cookies). Zobrazí sa po kliknutí alebo po súhlase s externým obsahom.</p>
+          <button class="btn btn--ghost btn--sm" type="button" id="map-load">Zobraziť mapu</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= PÄTIČKA ================= -->
+<footer class="footer">
+  <div class="wrap footer__in">
+    <img src="img/logo-mala.webp" width="96" height="96" alt="Logo Svet Krásy" loading="lazy">
+    <div>
+      <p class="fname">Svet Krásy – kozmetický salón</p>
+      <p>Mgr. Zuzana Machovičová – Svet Krásy kozmetický salón<br>
+      Miesto podnikania: Štiavnická 20, Nitra · IČO: 50367439<br>
+      <!-- TODO: doplniť číslo živnostenského registra (nájdete na www.zrsr.sk podľa IČO) -->
+      Zapísaná v Živnostenskom registri Okresného úradu Nitra, č. [DOPLNIŤ]<br>
+      Prevádzka: 7. pešieho pluku 1415/2, 949 01 Nitra<br>
+      <a href="tel:+421918797408" data-phone>0918&nbsp;797&nbsp;408</a></p>
+    </div>
+    <div class="social" style="justify-content:center">
+      <a href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" style="color:#F6E2C6;border-color:rgba(228,197,144,.4)"><svg class="icon"><use href="#i-ig"/></svg><span class="sr-only">Instagram</span></a>
+      <a href="https://www.facebook.com/kozmetikasvetkrasy/" target="_blank" rel="noopener" data-social="facebook" style="color:#F6E2C6;border-color:rgba(228,197,144,.4)"><svg class="icon"><use href="#i-fb"/></svg><span class="sr-only">Facebook</span></a>
+    </div>
+  </div>
+  <div class="wrap" style="margin-top:30px;display:grid;justify-items:center;gap:18px">
+    <div class="footer__line" aria-hidden="true"></div>
+    <div class="footer__bottom">
+      <span>© <span id="year">2026</span> Svet Krásy</span>
+      <a href="ochrana-osobnych-udajov.html">Ochrana osobných údajov</a>
+      <button class="linkbtn" type="button" id="cookie-settings">Nastavenia cookies</button>
+    </div>
+  </div>
+</footer>
+
+<!-- Plávajúce tlačidlo na mobile -->
+<div class="fabbar" id="fab" aria-hidden="true">
+  <a class="btn btn--ghost" href="tel:+421918797408" data-phone tabindex="-1"><svg class="icon"><use href="#i-phone"/></svg>Zavolať</a>
+  <a class="btn btn--primary" href="tel:+421918797408" data-booking data-loc="plavajuce_tlacidlo" tabindex="-1"><svg class="icon"><use href="#i-cal"/></svg>Rezervovať</a>
+</div>
+
+<!-- Cookie lišta (zákon č. 452/2021 Z. z. § 109 ods. 8 + GDPR) -->
+<div class="cookie" id="cookie" role="region" aria-labelledby="cookie-title" hidden>
+  <h2 id="cookie-title">Cookies</h2>
+  <p>Web používa nevyhnutné úložisko na zapamätanie vašej voľby. So súhlasom zapnem aj <strong>štatistiku návštevnosti</strong> (Google Analytics) a <strong>mapu Google</strong>. <a href="ochrana-osobnych-udajov.html#cookies">Viac informácií</a></p>
+  <div class="cookie__prefs" id="cookie-prefs" hidden>
+    <label class="switch"><input type="checkbox" checked disabled><span><strong>Nevyhnutné</strong> – zapamätanie voľby cookies. Vždy zapnuté.</span></label>
+    <label class="switch"><input type="checkbox" id="c-analytics"><span><strong>Analytické</strong> – Google Analytics 4, štatistika návštevnosti.</span></label>
+    <label class="switch"><input type="checkbox" id="c-maps"><span><strong>Externý obsah</strong> – mapa Google Maps v kontakte.</span></label>
+  </div>
+  <div class="cookie__btns">
+    <button class="btn btn--primary btn--sm" type="button" id="cookie-accept">Prijať všetko</button>
+    <button class="btn btn--primary btn--sm" type="button" id="cookie-reject">Odmietnuť</button>
+    <button class="cookie__more" type="button" id="cookie-custom" aria-expanded="false" aria-controls="cookie-prefs">Vybrať, čo povolím</button>
+    <button class="btn btn--primary btn--sm" type="button" id="cookie-save" hidden>Uložiť výber</button>
+  </div>
+</div>
+
+<!-- Lightbox -->
+<dialog class="lightbox" id="lightbox" aria-labelledby="lb-cap">
+  <figure><img id="lb-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt=""><figcaption id="lb-cap"></figcaption></figure><p class="lb-igwrap"><a class="btn btn--ghost btn--sm lb-ig" id="lb-ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="lightbox" hidden><svg class="icon"><use href="#i-ig"/></svg>Pozrieť na Instagrame</a></p>
+  <button class="lb-btn lb-close" type="button" id="lb-close" aria-label="Zavrieť"><svg class="icon"><use href="#i-close"/></svg></button>
+  <button class="lb-btn lb-prev" type="button" id="lb-prev" aria-label="Predchádzajúca fotografia"><svg class="icon"><use href="#i-left"/></svg></button>
+  <button class="lb-btn lb-next" type="button" id="lb-next" aria-label="Ďalšia fotografia"><svg class="icon"><use href="#i-right"/></svg></button>
+</dialog>
+
+<script>
+/* =========================================================
+   NASTAVENIA – upravuj iba tu
+   ========================================================= */
+// TODO: vložiť odkaz na rezervácie cez Notino (napr. "https://www.notino.sk/...").
+// Kým je prázdny, všetky tlačidlá „Rezervovať“ volajú na telefón.
+const BOOKING_URL = 'https://partner.notino.com/api/notino-partner/b2c/redirect/link/-hMrQbYpIFiU';
+const PHONE_URL = 'tel:+421918797408';
+// TODO: vložiť ID merania Google Analytics 4 (formát "G-XXXXXXXXXX"). Kým je prázdne, GA sa nenačíta.
+const GA_ID = 'G-Q1V6YDJL2P';
+// Adresa pre mapu Google
+const MAP_EMBED = 'https://www.google.com/maps?q=7.+pe%C5%A1ieho+pluku+1415%2F2%2C+949+01+Nitra&z=16&output=embed';
+const CONSENT_KEY = 'svetkrasy_cookie_consent_v2';
+// Otváracie hodiny (zobrazia sa v sekcii Kontakt)
+const OPENING_HOURS = [
+  ['Po–Pi', 'na objednávku'],
+  ['So–Ne', 'zatvorené']
+];
+
+(function () {
+  'use strict';
+  const doc = document.documentElement;
+  doc.classList.add('js');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const $ = (s, c) => (c || document).querySelector(s);
+  const $$ = (s, c) => Array.from((c || document).querySelectorAll(s));
+
+  /* ---------- Bezpečné úložisko ---------- */
+  const store = {
+    get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
+    set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+  };
+
+  /* ---------- Google Analytics 4 (až po súhlase) ---------- */
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { window.dataLayer.push(arguments); }
+  window.gtag = gtag;
+  gtag('consent', 'default', { analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
+  let gaLoaded = false;
+  function loadGA() {
+    if (gaLoaded || !GA_ID) return;
+    gaLoaded = true;
+    gtag('consent', 'update', { analytics_storage: 'granted' });
+    const s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(GA_ID);
+    document.head.appendChild(s);
+    gtag('js', new Date());
+    gtag('config', GA_ID); // GA4 neukladá IP adresy
+    // Kód Google tagu (gtag.js) sa načíta AŽ po súhlase – nevkladať ho natvrdo do <head> (§ 109 ods. 8 zák. 452/2021 Z. z.)
+  }
+  function track(name, params) {
+    if (gaLoaded) gtag('event', name, params || {});
+  }
+  function clearGACookies() {
+    document.cookie.split(';').forEach(function (c) {
+      const n = c.split('=')[0].trim();
+      if (/^_ga/.test(n)) {
+        const host = location.hostname;
+        document.cookie = n + '=; Max-Age=0; path=/';
+        document.cookie = n + '=; Max-Age=0; path=/; domain=' + host;
+        document.cookie = n + '=; Max-Age=0; path=/; domain=.' + host.replace(/^www\./, '');
+      }
+    });
+  }
+
+  /* ---------- Rezervačné tlačidlá ---------- */
+  const bookingHref = BOOKING_URL ? BOOKING_URL : PHONE_URL;
+  $$('[data-booking]').forEach(function (a) {
+    a.setAttribute('href', bookingHref);
+    if (BOOKING_URL) { a.setAttribute('target', '_blank'); a.setAttribute('rel', 'noopener'); }
+    a.addEventListener('click', function () {
+      track('klik_rezervovat', { umiestnenie: a.dataset.loc || 'nezname', sposob: BOOKING_URL ? 'notino' : 'telefon' });
+    });
+  });
+  $$('[data-phone]').forEach(function (a) {
+    a.addEventListener('click', function () { track('klik_telefon', { umiestnenie: a.closest('section,header,footer,.mnav') ? (a.closest('section,header,footer,.mnav').id || a.closest('section,header,footer,.mnav').tagName.toLowerCase()) : 'nezname' }); });
+  });
+  $$('[data-social]').forEach(function (a) {
+    a.addEventListener('click', function () { track('klik_socialne_siete', { siet: a.dataset.social, umiestnenie: a.dataset.loc || 'nezname' }); });
+  });
+
+  /* ---------- Hlavička a mobilné menu ---------- */
+  const header = $('.header');
+  const burger = $('.burger');
+  const mnav = $('#mnav');
+  function setMenu(open) {
+    burger.setAttribute('aria-expanded', String(open));
+    burger.setAttribute('aria-label', open ? 'Zavrieť menu' : 'Otvoriť menu');
+    mnav.classList.toggle('is-open', open);
+    if (open) mnav.removeAttribute('inert'); else mnav.setAttribute('inert', '');
+    document.body.classList.toggle('nav-open', open);
+    updateFab();
+    if (open) { const f = $('a', mnav); f && f.focus(); }
+  }
+  burger.addEventListener('click', function () { setMenu(burger.getAttribute('aria-expanded') !== 'true'); });
+  $$('a', mnav).forEach(function (a) { a.addEventListener('click', function () { setMenu(false); }); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && mnav.classList.contains('is-open')) { setMenu(false); burger.focus(); }
+  });
+  window.addEventListener('resize', function () { if (window.innerWidth >= 1080 && mnav.classList.contains('is-open')) setMenu(false); });
+
+  /* ---------- Plávajúce tlačidlo ---------- */
+  const fab = $('#fab');
+  const hero = $('.hero');
+  const contact = $('#kontakt');
+  const cookieBar = $('#cookie');
+  let heroVisible = true, contactVisible = false;
+  function updateFab() {
+    const show = !heroVisible && !contactVisible && cookieBar.hidden && !mnav.classList.contains('is-open');
+    fab.classList.toggle('is-visible', show);
+    fab.setAttribute('aria-hidden', String(!show));
+    $$('a', fab).forEach(function (a) { a.tabIndex = show ? 0 : -1; });
+  }
+
+  /* ---------- Scroll: tieň hlavičky, aktívne menu, animácie ---------- */
+  const navLinks = $$('.nav a');
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (en) { heroVisible = en[0].isIntersecting; header.classList.toggle('is-scrolled', !heroVisible || window.scrollY > 10); updateFab(); }, { threshold: 0.15 }).observe(hero);
+    new IntersectionObserver(function (en) { contactVisible = en[0].isIntersecting; updateFab(); }, { threshold: 0.25 }).observe(contact);
+    const secObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) navLinks.forEach(function (a) { a.classList.toggle('is-active', a.getAttribute('href') === '#' + e.target.id); });
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    ['sluzby', 'o-mne', 'certifikaty', 'cennik', 'balicky', 'poukazka', 'recenzie', 'galeria', 'kontakt'].forEach(function (id) { const el = document.getElementById(id); el && secObs.observe(el); });
+    if (!reduceMotion) {
+      const rev = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); rev.unobserve(e.target); } });
+      }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+      $$('.reveal').forEach(function (el) { rev.observe(el); });
+    } else { $$('.reveal').forEach(function (el) { el.classList.add('in'); }); }
+  } else {
+    $$('.reveal').forEach(function (el) { el.classList.add('in'); });
+    heroVisible = false; updateFab();
+  }
+  window.addEventListener('scroll', function () { header.classList.toggle('is-scrolled', window.scrollY > 10); }, { passive: true });
+
+  /* ---------- Cenník – záložky ---------- */
+  const tabs = $$('[role="tab"]');
+  function selectTab(tab, focus) {
+    tabs.forEach(function (t) {
+      const on = t === tab;
+      t.setAttribute('aria-selected', String(on));
+      t.tabIndex = on ? 0 : -1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+    });
+    if (focus) tab.focus();
+    tab.scrollIntoView({ block: 'nearest', inline: 'nearest', behavior: reduceMotion ? 'auto' : 'smooth' });
+  }
+  tabs.forEach(function (t, i) {
+    t.addEventListener('click', function () { selectTab(t); });
+    t.addEventListener('keydown', function (e) {
+      let n = null;
+      if (e.key === 'ArrowRight') n = tabs[(i + 1) % tabs.length];
+      if (e.key === 'ArrowLeft') n = tabs[(i - 1 + tabs.length) % tabs.length];
+      if (e.key === 'Home') n = tabs[0];
+      if (e.key === 'End') n = tabs[tabs.length - 1];
+      if (n) { e.preventDefault(); selectTab(n, true); }
+    });
+  });
+  $$('[data-tab]').forEach(function (a) {
+    a.addEventListener('click', function () { const t = document.getElementById(a.dataset.tab); t && selectTab(t); });
+  });
+
+  /* ---------- Galéria – filter ---------- */
+  const filterBtns = $$('[data-filter]');
+  const gItems = $$('.gitem');
+  filterBtns.forEach(function (b) {
+    b.addEventListener('click', function () {
+      const f = b.dataset.filter;
+      filterBtns.forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+      gItems.forEach(function (it) { it.hidden = !(f === 'all' || it.dataset.cat === f); });
+    });
+  });
+
+  /* ---------- Lightbox ---------- */
+  const lb = $('#lightbox'), lbImg = $('#lb-img'), lbCap = $('#lb-cap');
+  let lbList = [], lbIdx = 0, lbReturn = null;
+  function lbShow(i) {
+    lbIdx = (i + lbList.length) % lbList.length;
+    const b = lbList[lbIdx], img = $('img', b);
+    lbImg.src = b.dataset.full || img.currentSrc || img.src;
+    lbImg.alt = img.alt;
+    lbCap.textContent = b.dataset.caption || '';
+    const ig = $('#lb-ig');
+    if (b.dataset.ig) { ig.href = b.dataset.ig; ig.hidden = false; } else { ig.hidden = true; }
+    const multi = lbList.length > 1;
+    $('#lb-prev').hidden = !multi; $('#lb-next').hidden = !multi;
+  }
+  $$('[data-lightbox]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      const scope = b.closest('#gal') || b.closest('.certs');
+      lbList = $$('[data-lightbox]', scope).filter(function (x) { return !x.closest('[hidden]'); });
+      lbReturn = b;
+      lbShow(lbList.indexOf(b));
+      if (typeof lb.showModal === 'function') lb.showModal(); else lb.setAttribute('open', '');
+    });
+  });
+  function lbClose() { if (lb.open) { lb.close ? lb.close() : lb.removeAttribute('open'); } }
+  lb.addEventListener('close', function () { lbReturn && lbReturn.focus(); });
+  $('#lb-close').addEventListener('click', lbClose);
+  $('#lb-prev').addEventListener('click', function () { lbShow(lbIdx - 1); });
+  $('#lb-next').addEventListener('click', function () { lbShow(lbIdx + 1); });
+  lb.addEventListener('click', function (e) { if (e.target === lb) lbClose(); });
+  lb.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowRight') lbShow(lbIdx + 1);
+    if (e.key === 'ArrowLeft') lbShow(lbIdx - 1);
+  });
+
+  /* ---------- Mapa ---------- */
+  let mapLoaded = false;
+  function loadMap() {
+    if (mapLoaded) return;
+    mapLoaded = true;
+    const f = document.createElement('iframe');
+    f.src = MAP_EMBED;
+    f.title = 'Mapa – Svet Krásy, 7. pešieho pluku 1415/2, Nitra';
+    f.loading = 'lazy';
+    f.referrerPolicy = 'no-referrer-when-downgrade';
+    f.allowFullscreen = true;
+    $('#map').appendChild(f);
+    $('#map-ph').remove();
+  }
+  $('#map-load').addEventListener('click', loadMap);
+
+  /* ---------- Videá (načítajú sa až po kliknutí – šetria dáta) ---------- */
+  $$('.vid').forEach(function (fig) {
+    const v = $('video', fig), btn = $('.vid__play', fig), frame = $('.vid__frame', fig);
+    function playV() {
+      $$('.vid video').forEach(function (o) { if (o !== v) o.pause(); });
+      const pr = v.play();
+      if (pr && pr.catch) pr.catch(function () {});
+      track('prehratie_videa', { video: v.dataset.video });
+    }
+    btn.addEventListener('click', playV);
+    v.addEventListener('click', function () { if (v.paused) playV(); else v.pause(); });
+    v.addEventListener('play', function () { frame.classList.add('is-playing'); });
+    v.addEventListener('pause', function () { frame.classList.remove('is-playing'); });
+  });
+  if ('IntersectionObserver' in window) {
+    const vObs = new IntersectionObserver(function (en) {
+      en.forEach(function (e) { if (!e.isIntersecting && !e.target.paused) e.target.pause(); });
+    }, { threshold: 0.1 });
+    $$('.vid video').forEach(function (v) { vObs.observe(v); });
+  }
+
+  /* ---------- Cookie lišta (súhlas podľa § 109 ods. 8 zák. 452/2021 Z. z.) ---------- */
+  const prefs = $('#cookie-prefs'), cA = $('#c-analytics'), cM = $('#c-maps');
+  const btnCustom = $('#cookie-custom'), btnSave = $('#cookie-save');
+  function readConsent() {
+    try { const c = JSON.parse(store.get(CONSENT_KEY) || 'null'); if (c && (Date.now() - (c.t || 0)) < 365 * 24 * 3600 * 1000) return c; } catch (e) {}
+    return null;
+  }
+  function saveConsent(analytics, maps) {
+    const prev = readConsent();
+    store.set(CONSENT_KEY, JSON.stringify({ analytics: !!analytics, maps: !!maps, t: Date.now() }));
+    if (analytics) loadGA();
+    else {
+      if (gaLoaded) gtag('consent', 'update', { analytics_storage: 'denied' });
+      clearGACookies();
+      if (prev && prev.analytics && gaLoaded) { location.reload(); return; }
+    }
+    if (maps) loadMap();
+    hideBar();
+  }
+  function hideBar() { cookieBar.hidden = true; prefs.hidden = true; btnSave.hidden = true; btnCustom.hidden = false; btnCustom.setAttribute('aria-expanded', 'false'); updateFab(); }
+  function showBar(openPrefs) {
+    const c = readConsent();
+    cA.checked = !!(c && c.analytics); cM.checked = !!(c && c.maps);
+    cookieBar.hidden = false;
+    if (openPrefs) { prefs.hidden = false; btnSave.hidden = false; btnCustom.hidden = true; btnCustom.setAttribute('aria-expanded', 'true'); }
+    updateFab();
+    (openPrefs ? cA : $('#cookie-accept')).focus();
+  }
+  $('#cookie-accept').addEventListener('click', function () { saveConsent(true, true); });
+  $('#cookie-reject').addEventListener('click', function () { saveConsent(false, false); });
+  btnCustom.addEventListener('click', function () { prefs.hidden = false; btnSave.hidden = false; btnCustom.hidden = true; btnCustom.setAttribute('aria-expanded', 'true'); cA.focus(); });
+  btnSave.addEventListener('click', function () { saveConsent(cA.checked, cM.checked); });
+  $('#cookie-settings').addEventListener('click', function () { showBar(true); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !cookieBar.hidden && readConsent()) hideBar(); });
+  const saved = readConsent();
+  if (saved) { if (saved.analytics) loadGA(); if (saved.maps) loadMap(); }
+  else cookieBar.hidden = false;
+  if (location.hash === '#cookies-nastavenia') showBar(true);
+  updateFab();
+
+  /* ---------- Otváracie hodiny ---------- */
+  const hb = $('#hours tbody');
+  if (hb) {
+    hb.innerHTML = '';
+    OPENING_HOURS.forEach(function (r) {
+      const tr = document.createElement('tr');
+      r.forEach(function (c) { const td = document.createElement('td'); td.textContent = c; tr.appendChild(td); });
+      hb.appendChild(tr);
+    });
+  }
+
+  const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
