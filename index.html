@@ -260,8 +260,7 @@ body.nav-open{overflow:hidden}
 .certs{display:grid;gap:14px;grid-template-columns:repeat(2,1fr)}
 .cert{margin:0;background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px;box-shadow:var(--shadow)}
 .cert button{display:block;width:100%;padding:0;border:0;background:none;cursor:zoom-in;border-radius:8px;overflow:hidden}
-.cert img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center 60%;background:#F7ECEA}
-.cert--wide img{object-fit:contain;object-position:center}
+.cert img{width:100%;aspect-ratio:4/3;object-fit:contain;object-position:center;background:#fff}
 .cert .ph{aspect-ratio:1.414/1;border-radius:8px}
 .cert figcaption{font-size:15px;line-height:1.35;color:var(--wine-2);text-align:center;padding:10px 6px 4px}
 
@@ -790,8 +789,7 @@ html.js .reveal.d1{transition-delay:.08s}html.js .reveal.d2{transition-delay:.16
 <section class="section" id="o-mne" aria-labelledby="omne-title">
   <div class="wrap about">
     <div class="about__photo reveal">
-      <!-- TODO: ak klientka pošle portrétovú fotku, nahradiť touto (pomer 4:5) -->
-      <img src="img/o-mne.webp" width="800" height="1000" loading="lazy" decoding="async" alt="Mgr. Zuzana Machovičová počas ošetrenia pleti v salóne Svet Krásy">
+      <img src="img/o-mne.webp" width="880" height="1100" loading="lazy" decoding="async" alt="Mgr. Zuzana Machovičová v salóne Svet Krásy">
     </div>
     <div class="about__text reveal d1">
       <p class="eyebrow">O mne</p>
@@ -817,31 +815,55 @@ html.js .reveal.d1{transition-delay:.08s}html.js .reveal.d2{transition-delay:.16
       <div class="ornament" aria-hidden="true"><svg><use href="#i-flourish"/></svg></div>
     </header>
     <div class="certs">
-      <figure class="cert cert--wide reveal">
+      <figure class="cert reveal">
+        <button type="button" data-lightbox data-full="img/cert-hydrafacial.webp" data-caption="Hydrafacial – multifunkčný systém starostlivosti o pleť" aria-label="Zväčšiť certifikát: Hydrafacial – multifunkčný systém starostlivosti o pleť">
+          <img src="img/cert-hydrafacial-nahlad.webp" width="1600" height="1127" loading="lazy" decoding="async" alt="Certifikát o odbornom školení Mgr. Zuzany Machovičovej na kozmetický prístroj 3 v 1 Hydrafacial">
+        </button>
+        <figcaption>Hydrafacial – multifunkčný systém</figcaption>
+      </figure>
+      <figure class="cert reveal d1">
+        <button type="button" data-lightbox data-full="img/cert-radiofrekvencia.webp" data-caption="SynCare – rádiofrekvencia" aria-label="Zväčšiť certifikát: SynCare – rádiofrekvencia">
+          <img src="img/cert-radiofrekvencia-nahlad.webp" width="1575" height="1114" loading="lazy" decoding="async" alt="Certifikát SynCare pre Mgr. Zuzanu Machovičovú o absolvovaní školenia Rádiofrekvencia">
+        </button>
+        <figcaption>SynCare – rádiofrekvencia</figcaption>
+      </figure>
+      <figure class="cert reveal d2">
+        <button type="button" data-lightbox data-full="img/cert-microneedling.webp" data-caption="SynCare – microneedling" aria-label="Zväčšiť certifikát: SynCare – microneedling">
+          <img src="img/cert-microneedling-nahlad.webp" width="1598" height="1016" loading="lazy" decoding="async" alt="Certifikát SynCare pre Mgr. Zuzanu Machovičovú o absolvovaní školenia Microneedling">
+        </button>
+        <figcaption>SynCare – microneedling</figcaption>
+      </figure>
+      <figure class="cert reveal d3">
+        <button type="button" data-lightbox data-full="img/cert-dermaneoxin.webp" data-caption="SynCare – Dermaneoxin" aria-label="Zväčšiť certifikát: SynCare – Dermaneoxin">
+          <img src="img/cert-dermaneoxin-nahlad.webp" width="1600" height="1096" loading="lazy" decoding="async" alt="Certifikát SynCare pre Mgr. Zuzanu Machovičovú o absolvovaní školenia Dermaneoxin">
+        </button>
+        <figcaption>SynCare – Dermaneoxin</figcaption>
+      </figure>
+      <figure class="cert reveal">
         <button type="button" data-lightbox data-full="img/cert-wow.webp" data-caption="WOW lifting – lash-lifting technika" aria-label="Zväčšiť certifikát: WOW lifting – lash-lifting technika">
-          <img src="img/cert-wow-nahlad.webp" width="700" height="495" loading="lazy" decoding="async" alt="Certifikát pre Mgr. Zuzanu Machovičovú o absolvovaní online školenia lash-lifting techniky WOW LIFTING">
+          <img src="img/cert-wow-nahlad.webp" width="1400" height="990" loading="lazy" decoding="async" alt="Certifikát pre Mgr. Zuzanu Machovičovú o absolvovaní online školenia lash-lifting techniky WOW LIFTING">
         </button>
         <figcaption>WOW lifting – lash-lifting technika</figcaption>
       </figure>
       <figure class="cert reveal d1">
-        <button type="button" data-lightbox data-full="img/cert-hydrafacial.webp" data-caption="Hydrafacial – multifunkčný systém" aria-label="Zväčšiť certifikát: Hydrafacial – multifunkčný systém">
-          <img src="img/cert-hydrafacial-nahlad.webp" width="394" height="700" loading="lazy" decoding="async" alt="Certifikát o odbornom školení Mgr. Zuzany Machovičovej na prácu s multifunkčným systémom Hydrafacial">
-        </button>
-        <figcaption>Hydrafacial – multifunkčný systém</figcaption>
-      </figure>
-      <figure class="cert reveal d2">
-        <button type="button" data-lightbox data-full="img/cert-janssen-1.webp" data-caption="Janssen Cosmetics – odborné školenie" aria-label="Zväčšiť certifikát: Janssen Cosmetics – odborné školenie">
-          <img src="img/cert-janssen-1-nahlad.webp" width="390" height="700" loading="lazy" decoding="async" alt="Certifikát Janssen Cosmetics pre Mgr. Zuzanu Machovičovú z odborného školenia">
-        </button>
-        <figcaption>Janssen Cosmetics – odborné školenie</figcaption>
-      </figure>
-      <figure class="cert reveal d3">
-        <button type="button" data-lightbox data-full="img/cert-janssen-2.webp" data-caption="Janssen Cosmetics – Exfoliation System" aria-label="Zväčšiť certifikát: Janssen Cosmetics – Exfoliation System">
-          <img src="img/cert-janssen-2-nahlad.webp" width="390" height="700" loading="lazy" decoding="async" alt="Certifikát Janssen Cosmetics pre Mgr. Zuzanu Machovičovú – produktová línia Exfoliation System">
+        <button type="button" data-lightbox data-full="img/cert-janssen-exfoliation.webp" data-caption="Janssen Cosmetics – Exfoliation System" aria-label="Zväčšiť certifikát: Janssen Cosmetics – Exfoliation System">
+          <img src="img/cert-janssen-exfoliation-nahlad.webp" width="907" height="1088" loading="lazy" decoding="async" alt="Certifikát Janssen Cosmetics pre Mgr. Zuzanu Machovičovú – produktová línia Exfoliation System">
         </button>
         <figcaption>Janssen Cosmetics – Exfoliation System</figcaption>
       </figure>
-      <!-- TODO: ďalšie certifikáty stačí pridať ako ďalší <figure class="cert"> (fotku uložiť do priečinka img/) -->
+      <figure class="cert reveal d2">
+        <button type="button" data-lightbox data-full="img/cert-janssen-jarne.webp" data-caption="Janssen Cosmetics – Retinol Lift a Oily Skin" aria-label="Zväčšiť certifikát: Janssen Cosmetics – Retinol Lift a Oily Skin">
+          <img src="img/cert-janssen-jarne-nahlad.webp" width="790" height="1063" loading="lazy" decoding="async" alt="Certifikát Janssen Cosmetics pre Mgr. Zuzanu Machovičovú z jarného školenia – Retinol Lift Treatment a rada Oily Skin">
+        </button>
+        <figcaption>Janssen Cosmetics – Retinol Lift a Oily Skin</figcaption>
+      </figure>
+      <figure class="cert reveal d3">
+        <button type="button" data-lightbox data-full="img/cert-janssen-systemy.webp" data-caption="Janssen Cosmetics – systémy ošetrení" aria-label="Zväčšiť certifikát: Janssen Cosmetics – systémy ošetrení">
+          <img src="img/cert-janssen-systemy-nahlad.webp" width="837" height="1169" loading="lazy" decoding="async" alt="Certifikát Janssen Cosmetics pre Zuzanu Machovičovú zo školenia Systémy ošetrení Janssen Cosmetics">
+        </button>
+        <figcaption>Janssen Cosmetics – systémy ošetrení</figcaption>
+      </figure>
+      <!-- ďalšie certifikáty stačí pridať ako ďalší <figure class="cert"> (fotku uložiť do priečinka img/) -->
     </div>
   </div>
 </section>
@@ -1146,14 +1168,29 @@ html.js .reveal.d1{transition-delay:.08s}html.js .reveal.d2{transition-delay:.16
       </figure>
 
       <figure class="gitem reveal" data-cat="salon">
-        <button type="button" data-lightbox data-full="img/salon-kreslo.webp" data-caption="Čakáreň salónu" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Čakáreň salónu"><img src="img/salon-kreslo-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Čakáreň salónu Svet Krásy s ružovým zamatovým kreslom a stolíkom"></button>
+        <button type="button" data-lightbox data-full="img/salon-cakaren.webp" data-caption="Čakáreň salónu" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Čakáreň salónu"><img src="img/salon-cakaren-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Čakáreň salónu Svet Krásy s dvoma ružovými kreslami a stolíkom"></button>
         <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Čakáreň salónu"><svg class="icon"><use href="#i-ig"/></svg></a>
         <figcaption>Čakáreň salónu</figcaption>
       </figure>
       <figure class="gitem reveal" data-cat="salon">
-        <button type="button" data-lightbox data-full="img/salon-osetrovna.webp" data-caption="Ošetrovňa" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Ošetrovňa"><img src="img/salon-osetrovna-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Ošetrovňa salónu Svet Krásy s klientkou počas LED terapie"></button>
+        <button type="button" data-lightbox data-full="img/salon-miestnost.webp" data-caption="Ošetrovňa" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Ošetrovňa"><img src="img/salon-miestnost-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Ošetrovňa salónu Svet Krásy s kozmetickým lôžkom a prístrojmi"></button>
         <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Ošetrovňa"><svg class="icon"><use href="#i-ig"/></svg></a>
         <figcaption>Ošetrovňa</figcaption>
+      </figure>
+      <figure class="gitem reveal" data-cat="salon">
+        <button type="button" data-lightbox data-full="img/salon-pristroje.webp" data-caption="Prístroje na ošetrenie pleti" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Prístroje na ošetrenie pleti"><img src="img/salon-pristroje-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Kozmetické lôžko a prístroje na ošetrenie pleti v salóne Svet Krásy"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Prístroje na ošetrenie pleti"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <figcaption>Prístroje na ošetrenie pleti</figcaption>
+      </figure>
+      <figure class="gitem reveal" data-cat="salon">
+        <button type="button" data-lightbox data-full="img/salon-zuzana.webp" data-caption="Zuzana v salóne" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Zuzana v salóne"><img src="img/salon-zuzana-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Mgr. Zuzana Machovičová za stolom v salóne Svet Krásy"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Zuzana v salóne"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <figcaption>Zuzana v salóne</figcaption>
+      </figure>
+      <figure class="gitem reveal" data-cat="salon">
+        <button type="button" data-lightbox data-full="img/salon-osetrovna.webp" data-caption="Ošetrovňa – LED terapia" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Ošetrovňa – LED terapia"><img src="img/salon-osetrovna-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Ošetrovňa salónu Svet Krásy s klientkou počas LED terapie"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Ošetrovňa – LED terapia"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <figcaption>Ošetrovňa – LED terapia</figcaption>
       </figure>
       <figure class="gitem reveal" data-cat="salon">
         <button type="button" data-lightbox data-full="img/salon-osetrovna-2.webp" data-caption="Ošetrovňa – LED maska" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Ošetrovňa – LED maska"><img src="img/salon-osetrovna-2-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Ošetrovňa salónu Svet Krásy – klientka pod LED maskou"></button>
