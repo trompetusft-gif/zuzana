@@ -438,6 +438,12 @@ html:not(.js) .panel{margin-bottom:34px}
 .vid figcaption{text-align:center;font-size:16.5px;color:var(--muted)}
 .vid figcaption strong{color:var(--wine);font-family:var(--f-display);font-weight:500;letter-spacing:.06em;font-size:14px;text-transform:uppercase;display:block}
 .vid figcaption a{font-size:15px}
+.vphotos{display:grid;gap:12px;align-self:start}
+.vphoto{margin:0;position:relative;border-radius:18px;overflow:hidden;background:var(--blush-2);box-shadow:0 0 0 1px rgba(185,138,79,.6),0 24px 50px -30px rgba(90,24,40,.8)}
+.vphoto button{display:block;width:100%;padding:0;border:0;background:none;cursor:zoom-in}
+.vphoto img{display:block;width:100%;aspect-ratio:9/8;object-fit:cover;transition:transform .6s ease}
+.vphoto button:hover img{transform:scale(1.05)}
+.vphoto figcaption{position:absolute;left:8px;bottom:8px;pointer-events:none;font-size:13px;line-height:1.3;color:#fff;background:rgba(90,24,40,.82);padding:4px 12px;border-radius:999px}
 .gitem__ig{position:absolute;top:8px;right:8px;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:rgba(255,251,250,.92);color:var(--wine);box-shadow:0 6px 16px -8px rgba(62,16,25,.6);transition:transform .25s,background .25s}
 .gitem__ig:hover{transform:scale(1.08);background:#fff;color:var(--wine)}
 .gitem__ig .icon{width:20px;height:20px}
@@ -1095,23 +1101,26 @@ html.js .reveal.d1{transition-delay:.08s}html.js .reveal.d2{transition-delay:.16
       <div class="videos__text">
         <p class="eyebrow">Nahliadnite ku mne</p>
         <h3>Ako to vyzerá v salóne</h3>
-        <p>Krátka prehliadka čakárne a ošetrovne. Viac videí a výsledkov nájdete na Instagrame.</p>
+        <p>Krátke video a fotky z čakárne a ošetrovne. Viac videí a výsledkov nájdete na Instagrame.</p>
         <a class="btn btn--ghost btn--sm" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="videa"><svg class="icon"><use href="#i-ig"/></svg>Instagram salónu</a>
       </div>
-      <figure class="vid">
-        <div class="vid__frame">
-          <video poster="img/poster-cakaren.webp" preload="none" muted playsinline loop width="540" height="960" data-video="cakaren" title="Video: čakáreň salónu Svet Krásy"><source src="video/cakaren.mp4" type="video/mp4"><source src="video/cakaren.webm" type="video/webm"></video>
-          <button class="vid__play" type="button" aria-label="Prehrať video z čakárne"><svg class="icon icon--fill"><use href="#i-play"/></svg></button>
-        </div>
-        <figcaption><strong>Čakáreň</strong> <a href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="video">na Instagrame</a></figcaption>
-      </figure>
       <figure class="vid">
         <div class="vid__frame">
           <video poster="img/poster-salon-osetrovna.webp" preload="none" muted playsinline loop width="540" height="960" data-video="salon" title="Video: ošetrovňa salónu Svet Krásy"><source src="video/salon-osetrovna.mp4" type="video/mp4"><source src="video/salon-osetrovna.webm" type="video/webm"></video>
           <button class="vid__play" type="button" aria-label="Prehrať video zo salónu"><svg class="icon icon--fill"><use href="#i-play"/></svg></button>
         </div>
-        <figcaption><strong>Salón</strong> <a href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="video">na Instagrame</a></figcaption>
+        <figcaption><strong>Čakáreň a salón</strong> <a href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="video">na Instagrame</a></figcaption>
       </figure>
+      <div class="vphotos">
+        <figure class="vphoto">
+          <button type="button" data-lightbox data-full="img/salon-cakaren.webp" data-caption="Čakáreň" aria-label="Zväčšiť fotografiu: Čakáreň"><img src="img/salon-cakaren-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Čakáreň salónu Svet Krásy s ružovými kreslami"></button>
+          <figcaption>Čakáreň</figcaption>
+        </figure>
+        <figure class="vphoto">
+          <button type="button" data-lightbox data-full="img/salon-miestnost.webp" data-caption="Salón" aria-label="Zväčšiť fotografiu: Salón"><img src="img/salon-miestnost-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Ošetrovňa salónu Svet Krásy s kozmetickým lôžkom a prístrojmi"></button>
+          <figcaption>Salón</figcaption>
+        </figure>
+      </div>
     </div>
     <div class="filters" role="group" aria-label="Filtrovať galériu">
       <button class="tab" type="button" data-filter="all" aria-pressed="true">Všetko</button>
@@ -1528,7 +1537,7 @@ const OPENING_HOURS = [
   }
   $$('[data-lightbox]').forEach(function (b) {
     b.addEventListener('click', function () {
-      const scope = b.closest('#gal') || b.closest('.certs');
+      const scope = b.closest('#gal') || b.closest('.certs') || b.closest('.vphotos');
       lbList = $$('[data-lightbox]', scope).filter(function (x) { return !x.closest('[hidden]'); });
       lbReturn = b;
       lbShow(lbList.indexOf(b));
