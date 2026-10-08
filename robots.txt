@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# TODO: upraviť doménu
-Sitemap: https://svetkrasy.netlify.app/sitemap.xml
+Sitemap: https://kozmetikasvetkrasy.sk/sitemap.xml
