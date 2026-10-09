@@ -340,15 +340,6 @@ html:not(.js) .panel{margin-bottom:34px}
 .rcard__av{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;flex:none;font-family:var(--f-display);font-weight:600;font-size:18px;color:var(--wine);background:radial-gradient(circle at 35% 30%,#fff 0%,var(--blush-2) 75%);box-shadow:inset 0 0 0 1px rgba(185,138,79,.7)}
 .rcard figcaption strong{display:block;color:var(--wine);font-size:18px;line-height:1.2}
 .rcard figcaption small{display:block;color:var(--muted);font-size:14px}
-.rcard--featured{background:var(--wine);border-color:var(--wine);box-shadow:0 30px 60px -30px rgba(62,16,25,.8)}
-.rcard--featured::before{color:rgba(228,197,144,.18)}
-.rcard--featured .stars{color:var(--gold-light)}
-.rcard--featured .rcard__src{background:transparent;color:#EFD6CF;border-color:rgba(228,197,144,.45)}
-.rcard--featured blockquote p{color:#FFF1EC;font-size:20px;font-style:italic}
-.rcard--featured figcaption{border-top-color:rgba(228,197,144,.45)}
-.rcard--featured figcaption strong{color:#F6E2C6}
-.rcard--featured figcaption small{color:#E5C9C3}
-.rcard--featured .rcard__av{color:var(--wine);background:radial-gradient(circle at 35% 30%,#FFF6EC 0%,var(--gold-light) 80%);box-shadow:none}
 .center{text-align:center;margin-top:30px}
 
 /* ---------- Galeria ---------- */
@@ -465,9 +456,9 @@ html:not(.js) .panel{margin-bottom:34px}
 @media (min-width:900px){.grid{grid-template-columns:repeat(3,1fr);gap:16px}}
 @media (min-width:900px){.videos{grid-template-columns:1fr 250px 250px;gap:28px}
   .reviews{grid-auto-flow:row;grid-template-columns:repeat(3,minmax(0,1fr));overflow:visible;margin:0;padding:6px 0 0;gap:20px}
-  .rcard--featured{grid-column:span 2}
+  .rcard--wide{grid-column:span 2}
   .reviews__hint{display:none}
-  .rcard--featured blockquote p{font-size:23px;line-height:1.5}}
+}
 
 /* ---------- Animacie ---------- */
 html.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
@@ -572,7 +563,7 @@ html.js .reveal.d1{transition-delay:.08s}html.js .reveal.d2{transition-delay:.16
 @media (hover:hover) and (pointer:fine){.reviews__hint{display:none}}
 @media (min-width:640px){
   .reviews{grid-auto-flow:row;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible;margin:0;padding:6px 0 0;gap:18px}
-  .rcard--featured{grid-column:span 2}
+  .rcard--wide{grid-column:span 2}
   .reviews__hint{display:none}
 }
 @media (min-width:900px){.reviews{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}}
@@ -754,7 +745,7 @@ html.js .reveal.d1{transition-delay:.08s}html.js .reveal.d2{transition-delay:.16
     </header>
     <!-- Recenzie prevzaté z Google profilu salónu (text bez úprav obsahu, mená skrátené kvôli súkromiu) -->
     <div class="reviews reveal">
-      <figure class="rcard rcard--featured">
+      <figure class="rcard rcard--wide">
         <div class="rcard__top"><span class="stars" role="img" aria-label="Hodnotenie 5 z 5 hviezdičiek"><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg></span><span class="rcard__src">Google</span></div>
         <blockquote><p>Maximálna spokojnosť! Pani kozmetička je skutočná odborníčka, ktorá pleti naozaj rozumie. Po každom ošetrení odchádzam oddýchnutá s pocitom rozjasnenej a dokonale vyčistenej pleti. Oceňujem aj profesionálne poradenstvo pri výbere domácej starostlivosti. Určite prídem opäť.</p></blockquote>
         <figcaption><span class="rcard__av" aria-hidden="true">K</span><span><strong>K. Koprdová</strong><small>recenzia na Google</small></span></figcaption>
