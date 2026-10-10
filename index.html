@@ -558,6 +558,14 @@ html.js .reveal.d1{transition-delay:.08s}html.js .reveal.d2{transition-delay:.16
 @media (max-width:899px){.hero{padding:22px 0 54px}.hero__in{gap:14px}}
 
 @media (max-width:639px){.tabs{flex-direction:column;align-items:stretch;max-width:340px;margin-left:auto;margin-right:auto}.tab{white-space:normal}}
+/* Certifikáty a galéria – na mobile vedľa seba na posúvanie (ako recenzie) */
+.swipe__hint{display:none}
+@media (max-width:639px){
+  .swipe{flex-wrap:nowrap!important;justify-content:flex-start!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px!important;padding:6px 20px 18px;margin:0 -20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>.cert,.swipe>.gitem{flex:0 0 78%!important;scroll-snap-align:center}
+  .swipe__hint{display:block;text-align:center;font-size:15px;color:var(--muted);margin:2px 0 0}
+}
 
 /* Recenzie: od 640 px mriežka, text o potiahnutí len na dotykových zariadeniach */
 @media (hover:hover) and (pointer:fine){.reviews__hint{display:none}}
@@ -654,13 +662,10 @@ html.js .reveal.d1{transition-delay:.08s}html.js .reveal.d2{transition-delay:.16
       <p class="hero__text reveal d2">Profesionálne hĺbkové ošetrenia pleti pre ženy, ktoré chcú mať čistú, hydratovanú, hladšiu a viditeľne sviežejšiu pleť. Pomáham ženám dostať ich pleť do lepšej kondície a potom ju cielene omladzovať.</p>
       <div class="hero__ctas reveal d3">
         <a class="btn btn--primary" href="tel:+421918797408" data-booking data-loc="hero"><svg class="icon"><use href="#i-cal"/></svg>Rezervovať termín</a>
-        <a class="btn btn--ghost" href="#cennik">Pozrieť cenník</a>
       </div>
       <ul class="hero__info reveal d3">
         <li><svg class="icon"><use href="#i-pin"/></svg><span>7. pešieho pluku 1415/2, Nitra<small>Mestská tržnica, oproti Mlynom</small></span></li>
         <li><svg class="icon"><use href="#i-phone"/></svg><a href="tel:+421918797408" data-phone>0918&nbsp;797&nbsp;408</a></li>
-        <!-- TODO: hodnotenie a počet recenzií priebežne aktualizovať podľa Google profilu -->
-        <li><svg class="icon"><use href="#i-award"/></svg><a href="https://www.google.com/search?sca_esv=42b7bc95fdf18e3f&amp;sxsrf=APpeQnuMgw1oej3Nf3fsmNtbKUsJg9_l4A:1791026998066&amp;q=Svet+Kr%C3%A1sy+kozmetick%C3%BD+sal%C3%B3n+Nitra&amp;si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_84lEH3s6a43OeXeYuK90ZuIEVTy8EjIyalRY2wb3lctndTIGtiQetXO3pkWpZ98p-FQLFk%3D&amp;uds=AJ5uw195omnGJ76DOhPThDoE1qc-R4sjJjzkHozle2KJJik7AQ0ZrgvgR1tH6YZVPoBu0mmdQLG7qfwaFBAcWLNDBKZtpx_UPv3pBZh7op2g6Uc1daXmiU7GtbqsQtkqWDihw1C7DN7zly5SW-8S__0dEvzp3Rcc9w&amp;sa=X&amp;ved=2ahUKEwj2m4LA352XAxUWhP0HHYTEGNsQ3PALegQIHBAE&amp;biw=1920&amp;bih=945&amp;dpr=1#sv=CAESzQEKuQEStgEKd0FKaVQ0dEkxdy1BeXExTG5MclpYMmZWUjJVRDFqN0NpUW5mV19Udy1rcGgxMElSSkFyeXI2OUVFSHFBS2xSalBZMGZfc0ttTERpbEUyMks4MXhNamZ2MXNES1JBTGJYLS1CandTU1JjT3pETnRTZVhrVHItX3drEhdPdWZBYXNYek83bkJ3UEFQMi1lN2lRVRoiQURzcjlmVFBtaXpQYXFfdE8wajhxVTBsanBZTFljQ2Q2URIEODA1MRoBMyoAMAA4AUAAGAAgjZ6mowNKAhAB" target="_blank" rel="noopener" data-social="google" data-loc="hero">5,0 ★ · 24 recenzií na Google</a></li>
       </ul>
     </div>
   </div>
@@ -798,7 +803,6 @@ html.js .reveal.d1{transition-delay:.08s}html.js .reveal.d2{transition-delay:.16
       <p>Volám sa Zuzana Machovičová. Ako kozmetička pracujem už vyše 10 rokov a som majiteľkou salónu Svet Krásy v Nitre. O kozmetiku som sa zaujímala už odmalička. V puberte som si sama prešla náročným a zdĺhavým procesom liečby akné, čo môj záujem o kozmetickú profesiu ešte viac prehĺbilo.</p>
       <p>Hoci som ukončila vysokú školu, dnes sa venujem ženám, ktoré netúžia vyzerať na dvadsať, ale chcú vyzerať dobre na svoj vek a pri pohľade do zrkadla vidieť oddýchnutejšiu verziu seba. Mám za sebou roky praxe, niekoľko desiatok školení a neprestajne sa vzdelávam v beauty sfére.</p>
       <p>Kozmetické trendy sledujem, ale nie sú pre mňa určujúce. Pre pleť vyberám vždy to, čo aktuálne potrebuje.</p>
-      <p class="about__sign">Zuzana Machovičová</p>
       <p class="about__role">kozmetička · majiteľka salónu Svet Krásy</p>
     </div>
   </div>
@@ -812,7 +816,7 @@ html.js .reveal.d1{transition-delay:.08s}html.js .reveal.d2{transition-delay:.16
       <h2 class="h2" id="cert-title">Certifikáty</h2>
       <div class="ornament" aria-hidden="true"><svg><use href="#i-flourish"/></svg></div>
     </header>
-    <div class="certs">
+    <div class="certs swipe">
       <figure class="cert reveal">
         <button type="button" data-lightbox data-full="img/cert-hydrafacial.webp" data-caption="Hydrafacial – multifunkčný systém starostlivosti o pleť" aria-label="Zväčšiť certifikát: Hydrafacial – multifunkčný systém starostlivosti o pleť">
           <img src="img/cert-hydrafacial-nahlad.webp" width="1600" height="1127" loading="lazy" decoding="async" alt="Certifikát o odbornom školení Mgr. Zuzany Machovičovej na kozmetický prístroj 3 v 1 Hydrafacial">
@@ -863,6 +867,7 @@ html.js .reveal.d1{transition-delay:.08s}html.js .reveal.d2{transition-delay:.16
       </figure>
       <!-- ďalšie certifikáty stačí pridať ako ďalší <figure class="cert"> (fotku uložiť do priečinka img/) -->
     </div>
+    <p class="swipe__hint" aria-hidden="true">← potiahnite prstom pre ďalšie certifikáty →</p>
   </div>
 </section>
 
@@ -1121,7 +1126,7 @@ html.js .reveal.d1{transition-delay:.08s}html.js .reveal.d2{transition-delay:.16
       <button class="tab" type="button" data-filter="salon" aria-pressed="false">Salón</button>
     </div>
     <p class="gal-note">Výsledky sú individuálne.</p>
-    <div class="grid" id="gal">
+    <div class="grid swipe" id="gal">
       <figure class="gitem reveal" data-cat="po">
         <button type="button" data-lightbox data-full="img/po-plet.webp" data-caption="Pleť – pred a po" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Pleť – pred a po"><img src="img/po-plet-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Porovnanie pleti klientky pred a po ošetrení – vyhladenie a rozjasnenie"></button>
         <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Pleť – pred a po"><svg class="icon"><use href="#i-ig"/></svg></a>
@@ -1148,9 +1153,8 @@ html.js .reveal.d1{transition-delay:.08s}html.js .reveal.d2{transition-delay:.16
         <figcaption>Hydrafacial – hĺbkové čistenie</figcaption>
       </figure>
       <figure class="gitem reveal" data-cat="osetrenia">
-        <button type="button" data-lightbox data-full="img/os-zuzana.webp" data-caption="Zuzana pri ošetrení prístrojom" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Zuzana pri ošetrení prístrojom"><img src="img/os-zuzana-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Mgr. Zuzana Machovičová pri ošetrení pleti prístrojom"></button>
-        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Zuzana pri ošetrení prístrojom"><svg class="icon"><use href="#i-ig"/></svg></a>
-        <figcaption>Zuzana pri ošetrení prístrojom</figcaption>
+        <button type="button" data-lightbox data-full="img/os-zuzana.webp" data-caption="" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu"><img src="img/os-zuzana-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Mgr. Zuzana Machovičová pri ošetrení pleti prístrojom"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame"><svg class="icon"><use href="#i-ig"/></svg></a>
       </figure>
       <figure class="gitem reveal" data-cat="osetrenia">
         <button type="button" data-lightbox data-full="img/os-svetlo.webp" data-caption="LED terapia – červené svetlo" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: LED terapia – červené svetlo"><img src="img/os-svetlo-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Klientka počas LED terapie červeným svetlom"></button>
@@ -1158,14 +1162,14 @@ html.js .reveal.d1{transition-delay:.08s}html.js .reveal.d2{transition-delay:.16
         <figcaption>LED terapia – červené svetlo</figcaption>
       </figure>
       <figure class="gitem reveal" data-cat="osetrenia">
-        <button type="button" data-lightbox data-full="img/os-po-osetreni.webp" data-caption="Klientka po ošetrení pleti" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Klientka po ošetrení pleti"><img src="img/os-po-osetreni-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Oddýchnutá klientka po ošetrení pleti"></button>
-        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Klientka po ošetrení pleti"><svg class="icon"><use href="#i-ig"/></svg></a>
-        <figcaption>Klientka po ošetrení pleti</figcaption>
+        <button type="button" data-lightbox data-full="img/os-po-osetreni.webp" data-caption="Klientka po laminácii obočia" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Klientka po laminácii obočia"><img src="img/os-po-osetreni-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Klientka po laminácii obočia"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Klientka po laminácii obočia"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <figcaption>Klientka po laminácii obočia</figcaption>
       </figure>
       <figure class="gitem reveal" data-cat="osetrenia">
-        <button type="button" data-lightbox data-full="img/os-zuzana-2.webp" data-caption="Zuzana nanáša pleťovú masku" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Zuzana nanáša pleťovú masku"><img src="img/os-zuzana-2-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Mgr. Zuzana Machovičová nanáša klientke pleťovú masku"></button>
-        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Zuzana nanáša pleťovú masku"><svg class="icon"><use href="#i-ig"/></svg></a>
-        <figcaption>Zuzana nanáša pleťovú masku</figcaption>
+        <button type="button" data-lightbox data-full="img/os-zuzana-2.webp" data-caption="Nanášam a vmasírovávam do pleti thermo peeling" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Nanášam a vmasírovávam do pleti thermo peeling"><img src="img/os-zuzana-2-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Nanášanie a vmasírovanie thermo peelingu do pleti klientky"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Nanášam a vmasírovávam do pleti thermo peeling"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <figcaption>Nanášam a vmasírovávam do pleti thermo peeling</figcaption>
       </figure>
 
       <figure class="gitem reveal" data-cat="salon">
@@ -1189,17 +1193,18 @@ html.js .reveal.d1{transition-delay:.08s}html.js .reveal.d2{transition-delay:.16
         <figcaption>Zuzana pri práci</figcaption>
       </figure>
       <figure class="gitem reveal" data-cat="salon">
-        <button type="button" data-lightbox data-full="img/salon-osetrovna.webp" data-caption="Ošetrovňa – LED terapia" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Ošetrovňa – LED terapia"><img src="img/salon-osetrovna-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Ošetrovňa salónu Svet Krásy s klientkou počas LED terapie"></button>
-        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Ošetrovňa – LED terapia"><svg class="icon"><use href="#i-ig"/></svg></a>
-        <figcaption>Ošetrovňa – LED terapia</figcaption>
+        <button type="button" data-lightbox data-full="img/salon-osetrovna.webp" data-caption="LED terapia" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: LED terapia"><img src="img/salon-osetrovna-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Ošetrovňa salónu Svet Krásy s klientkou počas LED terapie"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: LED terapia"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <figcaption>LED terapia</figcaption>
       </figure>
       <figure class="gitem reveal" data-cat="salon">
-        <button type="button" data-lightbox data-full="img/salon-osetrovna-2.webp" data-caption="Ošetrovňa – LED maska" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Ošetrovňa – LED maska"><img src="img/salon-osetrovna-2-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Ošetrovňa salónu Svet Krásy – klientka pod LED maskou"></button>
-        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Ošetrovňa – LED maska"><svg class="icon"><use href="#i-ig"/></svg></a>
-        <figcaption>Ošetrovňa – LED maska</figcaption>
+        <button type="button" data-lightbox data-full="img/salon-osetrovna-2.webp" data-caption="LED terapia" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: LED terapia"><img src="img/salon-osetrovna-2-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Ošetrovňa salónu Svet Krásy – klientka pod LED maskou"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: LED terapia"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <figcaption>LED terapia</figcaption>
       </figure>
     </div>
-    <p class="center reveal"><a class="btn btn--primary" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria_cta"><svg class="icon"><use href="#i-ig"/></svg>Ďalšie výsledky na Instagrame</a></p>
+    <p class="swipe__hint" aria-hidden="true">← potiahnite prstom pre ďalšie fotky →</p>
+    <p class="center reveal"><a class="btn btn--primary" href="tel:+421918797408" data-booking data-loc="galeria_cta"><svg class="icon"><use href="#i-cal"/></svg>Rezervovať termín</a></p>
   </div>
 </section>
 
