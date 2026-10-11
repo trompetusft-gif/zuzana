@@ -70,15 +70,30 @@
     "addressCountry": "SK"
   },
   "areaServed": "Nitra",
-  "founder": {
-    "@type": "Person",
-    "name": "Mgr. Zuzana Machovičová"
-  },
+  "founder": { "@type": "Person", "name": "Mgr. Zuzana Machovičová" },
   "sameAs": [
     "https://www.instagram.com/kozmeticky_salon_svet_krasy/",
     "https://www.facebook.com/kozmetikasvetkrasy/"
   ],
-  "keywords": "kozmetika Nitra, kozmetický salón Nitra"
+  "keywords": "kozmetika Nitra, kozmetický salón Nitra",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Cenník služieb (platný od 1. 10. 2026)",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lux Skin Ritual Hydra + Royal Spicule 2 v 1" }, "price": "132", "priceCurrency": "EUR" },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lux Skin Ritual Hydra + ošetrenie s efektom podobným botoxu 2 v 1" }, "price": "123", "priceCurrency": "EUR" },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lux Skin Ritual 3 Mesotherapy" }, "price": "110", "priceCurrency": "EUR" },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Prémiové hĺbkové čistenie pleti" }, "price": "76", "priceCurrency": "EUR" },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Anti-akné ošetrenie pleti" }, "price": "66", "priceCurrency": "EUR" },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Relax Harmony" }, "price": "63", "priceCurrency": "EUR" },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lift & Glow" }, "price": "76", "priceCurrency": "EUR" },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lifting Radiance + Stem Cells" }, "price": "66", "priceCurrency": "EUR" },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bio Impulse" }, "price": "76", "priceCurrency": "EUR" },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Chemický peeling Medi Lift" }, "price": "40", "priceCurrency": "EUR" },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "WOW lifting" }, "price": "50", "priceCurrency": "EUR" },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Laminácia obočia" }, "price": "40", "priceCurrency": "EUR" }
+    ]
+  }
 }
 </script>
 
@@ -229,7 +244,7 @@ body.nav-open{overflow:hidden}
 /* ---------- O mne ---------- */
 .about{display:grid;gap:36px;align-items:center}
 .about__photo{position:relative;max-width:440px;margin:0 auto;width:100%}
-.about__photo img,.about__photo .ph{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:220px 220px 18px 18px}
+.about__photo img,.about__photo .ph{width:100%;aspect-ratio:3/5;object-fit:cover;border-radius:220px 220px 18px 18px}
 .about__photo::before{content:"";position:absolute;inset:-12px -12px 12px 12px;border:1px solid var(--gold);border-radius:228px 228px 22px 22px;z-index:-1}
 .about__sign{font-family:var(--f-script);font-size:40px;color:var(--gold-text);margin:22px 0 0;line-height:1}
 .about__role{font-family:var(--f-display);font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:6px}
@@ -325,6 +340,7 @@ html:not(.js) .panel{margin-bottom:34px}
 .rcard__av{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;flex:none;font-family:var(--f-display);font-weight:600;font-size:18px;color:var(--wine);background:radial-gradient(circle at 35% 30%,#fff 0%,var(--blush-2) 75%);box-shadow:inset 0 0 0 1px rgba(185,138,79,.7)}
 .rcard figcaption strong{display:block;color:var(--wine);font-size:18px;line-height:1.2}
 .rcard figcaption small{display:block;color:var(--muted);font-size:14px}
+.rcard--featured blockquote p{font-size:20px;font-style:italic}
 .center{text-align:center;margin-top:30px}
 
 /* ---------- Galeria ---------- */
@@ -441,9 +457,9 @@ html:not(.js) .panel{margin-bottom:34px}
 @media (min-width:900px){.grid{grid-template-columns:repeat(3,1fr);gap:16px}}
 @media (min-width:900px){.videos{grid-template-columns:1fr 250px 250px;gap:28px}
   .reviews{grid-auto-flow:row;grid-template-columns:repeat(3,minmax(0,1fr));overflow:visible;margin:0;padding:6px 0 0;gap:20px}
-  .rcard--wide{grid-column:span 2}
+  .rcard--featured{grid-column:span 2}
   .reviews__hint{display:none}
-}
+  .rcard--featured blockquote p{font-size:23px;line-height:1.5}}
 
 /* ---------- Animacie ---------- */
 html.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
@@ -543,23 +559,40 @@ html.js .reveal.d1{transition-delay:.08s}html.js .reveal.d2{transition-delay:.16
 @media (max-width:899px){.hero{padding:22px 0 54px}.hero__in{gap:14px}}
 
 @media (max-width:639px){.tabs{flex-direction:column;align-items:stretch;max-width:340px;margin-left:auto;margin-right:auto}.tab{white-space:normal}}
-/* Certifikáty a galéria – na mobile vedľa seba na posúvanie (ako recenzie) */
-.swipe__hint{display:none}
-@media (max-width:639px){
-  .swipe{flex-wrap:nowrap!important;justify-content:flex-start!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px!important;padding:6px 20px 18px;margin:0 -20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
-  .swipe::-webkit-scrollbar{display:none}
-  .swipe>.cert,.swipe>.gitem{flex:0 0 78%!important;scroll-snap-align:center}
-  .swipe__hint{display:block;text-align:center;font-size:15px;color:var(--muted);margin:2px 0 0}
-}
 
 /* Recenzie: od 640 px mriežka, text o potiahnutí len na dotykových zariadeniach */
 @media (hover:hover) and (pointer:fine){.reviews__hint{display:none}}
 @media (min-width:640px){
   .reviews{grid-auto-flow:row;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible;margin:0;padding:6px 0 0;gap:18px}
-  .rcard--wide{grid-column:span 2}
+  .rcard--featured{grid-column:span 2}
   .reviews__hint{display:none}
 }
 @media (min-width:900px){.reviews{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}}
+/* Certifikáty ako posuvný pás pod recenziami */
+.subhead{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:48px 0 14px;padding-top:28px;border-top:1px dashed rgba(185,138,79,.5)}
+.subhead .h3{margin:0;font-family:var(--f-display);font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--wine);font-size:clamp(20px,2.4vw,26px)}
+.slider-nav{display:flex;gap:8px}
+.slider-btn{width:44px;height:44px;border-radius:50%;border:1px solid rgba(185,138,79,.7);background:#fff;color:var(--wine);display:grid;place-items:center;cursor:pointer;transition:background .25s,transform .25s}
+.slider-btn:hover{background:var(--blush-2);transform:scale(1.05)}
+.slider-btn .icon{width:20px;height:20px}
+.certs{display:flex!important;flex-wrap:nowrap!important;justify-content:flex-start!important;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:6px 20px 22px;margin:0 -20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.certs::-webkit-scrollbar{display:none}
+.certs .cert{flex:0 0 72%!important;scroll-snap-align:center}
+@media (min-width:640px){.certs .cert{flex-basis:40%!important}}
+@media (min-width:900px){.certs{margin:0;padding:6px 0 22px}.certs .cert{flex-basis:calc(25% - 11px)!important;scroll-snap-align:start}}
+@media (max-width:639px){.slider-nav{display:none}}
+/* Popisy pri fotkách pred a po */
+.gitem--cap{background:#fff;display:flex;flex-direction:column;box-shadow:0 0 0 1px rgba(185,138,79,.35)}
+.gitem--cap figcaption{position:static;max-width:none;width:auto;white-space:normal;overflow:visible;background:none;color:var(--wine);border-radius:0;padding:10px 12px 12px;text-align:center;font-size:15px;line-height:1.35;pointer-events:auto}
+.gitem--cap figcaption strong{display:block;font-family:var(--f-display);font-weight:500;letter-spacing:.06em;text-transform:uppercase;font-size:13px}
+.gitem--cap figcaption small{display:block;color:var(--muted);font-size:14px;margin-top:4px}
+/* O mne – fotka bez oblúka */
+.about__photo img,.about__photo .ph{aspect-ratio:auto!important;height:auto;border-radius:18px!important;box-shadow:0 24px 50px -30px rgba(90,24,40,.55)}
+.about__photo::before{display:none!important}
+/* Galéria – jednotné popisky */
+.gitem--cap figcaption{flex:1;display:flex;flex-direction:column;justify-content:center;min-height:62px;padding:10px 10px 12px}
+.gitem--cap figcaption strong{font-size:13.5px}
+.gitem--cap figcaption small{font-size:14px;margin-top:3px;font-style:italic}
 </style>
 </head>
 <body>
@@ -606,6 +639,7 @@ html.js .reveal.d1{transition-delay:.08s}html.js .reveal.d2{transition-delay:.16
         <li><a href="#sluzby">Služby</a></li>
         <li><a href="#recenzie">Recenzie</a></li>
         <li><a href="#o-mne">O mne</a></li>
+        <li><a href="#cennik">Cenník</a></li>
         <li><a href="#balicky">Balíčky</a></li>
         <li><a href="#kontakt">Kontakt</a></li>
       </ul>
@@ -620,6 +654,7 @@ html.js .reveal.d1{transition-delay:.08s}html.js .reveal.d2{transition-delay:.16
     <li><a href="#sluzby">Služby</a></li>
     <li><a href="#recenzie">Recenzie</a></li>
     <li><a href="#o-mne">O mne</a></li>
+    <li><a href="#cennik">Cenník</a></li>
     <li><a href="#balicky">Balíčky</a></li>
     <li><a href="#kontakt">Kontakt</a></li>
   </ul>
@@ -645,6 +680,7 @@ html.js .reveal.d1{transition-delay:.08s}html.js .reveal.d2{transition-delay:.16
       <p class="hero__text reveal d2">Profesionálne hĺbkové ošetrenia pleti pre ženy, ktoré chcú mať čistú, hydratovanú, hladšiu a viditeľne sviežejšiu pleť. Pomáham ženám dostať ich pleť do lepšej kondície a potom ju cielene omladzovať.</p>
       <div class="hero__ctas reveal d3">
         <a class="btn btn--primary" href="tel:+421918797408" data-booking data-loc="hero"><svg class="icon"><use href="#i-cal"/></svg>Rezervovať termín</a>
+        <a class="btn btn--ghost" href="tel:+421918797408" data-phone data-loc="hero_zavolat"><svg class="icon"><use href="#i-phone"/></svg>Zavolať</a>
       </div>
       <ul class="hero__info reveal d3">
         <li><svg class="icon"><use href="#i-pin"/></svg><span>7. pešieho pluku 1415/2, Nitra<small>Mestská tržnica, oproti Mlynom</small></span></li>
@@ -673,37 +709,37 @@ html.js .reveal.d1{transition-delay:.08s}html.js .reveal.d2{transition-delay:.16
         <div class="medal"><svg class="icon"><use href="#i-diamond"/></svg></div>
         <h3>Luxusné ošetrenia pleti</h3>
         <p>Kombinácia dvoch ošetrení (2 v 1) pre rozjasnenie, hydratáciu, lifting a celkovú revitalizáciu pleti.</p>
-        <div class="card__foot"><span class="from">od<strong>110 €</strong></span></div>
+        <div class="card__foot"><span class="from">od<strong>110 €</strong></span><a class="card__link" href="#cennik" data-tab="tab-lux">Cenník<span class="sr-only"> – luxusné ošetrenia pleti</span></a></div>
       </article>
       <article class="card reveal d1">
         <div class="medal"><svg class="icon"><use href="#i-lotus"/></svg></div>
         <h3>Základné ošetrenia pleti</h3>
         <p>Prémiové hĺbkové čistenie s Hydrafacialom, anti-akné ošetrenie a relaxačné ošetrenie s masážou.</p>
-        <div class="card__foot"><span class="from">od<strong>63 €</strong></span></div>
+        <div class="card__foot"><span class="from">od<strong>63 €</strong></span><a class="card__link" href="#cennik" data-tab="tab-zakl">Cenník<span class="sr-only"> – základné ošetrenia pleti</span></a></div>
       </article>
       <article class="card reveal d2">
         <div class="medal"><svg class="icon"><use href="#i-sparkle"/></svg></div>
         <h3>Anti-age ošetrenia</h3>
         <p>Rozjasnenie, spevnenie a pozdvihnutie kontúr tváre, krku a dekoltu – rádiofrekvencia, ultrazvuk, Spicule.</p>
-        <div class="card__foot"><span class="from">od<strong>66 €</strong></span></div>
+        <div class="card__foot"><span class="from">od<strong>66 €</strong></span><a class="card__link" href="#cennik" data-tab="tab-age">Cenník<span class="sr-only"> – anti-age ošetrenia</span></a></div>
       </article>
       <article class="card reveal">
         <div class="medal"><svg class="icon"><use href="#i-flask"/></svg></div>
         <h3>Chemický peeling</h3>
         <p>Omladzujúci peeling na vrásky a hyperpigmentáciu aj peeling pre pleť so sklonom k akné.</p>
-        <div class="card__foot"><span class="from">od<strong>40 €</strong></span></div>
+        <div class="card__foot"><span class="from">od<strong>40 €</strong></span><a class="card__link" href="#cennik" data-tab="tab-peel">Cenník<span class="sr-only"> – chemický peeling</span></a></div>
       </article>
       <article class="card reveal d1">
         <div class="medal"><svg class="icon"><use href="#i-eye"/></svg></div>
         <h3>Obočie a mihalnice</h3>
         <p>WOW lifting, laminácia obočia, úprava a farbenie obočia, farbenie mihalníc.</p>
-        <div class="card__foot"><span class="from">od<strong>15 €</strong></span></div>
+        <div class="card__foot"><span class="from">od<strong>15 €</strong></span><a class="card__link" href="#cennik" data-tab="tab-oboc">Cenník<span class="sr-only"> – obočie a mihalnice</span></a></div>
       </article>
       <article class="card reveal d2">
         <div class="medal"><svg class="icon"><use href="#i-drop"/></svg></div>
         <h3>Depilácia voskom</h3>
         <p>Depilácia pre ženy – nohy, ruky, bikiny, podpazušie aj malé časti tváre.</p>
-        <div class="card__foot"><span class="from">od<strong>7 €</strong></span></div>
+        <div class="card__foot"><span class="from">od<strong>7 €</strong></span><a class="card__link" href="#cennik" data-tab="tab-depi">Cenník<span class="sr-only"> – depilácia voskom</span></a></div>
       </article>
       <article class="card card--wide reveal">
         <div class="medal"><svg class="icon"><use href="#i-lotus"/></svg></div>
@@ -711,7 +747,7 @@ html.js .reveal.d1{transition-delay:.08s}html.js .reveal.d2{transition-delay:.16
           <h3>Doplnkové služby</h3>
           <p>Úprava a farbenie obočia, farbenie mihalníc či depilácia malej časti tváre ako doplnok ku kozmetickému ošetreniu.</p>
         </div>
-        <div class="card__foot"><span class="from">od<strong>5 €</strong></span></div>
+        <div class="card__foot"><span class="from">od<strong>5 €</strong></span><a class="card__link" href="#cennik" data-tab="tab-dopl">Cenník<span class="sr-only"> – doplnkové služby</span></a></div>
       </article>
     </div>
     <dl class="glossary reveal">
@@ -726,14 +762,14 @@ html.js .reveal.d1{transition-delay:.08s}html.js .reveal.d2{transition-delay:.16
 <section class="section section--blush" id="recenzie" aria-labelledby="recenzie-title">
   <div class="wrap">
     <header class="section-head reveal">
-      <p class="eyebrow">Recenzie z Google</p>
+      <p class="eyebrow">Recenzie a certifikáty</p>
       <h2 class="h2" id="recenzie-title">Recenzie –</h2>
       <span class="script">čo hovoria klientky</span>
       <div class="ornament" aria-hidden="true"><svg><use href="#i-flourish"/></svg></div>
     </header>
     <!-- Recenzie prevzaté z Google profilu salónu (text bez úprav obsahu, mená skrátené kvôli súkromiu) -->
     <div class="reviews reveal">
-      <figure class="rcard rcard--wide">
+      <figure class="rcard rcard--featured">
         <div class="rcard__top"><span class="stars" role="img" aria-label="Hodnotenie 5 z 5 hviezdičiek"><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg></span><span class="rcard__src">Google</span></div>
         <blockquote><p>Maximálna spokojnosť! Pani kozmetička je skutočná odborníčka, ktorá pleti naozaj rozumie. Po každom ošetrení odchádzam oddýchnutá s pocitom rozjasnenej a dokonale vyčistenej pleti. Oceňujem aj profesionálne poradenstvo pri výbere domácej starostlivosti. Určite prídem opäť.</p></blockquote>
         <figcaption><span class="rcard__av" aria-hidden="true">K</span><span><strong>K. Koprdová</strong><small>recenzia na Google</small></span></figcaption>
@@ -760,46 +796,14 @@ html.js .reveal.d1{transition-delay:.08s}html.js .reveal.d2{transition-delay:.16
       </figure>
     </div>
     <p class="reviews__hint" aria-hidden="true">← potiahnite prstom pre ďalšie recenzie →</p>
-    <p class="center reveal">
-      <a class="btn btn--ghost" id="google-reviews" href="https://www.google.com/search?sca_esv=42b7bc95fdf18e3f&amp;sxsrf=APpeQnuMgw1oej3Nf3fsmNtbKUsJg9_l4A:1791026998066&amp;q=Svet+Kr%C3%A1sy+kozmetick%C3%BD+sal%C3%B3n+Nitra&amp;si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_84lEH3s6a43OeXeYuK90ZuIEVTy8EjIyalRY2wb3lctndTIGtiQetXO3pkWpZ98p-FQLFk%3D&amp;uds=AJ5uw195omnGJ76DOhPThDoE1qc-R4sjJjzkHozle2KJJik7AQ0ZrgvgR1tH6YZVPoBu0mmdQLG7qfwaFBAcWLNDBKZtpx_UPv3pBZh7op2g6Uc1daXmiU7GtbqsQtkqWDihw1C7DN7zly5SW-8S__0dEvzp3Rcc9w&amp;sa=X&amp;ved=2ahUKEwj2m4LA352XAxUWhP0HHYTEGNsQ3PALegQIHBAE&amp;biw=1920&amp;bih=945&amp;dpr=1#sv=CAESzQEKuQEStgEKd0FKaVQ0dEkxdy1BeXExTG5MclpYMmZWUjJVRDFqN0NpUW5mV19Udy1rcGgxMElSSkFyeXI2OUVFSHFBS2xSalBZMGZfc0ttTERpbEUyMks4MXhNamZ2MXNES1JBTGJYLS1CandTU1JjT3pETnRTZVhrVHItX3drEhdPdWZBYXNYek83bkJ3UEFQMi1lN2lRVRoiQURzcjlmVFBtaXpQYXFfdE8wajhxVTBsanBZTFljQ2Q2URIEODA1MRoBMyoAMAA4AUAAGAAgjZ6mowNKAhAB" target="_blank" rel="noopener"><svg class="icon icon--fill" style="color:var(--gold)"><use href="#i-star"/></svg>Recenzie na Google</a>
-    </p>
-  </div>
-</section>
-
-<div class="motto reveal" role="note">
-  <q>Najprv pleť pripraviť, potom omladzovať.</q>
-  <p>Mojím cieľom je, aby bola pleť nielen krásna na pohľad, ale predovšetkým čistá, hydratovaná, revitalizovaná a zdravšie pôsobiaca.</p>
-</div>
-
-<!-- ================= O MNE ================= -->
-<section class="section" id="o-mne" aria-labelledby="omne-title">
-  <div class="wrap about">
-    <div class="about__photo reveal">
-      <img src="img/o-mne-3.webp" width="880" height="1100" loading="lazy" decoding="async" alt="Mgr. Zuzana Machovičová v ošetrovni salónu Svet Krásy">
+    <div class="subhead reveal" id="certifikaty">
+      <h3 class="h3" id="cert-title">Certifikáty</h3>
+      <div class="slider-nav" aria-hidden="false">
+        <button class="slider-btn" type="button" data-slide="-1" data-target="certs-row" aria-label="Predchádzajúce certifikáty"><svg class="icon"><use href="#i-left"/></svg></button>
+        <button class="slider-btn" type="button" data-slide="1" data-target="certs-row" aria-label="Ďalšie certifikáty"><svg class="icon"><use href="#i-right"/></svg></button>
+      </div>
     </div>
-    <div class="about__text reveal d1">
-      <p class="eyebrow">O mne</p>
-      <h2 class="h2" id="omne-title"><span class="h2__pre">Mgr.</span> Zuzana Machovičová</h2>
-      <span class="script">majiteľka salónu</span>
-      <div style="height:22px"></div>
-      <!-- TODO: text je prevzatý z podkladov klientky („Čo má obsahovať web“) – dať jej ho na finálne odsúhlasenie -->
-      <p>Volám sa Zuzana Machovičová. Ako kozmetička pracujem už vyše 10 rokov a som majiteľkou salónu Svet Krásy v Nitre. O kozmetiku som sa zaujímala už odmalička. V puberte som si sama prešla náročným a zdĺhavým procesom liečby akné, čo môj záujem o kozmetickú profesiu ešte viac prehĺbilo.</p>
-      <p>Hoci som ukončila vysokú školu, dnes sa venujem ženám, ktoré netúžia vyzerať na dvadsať, ale chcú vyzerať dobre na svoj vek a pri pohľade do zrkadla vidieť oddýchnutejšiu verziu seba. Mám za sebou roky praxe, niekoľko desiatok školení a neprestajne sa vzdelávam v beauty sfére.</p>
-      <p>Kozmetické trendy sledujem, ale nie sú pre mňa určujúce. Pre pleť vyberám vždy to, čo aktuálne potrebuje.</p>
-      <p class="about__role">kozmetička · majiteľka salónu Svet Krásy</p>
-    </div>
-  </div>
-</section>
-
-<!-- ================= CERTIFIKÁTY ================= -->
-<section class="section section--blush" id="certifikaty" aria-labelledby="cert-title">
-  <div class="wrap">
-    <header class="section-head reveal">
-      <p class="eyebrow">Vzdelávanie</p>
-      <h2 class="h2" id="cert-title">Certifikáty</h2>
-      <div class="ornament" aria-hidden="true"><svg><use href="#i-flourish"/></svg></div>
-    </header>
-    <div class="certs swipe">
+    <div class="certs" id="certs-row" role="region" aria-labelledby="cert-title" tabindex="0">
       <figure class="cert reveal">
         <button type="button" data-lightbox data-full="img/cert-hydrafacial.webp" data-caption="Hydrafacial – multifunkčný systém starostlivosti o pleť" aria-label="Zväčšiť certifikát: Hydrafacial – multifunkčný systém starostlivosti o pleť">
           <img src="img/cert-hydrafacial-nahlad.webp" width="1600" height="1127" loading="lazy" decoding="async" alt="Certifikát o odbornom školení Mgr. Zuzany Machovičovej na kozmetický prístroj 3 v 1 Hydrafacial">
@@ -850,7 +854,195 @@ html.js .reveal.d1{transition-delay:.08s}html.js .reveal.d2{transition-delay:.16
       </figure>
       <!-- ďalšie certifikáty stačí pridať ako ďalší <figure class="cert"> (fotku uložiť do priečinka img/) -->
     </div>
-    <p class="swipe__hint" aria-hidden="true">← potiahnite prstom pre ďalšie certifikáty →</p>
+    <p class="reviews__hint" aria-hidden="true">← potiahnite prstom pre ďalšie certifikáty →</p>
+    <p class="center reveal">
+      <a class="btn btn--ghost" id="google-reviews" href="https://www.google.com/search?sca_esv=42b7bc95fdf18e3f&amp;sxsrf=APpeQnuMgw1oej3Nf3fsmNtbKUsJg9_l4A:1791026998066&amp;q=Svet+Kr%C3%A1sy+kozmetick%C3%BD+sal%C3%B3n+Nitra&amp;si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_84lEH3s6a43OeXeYuK90ZuIEVTy8EjIyalRY2wb3lctndTIGtiQetXO3pkWpZ98p-FQLFk%3D&amp;uds=AJ5uw195omnGJ76DOhPThDoE1qc-R4sjJjzkHozle2KJJik7AQ0ZrgvgR1tH6YZVPoBu0mmdQLG7qfwaFBAcWLNDBKZtpx_UPv3pBZh7op2g6Uc1daXmiU7GtbqsQtkqWDihw1C7DN7zly5SW-8S__0dEvzp3Rcc9w&amp;sa=X&amp;ved=2ahUKEwj2m4LA352XAxUWhP0HHYTEGNsQ3PALegQIHBAE&amp;biw=1920&amp;bih=945&amp;dpr=1#sv=CAESzQEKuQEStgEKd0FKaVQ0dEkxdy1BeXExTG5MclpYMmZWUjJVRDFqN0NpUW5mV19Udy1rcGgxMElSSkFyeXI2OUVFSHFBS2xSalBZMGZfc0ttTERpbEUyMks4MXhNamZ2MXNES1JBTGJYLS1CandTU1JjT3pETnRTZVhrVHItX3drEhdPdWZBYXNYek83bkJ3UEFQMi1lN2lRVRoiQURzcjlmVFBtaXpQYXFfdE8wajhxVTBsanBZTFljQ2Q2URIEODA1MRoBMyoAMAA4AUAAGAAgjZ6mowNKAhAB" target="_blank" rel="noopener"><svg class="icon icon--fill" style="color:var(--gold)"><use href="#i-star"/></svg>Recenzie na Google</a>
+    </p>
+  </div>
+</section>
+
+<div class="motto reveal" role="note">
+  <q>Najprv pleť pripraviť, potom omladzovať.</q>
+  <p>Mojím cieľom je, aby bola pleť nielen krásna na pohľad, ale predovšetkým čistá, hydratovaná, revitalizovaná a zdravšie pôsobiaca.</p>
+</div>
+
+<!-- ================= O MNE ================= -->
+<section class="section" id="o-mne" aria-labelledby="omne-title">
+  <div class="wrap about">
+    <div class="about__photo reveal">
+      <img src="img/mgr-zuzana-machovicova-v-osetrovni-salonu.webp" width="971" height="1619" loading="lazy" decoding="async" alt="Mgr. Zuzana Machovičová v ošetrovni salónu Svet Krásy">
+    </div>
+    <div class="about__text reveal d1">
+      <p class="eyebrow">O mne</p>
+      <h2 class="h2" id="omne-title"><span class="h2__pre">Mgr.</span> Zuzana Machovičová</h2>
+      <span class="script">majiteľka salónu</span>
+      <div style="height:22px"></div>
+      <!-- TODO: text je prevzatý z podkladov klientky („Čo má obsahovať web“) – dať jej ho na finálne odsúhlasenie -->
+      <p>Volám sa Zuzana Machovičová. Ako kozmetička pracujem už vyše 10 rokov a som majiteľkou salónu Svet Krásy v Nitre. O kozmetiku som sa zaujímala už odmalička. V puberte som si sama prešla náročným a zdĺhavým procesom liečby akné, čo môj záujem o kozmetickú profesiu ešte viac prehĺbilo.</p>
+      <p>Hoci som ukončila vysokú školu, dnes sa venujem ženám, ktoré netúžia vyzerať na dvadsať, ale chcú vyzerať dobre na svoj vek a pri pohľade do zrkadla vidieť oddýchnutejšiu verziu seba. Mám za sebou roky praxe, niekoľko desiatok školení a neprestajne sa vzdelávam v beauty sfére.</p>
+      <p>Kozmetické trendy sledujem, ale nie sú pre mňa určujúce. Pre pleť vyberám vždy to, čo aktuálne potrebuje.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CENNÍK ================= -->
+<section class="section section--marble" id="cennik" aria-labelledby="cennik-title">
+  <div class="wrap">
+    <header class="section-head reveal" style="background:rgba(255,251,250,.86);padding:22px 18px;border-radius:18px">
+      <p class="eyebrow">Svet Krásy</p>
+      <h2 class="h2" id="cennik-title">CENNÍK</h2>
+      <span class="script">služieb</span>
+      <div class="ornament" aria-hidden="true"><svg><use href="#i-flourish"/></svg></div>
+    </header>
+
+    <div class="pricebox reveal">
+      <div class="pricebox__in">
+
+        <div class="tabs" role="tablist" aria-label="Kategórie cenníka">
+          <button class="tab" type="button" role="tab" id="tab-lux" aria-controls="p-lux" aria-selected="true">Luxusné ošetrenia</button>
+          <button class="tab" type="button" role="tab" id="tab-zakl" aria-controls="p-zakl" aria-selected="false" tabindex="-1">Základné ošetrenia pleti</button>
+          <button class="tab" type="button" role="tab" id="tab-age" aria-controls="p-age" aria-selected="false" tabindex="-1">Anti-age</button>
+          <button class="tab" type="button" role="tab" id="tab-peel" aria-controls="p-peel" aria-selected="false" tabindex="-1">Chemický peeling</button>
+          <button class="tab" type="button" role="tab" id="tab-oboc" aria-controls="p-oboc" aria-selected="false" tabindex="-1">Obočie a mihalnice</button>
+          <button class="tab" type="button" role="tab" id="tab-dopl" aria-controls="p-dopl" aria-selected="false" tabindex="-1">Doplnkové služby</button>
+          <button class="tab" type="button" role="tab" id="tab-depi" aria-controls="p-depi" aria-selected="false" tabindex="-1">Depilácia</button>
+        </div>
+
+        <!-- Luxusné ošetrenia pleti -->
+        <div class="panel" role="tabpanel" id="p-lux" aria-labelledby="tab-lux" tabindex="0">
+          <h3><span class="medal" aria-hidden="true"><svg class="icon"><use href="#i-diamond"/></svg></span>Luxusné ošetrenia pleti</h3>
+          <p class="panel__note">kombinácia dvoch ošetrení (2 v 1)</p>
+          <ul class="plist">
+            <li class="pitem">
+              <span class="pitem__name">Lux Skin Ritual Hydra + Royal Spicule 2 v 1</span><span class="pitem__price">132 €</span>
+              <span class="pitem__meta"><span class="dur"><svg class="icon"><use href="#i-clock"/></svg>90 min</span></span>
+              <p class="pitem__desc">Luxusné ošetrenie pre pleť, ktorá túži po rozjasnení, hydratácii a sviežom vzhľade.</p>
+            </li>
+            <li class="pitem">
+              <span class="pitem__name">Lux Skin Ritual Hydra + ošetrenie s efektom podobným botoxu 2 v 1</span><span class="pitem__price">123 €</span>
+              <span class="pitem__meta"><span class="dur"><svg class="icon"><use href="#i-clock"/></svg>90 min</span></span>
+              <p class="pitem__desc">Luxusné ošetrenie pleti, ktorá potrebuje lifting a vyhladenie vrások s efektom podobným botoxu.</p>
+            </li>
+            <li class="pitem">
+              <span class="pitem__name">Lux Skin Ritual 3 Mesotherapy</span><span class="pitem__price">110 €</span>
+              <span class="pitem__meta"><span class="dur"><svg class="icon"><use href="#i-clock"/></svg>75 min</span></span>
+              <p class="pitem__desc">Luxusné ošetrenie – trojitý impulz pre celkové omladenie, obnovu a revitalizáciu pleti.</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Základné ošetrenia pleti -->
+        <div class="panel" role="tabpanel" id="p-zakl" aria-labelledby="tab-zakl" tabindex="0" hidden>
+          <h3><span class="medal" aria-hidden="true"><svg class="icon"><use href="#i-lotus"/></svg></span>Základné ošetrenia pleti</h3>
+          <ul class="plist">
+            <li class="pitem">
+              <span class="pitem__name">Prémiové hĺbkové čistenie pleti</span><span class="pitem__price">76 €</span>
+              <span class="pitem__meta"><span class="dur"><svg class="icon"><use href="#i-clock"/></svg>75 min</span></span>
+              <p class="pitem__desc">Peeling + hĺbkové čistenie pleti s Hydrafacialom + neinvazívna mezoterapia.</p>
+              <span class="extra">príplatok k ošetreniu: +20 € manuálne čistenie pleti</span>
+            </li>
+            <li class="pitem">
+              <span class="pitem__name">Anti-akné ošetrenie pleti</span><span class="pitem__price">66 €</span>
+              <span class="pitem__meta"><span class="dur"><svg class="icon"><use href="#i-clock"/></svg>75 min</span></span>
+              <p class="pitem__desc">Hĺbkové čistenie pleti naparovaním / dermabráziou / scrubberom.</p>
+              <span class="extra">príplatok k ošetreniu: +15 € ručná masáž tváre a krku</span>
+            </li>
+            <li class="pitem">
+              <span class="pitem__name">Relax Harmony</span><span class="pitem__price">63 €</span>
+              <span class="pitem__meta"><span class="dur"><svg class="icon"><use href="#i-clock"/></svg>70 min</span></span>
+              <p class="pitem__desc">Ultrazvuk + ručná relaxačná masáž tváre, krku a dekoltu.</p>
+              <span class="extra">príplatok k ošetreniu: +12 € anti-age fleece mask</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Anti-age -->
+        <div class="panel" role="tabpanel" id="p-age" aria-labelledby="tab-age" tabindex="0" hidden>
+          <h3><span class="medal" aria-hidden="true"><svg class="icon"><use href="#i-sparkle"/></svg></span>Anti-age ošetrenia pleti</h3>
+          <ul class="plist">
+            <li class="pitem">
+              <span class="pitem__name">Lift &amp; Glow <small style="font-weight:500">(OxyGeneo, RF, ultrazvuk)</small></span><span class="pitem__price">76 €</span>
+              <span class="pitem__meta"><span class="dur"><svg class="icon"><use href="#i-clock"/></svg>75 min</span></span>
+              <p class="pitem__desc">Rozjasnenie a spevnenie pre každý typ pleti.</p>
+            </li>
+            <li class="pitem">
+              <span class="pitem__name">Lifting Radiance + Stem Cells</span><span class="pitem__price">66 €</span>
+              <span class="pitem__meta"><span class="dur"><svg class="icon"><use href="#i-clock"/></svg>75 min</span></span>
+              <p class="pitem__desc">Pozdvihnutie a spevnenie kontúr tváre, krku a dekoltu rádiofrekvenciou s kmeňovými bunkami.</p>
+            </li>
+            <li class="pitem">
+              <span class="pitem__name">Bio Impulse</span><span class="pitem__price">76 €</span>
+              <span class="pitem__meta"><span class="dur"><svg class="icon"><use href="#i-clock"/></svg>60 min</span></span>
+              <p class="pitem__desc">Ošetrenie Spicule (biomicroneedling) pre obnovu a revitalizáciu pleti.</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Chemický peeling -->
+        <div class="panel" role="tabpanel" id="p-peel" aria-labelledby="tab-peel" tabindex="0" hidden>
+          <h3><span class="medal" aria-hidden="true"><svg class="icon"><use href="#i-flask"/></svg></span>Chemický peeling</h3>
+          <ul class="plist">
+            <li class="pitem">
+              <span class="pitem__name">Medi Lift</span><span class="pitem__price">40 €</span>
+              <span class="pitem__meta"><span class="dur"><svg class="icon"><use href="#i-clock"/></svg>30 min</span></span>
+              <p class="pitem__desc">Omladzujúci chemický peeling zameraný na redukciu vrások a hyperpigmentácií.</p>
+            </li>
+            <li class="pitem">
+              <span class="pitem__name">Medi Glow</span><span class="pitem__price">40 €</span>
+              <span class="pitem__meta"><span class="dur"><svg class="icon"><use href="#i-clock"/></svg>30 min</span></span>
+              <p class="pitem__desc">Anti-akné chemický peeling.</p>
+            </li>
+            <li class="pitem">
+              <span class="pitem__name">Medi Glow + anti-akné ošetrenie pleti</span><span class="pitem__price">70 €</span>
+              <span class="pitem__meta"><span class="dur"><svg class="icon"><use href="#i-clock"/></svg>75 min</span></span>
+              <p class="pitem__desc">Chemický peeling + hĺbkové čistenie pleti.</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Obočie a mihalnice -->
+        <div class="panel" role="tabpanel" id="p-oboc" aria-labelledby="tab-oboc" tabindex="0" hidden>
+          <h3><span class="medal" aria-hidden="true"><svg class="icon"><use href="#i-eye"/></svg></span>Obočie a mihalnice</h3>
+          <ul class="dots">
+            <li><span class="n">WOW lifting</span><span class="lead-dots" aria-hidden="true"></span><span class="p">50 €</span></li>
+            <li><span class="n">Laminácia obočia</span><span class="lead-dots" aria-hidden="true"></span><span class="p">40 €</span></li>
+            <li><span class="n">Úprava a farbenie obočia</span><span class="lead-dots" aria-hidden="true"></span><span class="p">26 €</span></li>
+            <li><span class="n">Úprava obočia samostatne</span><span class="lead-dots" aria-hidden="true"></span><span class="p">15 €</span></li>
+            <li><span class="n">Náročná úprava obočia – doplatok</span><span class="lead-dots" aria-hidden="true"></span><span class="p">+10 €</span></li>
+            <li><span class="n">Farbenie mihalníc</span><span class="lead-dots" aria-hidden="true"></span><span class="p">15 €</span></li>
+          </ul>
+        </div>
+
+        <!-- Doplnkové služby -->
+        <div class="panel" role="tabpanel" id="p-dopl" aria-labelledby="tab-dopl" tabindex="0" hidden>
+          <h3><span class="medal" aria-hidden="true"><svg class="icon"><use href="#i-lotus"/></svg></span>Doplnkové služby</h3>
+          <p class="panel__note">pri kozmetickom ošetrení</p>
+          <ul class="dots">
+            <li><span class="n">Úprava a farbenie obočia</span><span class="lead-dots" aria-hidden="true"></span><span class="p">10 €</span></li>
+            <li><span class="n">Farbenie mihalníc</span><span class="lead-dots" aria-hidden="true"></span><span class="p">10 €</span></li>
+            <li><span class="n">Depilácia 1 malej časti tváre</span><span class="lead-dots" aria-hidden="true"></span><span class="p">5 €</span></li>
+          </ul>
+        </div>
+
+        <!-- Depilácia -->
+        <div class="panel" role="tabpanel" id="p-depi" aria-labelledby="tab-depi" tabindex="0" hidden>
+          <h3><span class="medal" aria-hidden="true"><svg class="icon"><use href="#i-drop"/></svg></span>Depilácia voskom – ženy</h3>
+          <ul class="dots">
+            <li><span class="n">Celé nohy</span><span class="lead-dots" aria-hidden="true"></span><span class="p">40 €</span></li>
+            <li><span class="n">Celé ruky</span><span class="lead-dots" aria-hidden="true"></span><span class="p">30 €</span></li>
+            <li><span class="n">Bikiny</span><span class="lead-dots" aria-hidden="true"></span><span class="p">20 €</span></li>
+            <li><span class="n">Podpazušie</span><span class="lead-dots" aria-hidden="true"></span><span class="p">15 €</span></li>
+            <li><span class="n">1 malá časť tváre <small>(horná pera, brada, líce)</small></span><span class="lead-dots" aria-hidden="true"></span><span class="p">7 €</span></li>
+          </ul>
+        </div>
+
+        <div class="price-foot">
+          <div class="notice notice--cta"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><div><strong>Neviete, ktoré ošetrenie vybrať?</strong>Zavolajte, rada vám poradím, čo vaša pleť práve potrebuje. <a href="tel:+421918797408" data-phone>0918&nbsp;797&nbsp;408</a></div></div>
+          <div class="notice"><svg class="icon" aria-hidden="true"><use href="#i-gift"/></svg><div><strong>Darčeková poukážka</strong>od 30 € – <a href="#poukazka">viac o poukážke</a></div></div>
+          <div class="notice"><svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg><div><strong>Storno podmienky</strong><a href="#storno">Pozrieť storno podmienky v sekcii Kontakt</a></div></div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -920,24 +1112,21 @@ html.js .reveal.d1{transition-delay:.08s}html.js .reveal.d2{transition-delay:.16
       <div class="videos__text">
         <p class="eyebrow">Nahliadnite ku mne</p>
         <h3>Ako to vyzerá v salóne</h3>
-        <p>Krátke video a fotky z čakárne a ošetrovne. Viac videí a výsledkov nájdete na Instagrame.</p>
+        <p>Krátke video, fotky z čakárne a salónu. Viac videí a výsledkov nájdete na Instagrame.</p>
         <a class="btn btn--ghost btn--sm" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="videa"><svg class="icon"><use href="#i-ig"/></svg>Instagram salónu</a>
       </div>
       <figure class="vid">
         <div class="vid__frame">
-          <video poster="img/poster-cakaren-salon.webp" preload="none" muted playsinline loop width="540" height="960" data-video="salon" title="Video: čakáreň a ošetrovňa salónu Svet Krásy"><source src="video/cakaren-salon.mp4" type="video/mp4"><source src="video/cakaren-salon.webm" type="video/webm"></video>
+          <video poster="img/poster-cakaren-salon.webp" preload="none" muted playsinline loop width="540" height="960" data-video="salon" title="Video: čakáreň a ošetrovňa salónu Svet Krásy"><source src="video/cakaren-salon.mp4" type="video/mp4"></video>
           <button class="vid__play" type="button" aria-label="Prehrať video zo salónu"><svg class="icon icon--fill"><use href="#i-play"/></svg></button>
         </div>
-        <figcaption><strong>Čakáreň a salón</strong> <a href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="video">na Instagrame</a></figcaption>
       </figure>
       <div class="vphotos">
         <figure class="vphoto">
           <button type="button" data-lightbox data-full="img/salon-cakaren.webp" data-caption="Čakáreň" aria-label="Zväčšiť fotografiu: Čakáreň"><img src="img/salon-cakaren-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Čakáreň salónu Svet Krásy s ružovými kreslami"></button>
-          <figcaption>Čakáreň</figcaption>
         </figure>
         <figure class="vphoto">
           <button type="button" data-lightbox data-full="img/salon-miestnost.webp" data-caption="Salón" aria-label="Zväčšiť fotografiu: Salón"><img src="img/salon-miestnost-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Ošetrovňa salónu Svet Krásy s kozmetickým lôžkom a prístrojmi"></button>
-          <figcaption>Salón</figcaption>
         </figure>
       </div>
     </div>
@@ -945,88 +1134,95 @@ html.js .reveal.d1{transition-delay:.08s}html.js .reveal.d2{transition-delay:.16
       <button class="tab" type="button" data-filter="all" aria-pressed="true">Všetko</button>
       <button class="tab" type="button" data-filter="po" aria-pressed="false">Pred a po</button>
       <button class="tab" type="button" data-filter="osetrenia" aria-pressed="false">Ošetrenia</button>
-      <button class="tab" type="button" data-filter="salon" aria-pressed="false">Salón</button>
     </div>
-    <p class="gal-note">Výsledky sú individuálne.</p>
-    <div class="grid swipe" id="gal">
-      <figure class="gitem reveal" data-cat="po">
-        <button type="button" data-lightbox data-full="img/po-plet.webp" data-caption="Pleť – pred a po" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Pleť – pred a po"><img src="img/po-plet-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Porovnanie pleti klientky pred a po ošetrení – vyhladenie a rozjasnenie"></button>
-        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Pleť – pred a po"><svg class="icon"><use href="#i-ig"/></svg></a>
-        <figcaption>Pleť – pred a po</figcaption>
+    <div class="grid" id="gal">
+      <figure class="gitem gitem--cap reveal" data-cat="po">
+        <button type="button" data-lightbox data-full="img/mihalnice-klientky-pred-a-po-wow.webp" data-caption="WOW lifting – pred a po" data-ig="https://www.instagram.com/stories/highlights/17926294203144073/" aria-label="Zväčšiť fotografiu: WOW lifting – pred a po"><img src="img/mihalnice-klientky-pred-a-po-wow-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Mihalnice klientky pred a po WOW liftingu"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/stories/highlights/17926294203144073/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: WOW lifting"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <figcaption><strong>WOW lifting</strong><small>pred a po</small></figcaption>
       </figure>
-      <figure class="gitem reveal" data-cat="po">
-        <button type="button" data-lightbox data-full="img/po-wow-1.webp" data-caption="WOW lifting – pred a po" data-ig="https://www.instagram.com/stories/highlights/17926294203144073/" aria-label="Zväčšiť fotografiu: WOW lifting – pred a po"><img src="img/po-wow-1-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Mihalnice klientky pred a po WOW liftingu"></button>
-        <a class="gitem__ig" href="https://www.instagram.com/stories/highlights/17926294203144073/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: WOW lifting – pred a po"><svg class="icon"><use href="#i-ig"/></svg></a>
-        <figcaption>WOW lifting – pred a po</figcaption>
+      <figure class="gitem gitem--cap reveal" data-cat="po">
+        <button type="button" data-lightbox data-full="img/mihalnice-dalsej-klientky-pred-a-po.webp" data-caption="WOW lifting – pred a po" data-ig="https://www.instagram.com/stories/highlights/17926294203144073/" aria-label="Zväčšiť fotografiu: WOW lifting – pred a po"><img src="img/mihalnice-dalsej-klientky-pred-a-po-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Mihalnice ďalšej klientky pred a po WOW liftingu"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/stories/highlights/17926294203144073/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: WOW lifting"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <figcaption><strong>WOW lifting</strong><small>pred a po</small></figcaption>
       </figure>
-      <figure class="gitem reveal" data-cat="po">
-        <button type="button" data-lightbox data-full="img/po-obocie.webp" data-caption="Obočie – pred a po" data-ig="https://www.instagram.com/stories/highlights/17924867373164888/" aria-label="Zväčšiť fotografiu: Obočie – pred a po"><img src="img/po-obocie-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Obočie klientky pred a po úprave"></button>
-        <a class="gitem__ig" href="https://www.instagram.com/stories/highlights/17924867373164888/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Obočie – pred a po"><svg class="icon"><use href="#i-ig"/></svg></a>
-        <figcaption>Obočie – pred a po</figcaption>
+      <figure class="gitem gitem--cap reveal" data-cat="po">
+        <button type="button" data-lightbox data-full="img/mihalnice-klientky-pred-a-po-wow-2.webp" data-caption="WOW lifting – pred a po" data-ig="https://www.instagram.com/stories/highlights/17926294203144073/" aria-label="Zväčšiť fotografiu: WOW lifting – pred a po"><img src="img/mihalnice-klientky-pred-a-po-wow-nahlad-2.webp" width="640" height="640" loading="lazy" decoding="async" alt="Mihalnice klientky pred a po WOW liftingu"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/stories/highlights/17926294203144073/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: WOW lifting"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <figcaption><strong>WOW lifting</strong><small>pred a po</small></figcaption>
       </figure>
-      <figure class="gitem reveal" data-cat="po">
-        <button type="button" data-lightbox data-full="img/po-spicule.webp" data-caption="Spicule biomicroneedling – pred a po" data-ig="https://www.instagram.com/stories/highlights/17880015354616297/" aria-label="Zväčšiť fotografiu: Spicule biomicroneedling – pred a po"><img src="img/po-spicule-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Pleť klientky pred a po ošetrení Spicule biomicroneedling"></button>
-        <a class="gitem__ig" href="https://www.instagram.com/stories/highlights/17880015354616297/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Spicule biomicroneedling – pred a po"><svg class="icon"><use href="#i-ig"/></svg></a>
-        <figcaption>Spicule biomicroneedling – pred a po</figcaption>
+      <figure class="gitem gitem--cap reveal" data-cat="po">
+        <button type="button" data-lightbox data-full="img/plet-klientky-pred-a-po-prvom.webp" data-caption="3 Mesotherapy – pred a po. Výsledok po 1. ošetrení. Odporúčame aspoň 3–4 ošetrenia podľa stavu pleti." data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: 3 Mesotherapy – pred a po · po 1. ošetrení"><img src="img/plet-klientky-pred-a-po-prvom-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Pleť klientky pred a po prvom ošetrení 3 Mesotherapy – tvár z profilu"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: 3 Mesotherapy"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <figcaption><strong>3 Mesotherapy</strong><small>pred a po · po 1. ošetrení</small></figcaption>
       </figure>
-      <figure class="gitem reveal" data-cat="osetrenia">
-        <button type="button" data-lightbox data-full="img/os-hydrafacial.webp" data-caption="Hydrafacial – hĺbkové čistenie" data-ig="https://www.instagram.com/stories/highlights/18385547857206259/" aria-label="Zväčšiť fotografiu: Hydrafacial – hĺbkové čistenie"><img src="img/os-hydrafacial-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Hĺbkové čistenie pleti hlavicou Hydrafacial počas ošetrenia"></button>
-        <a class="gitem__ig" href="https://www.instagram.com/stories/highlights/18385547857206259/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Hydrafacial – hĺbkové čistenie"><svg class="icon"><use href="#i-ig"/></svg></a>
-        <figcaption>Hydrafacial – hĺbkové čistenie</figcaption>
+      <figure class="gitem gitem--cap reveal" data-cat="po">
+        <button type="button" data-lightbox data-full="img/celo-klientky-pred-a-po-prvom.webp" data-caption="3 Mesotherapy – pred a po. Výsledok po 1. ošetrení. Odporúčame aspoň 3–4 ošetrenia podľa stavu pleti." data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: 3 Mesotherapy – pred a po · po 1. ošetrení"><img src="img/celo-klientky-pred-a-po-prvom-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Čelo klientky pred a po prvom ošetrení 3 Mesotherapy"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: 3 Mesotherapy"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <figcaption><strong>3 Mesotherapy</strong><small>pred a po · po 1. ošetrení</small></figcaption>
       </figure>
-      <figure class="gitem reveal" data-cat="osetrenia">
-        <button type="button" data-lightbox data-full="img/os-zuzana.webp" data-caption="" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu"><img src="img/os-zuzana-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Mgr. Zuzana Machovičová pri ošetrení pleti prístrojom"></button>
-        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame"><svg class="icon"><use href="#i-ig"/></svg></a>
+      <figure class="gitem gitem--cap reveal" data-cat="po">
+        <button type="button" data-lightbox data-full="img/okolie-ust-klientky-pred-a-po.webp" data-caption="3 Mesotherapy – pred a po. Výsledok po 1. ošetrení. Odporúčame aspoň 3–4 ošetrenia podľa stavu pleti." data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: 3 Mesotherapy – pred a po · po 1. ošetrení"><img src="img/okolie-ust-klientky-pred-a-po-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Okolie úst klientky pred a po prvom ošetrení 3 Mesotherapy"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: 3 Mesotherapy"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <figcaption><strong>3 Mesotherapy</strong><small>pred a po · po 1. ošetrení</small></figcaption>
       </figure>
-      <figure class="gitem reveal" data-cat="osetrenia">
+      <figure class="gitem gitem--cap reveal" data-cat="po">
+        <button type="button" data-lightbox data-full="img/po-obocie.webp" data-caption="Obočie – pred a po" data-ig="https://www.instagram.com/stories/highlights/17924867373164888/" aria-label="Zväčšiť fotografiu: Obočie – pred a po"><img src="img/obocie-klientky-pred-a-po-uprave.webp" width="640" height="640" loading="lazy" decoding="async" alt="Obočie klientky pred a po úprave"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/stories/highlights/17924867373164888/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Obočie"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <figcaption><strong>Obočie</strong><small>pred a po</small></figcaption>
+      </figure>
+      <figure class="gitem gitem--cap reveal" data-cat="osetrenia">
+        <button type="button" data-lightbox data-full="img/klientka-po-laminacii-obocia.webp" data-caption="Laminácia obočia – po ošetrení" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Laminácia obočia – po ošetrení"><img src="img/klientka-po-laminacii-obocia-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Klientka po laminácii obočia"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Laminácia obočia"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <figcaption><strong>Laminácia obočia</strong><small>po ošetrení</small></figcaption>
+      </figure>
+      <figure class="gitem gitem--cap reveal" data-cat="po">
+        <button type="button" data-lightbox data-full="img/plet-klientky-pred-a-po-osetreni.webp" data-caption="Bio Impulse – pred a po" data-ig="https://www.instagram.com/stories/highlights/17880015354616297/" aria-label="Zväčšiť fotografiu: Bio Impulse – pred a po"><img src="img/plet-klientky-pred-a-po-osetreni-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Pleť klientky pred a po ošetrení Bio Impulse"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/stories/highlights/17880015354616297/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Bio Impulse"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <figcaption><strong>Bio Impulse</strong><small>pred a po</small></figcaption>
+      </figure>
+      <figure class="gitem gitem--cap reveal" data-cat="po">
+        <button type="button" data-lightbox data-full="img/porovnanie-pleti-klientky-pred-a-po.webp" data-caption="Bio Impulse – pred a po" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Bio Impulse – pred a po"><img src="img/porovnanie-pleti-klientky-pred-a-po-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Porovnanie pleti klientky pred a po ošetrení – vyhladenie a rozjasnenie"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Bio Impulse"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <figcaption><strong>Bio Impulse</strong><small>pred a po</small></figcaption>
+      </figure>
+      <figure class="gitem gitem--cap reveal" data-cat="po">
+        <button type="button" data-lightbox data-full="img/plet-klienta-pred-a-po-osetreni.webp" data-caption="Dermaneoxin – pred a po" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Dermaneoxin – pred a po"><img src="img/plet-klienta-pred-a-po-osetreni-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Pleť klienta pred a po ošetrení Dermaneoxin – hore pred, dole po"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Dermaneoxin"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <figcaption><strong>Dermaneoxin</strong><small>pred a po</small></figcaption>
+      </figure>
+      <figure class="gitem gitem--cap reveal" data-cat="osetrenia">
+        <button type="button" data-lightbox data-full="img/detail-aplikacie-osetrenia-dermaneoxin-na-celo.webp" data-caption="Dermaneoxin" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Dermaneoxin"><img src="img/detail-aplikacie-osetrenia-dermaneoxin-na-celo-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Detail aplikácie ošetrenia Dermaneoxin na čelo klienta"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Dermaneoxin"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <figcaption><strong>Dermaneoxin</strong></figcaption>
+      </figure>
+      <figure class="gitem gitem--cap reveal" data-cat="po">
+        <button type="button" data-lightbox data-full="img/nos-a-pory-klientky-pred-a.webp" data-caption="Hydrafacial – pred a po" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Hydrafacial – pred a po"><img src="img/nos-a-pory-klientky-pred-a-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Nos a póry klientky pred a po ošetrení Hydrafacial"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Hydrafacial"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <figcaption><strong>Hydrafacial</strong><small>pred a po</small></figcaption>
+      </figure>
+      <figure class="gitem gitem--cap reveal" data-cat="osetrenia">
+        <button type="button" data-lightbox data-full="img/hlbkove-cistenie-pleti-hlavicou-hydrafacial-pocas.webp" data-caption="Hydrafacial – hĺbkové čistenie pleti" data-ig="https://www.instagram.com/stories/highlights/18385547857206259/" aria-label="Zväčšiť fotografiu: Hydrafacial – hĺbkové čistenie pleti"><img src="img/hlbkove-cistenie-pleti-hlavicou-hydrafacial-pocas-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Hĺbkové čistenie pleti hlavicou Hydrafacial počas ošetrenia"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/stories/highlights/18385547857206259/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Hydrafacial"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <figcaption><strong>Hydrafacial</strong><small>hĺbkové čistenie pleti</small></figcaption>
+      </figure>
+      <figure class="gitem gitem--cap reveal" data-cat="osetrenia">
         <button type="button" data-lightbox data-full="img/os-svetlo.webp" data-caption="LED terapia – červené svetlo" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: LED terapia – červené svetlo"><img src="img/os-svetlo-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Klientka počas LED terapie červeným svetlom"></button>
-        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: LED terapia – červené svetlo"><svg class="icon"><use href="#i-ig"/></svg></a>
-        <figcaption>LED terapia – červené svetlo</figcaption>
-      </figure>
-      <figure class="gitem reveal" data-cat="osetrenia">
-        <button type="button" data-lightbox data-full="img/os-po-osetreni.webp" data-caption="Klientka po laminácii obočia" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Klientka po laminácii obočia"><img src="img/os-po-osetreni-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Klientka po laminácii obočia"></button>
-        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Klientka po laminácii obočia"><svg class="icon"><use href="#i-ig"/></svg></a>
-        <figcaption>Klientka po laminácii obočia</figcaption>
-      </figure>
-      <figure class="gitem reveal" data-cat="osetrenia">
-        <button type="button" data-lightbox data-full="img/os-zuzana-2.webp" data-caption="Nanášam a vmasírovávam do pleti thermo peeling" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Nanášam a vmasírovávam do pleti thermo peeling"><img src="img/os-zuzana-2-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Nanášanie a vmasírovanie thermo peelingu do pleti klientky"></button>
-        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Nanášam a vmasírovávam do pleti thermo peeling"><svg class="icon"><use href="#i-ig"/></svg></a>
-        <figcaption>Nanášam a vmasírovávam do pleti thermo peeling</figcaption>
-      </figure>
-
-      <figure class="gitem reveal" data-cat="salon">
-        <button type="button" data-lightbox data-full="img/salon-cakaren.webp" data-caption="Čakáreň salónu" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Čakáreň salónu"><img src="img/salon-cakaren-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Čakáreň salónu Svet Krásy s dvoma ružovými kreslami a stolíkom"></button>
-        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Čakáreň salónu"><svg class="icon"><use href="#i-ig"/></svg></a>
-        <figcaption>Čakáreň salónu</figcaption>
-      </figure>
-      <figure class="gitem reveal" data-cat="salon">
-        <button type="button" data-lightbox data-full="img/salon-miestnost.webp" data-caption="Ošetrovňa" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Ošetrovňa"><img src="img/salon-miestnost-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Ošetrovňa salónu Svet Krásy s kozmetickým lôžkom a prístrojmi"></button>
-        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Ošetrovňa"><svg class="icon"><use href="#i-ig"/></svg></a>
-        <figcaption>Ošetrovňa</figcaption>
-      </figure>
-      <figure class="gitem reveal" data-cat="salon">
-        <button type="button" data-lightbox data-full="img/salon-pristroje.webp" data-caption="Prístroje na ošetrenie pleti" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Prístroje na ošetrenie pleti"><img src="img/salon-pristroje-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Kozmetické lôžko a prístroje na ošetrenie pleti v salóne Svet Krásy"></button>
-        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Prístroje na ošetrenie pleti"><svg class="icon"><use href="#i-ig"/></svg></a>
-        <figcaption>Prístroje na ošetrenie pleti</figcaption>
-      </figure>
-      <figure class="gitem reveal" data-cat="salon">
-        <button type="button" data-lightbox data-full="img/salon-zuzana.webp" data-caption="Zuzana pri práci" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Zuzana pri práci"><img src="img/salon-zuzana-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Mgr. Zuzana Machovičová za stolom v salóne Svet Krásy"></button>
-        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Zuzana pri práci"><svg class="icon"><use href="#i-ig"/></svg></a>
-        <figcaption>Zuzana pri práci</figcaption>
-      </figure>
-      <figure class="gitem reveal" data-cat="salon">
-        <button type="button" data-lightbox data-full="img/salon-osetrovna.webp" data-caption="LED terapia" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: LED terapia"><img src="img/salon-osetrovna-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Ošetrovňa salónu Svet Krásy s klientkou počas LED terapie"></button>
         <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: LED terapia"><svg class="icon"><use href="#i-ig"/></svg></a>
-        <figcaption>LED terapia</figcaption>
+        <figcaption><strong>LED terapia</strong><small>červené svetlo</small></figcaption>
       </figure>
-      <figure class="gitem reveal" data-cat="salon">
-        <button type="button" data-lightbox data-full="img/salon-osetrovna-2.webp" data-caption="LED terapia" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: LED terapia"><img src="img/salon-osetrovna-2-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Ošetrovňa salónu Svet Krásy – klientka pod LED maskou"></button>
+      <figure class="gitem gitem--cap reveal" data-cat="osetrenia">
+        <button type="button" data-lightbox data-full="img/salon-osetrovna.webp" data-caption="LED terapia – zelené svetlo" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: LED terapia – zelené svetlo"><img src="img/salon-osetrovna-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Ošetrovňa salónu Svet Krásy s klientkou počas LED terapie"></button>
         <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: LED terapia"><svg class="icon"><use href="#i-ig"/></svg></a>
-        <figcaption>LED terapia</figcaption>
+        <figcaption><strong>LED terapia</strong><small>zelené svetlo</small></figcaption>
+      </figure>
+      <figure class="gitem gitem--cap reveal" data-cat="osetrenia">
+        <button type="button" data-lightbox data-full="img/mgr-zuzana-machovicova-pri-osetreni-pleti.webp" data-caption="Ošetrenie pleti – prístrojom" data-ig="https://www.instagram.com/kozmeticky_salon_svet_krasy/" aria-label="Zväčšiť fotografiu: Ošetrenie pleti – prístrojom"><img src="img/mgr-zuzana-machovicova-pri-osetreni-pleti-nahlad.webp" width="640" height="640" loading="lazy" decoding="async" alt="Mgr. Zuzana Machovičová pri ošetrení pleti prístrojom"></button>
+        <a class="gitem__ig" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria" aria-label="Pozrieť na Instagrame: Ošetrenie pleti"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <figcaption><strong>Ošetrenie pleti</strong><small>prístrojom</small></figcaption>
       </figure>
     </div>
-    <p class="swipe__hint" aria-hidden="true">← potiahnite prstom pre ďalšie fotky →</p>
-    <p class="center reveal"><a class="btn btn--primary" href="tel:+421918797408" data-booking data-loc="galeria_cta"><svg class="icon"><use href="#i-cal"/></svg>Rezervovať termín</a></p>
+    <p class="center reveal"><a class="btn btn--primary" href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="galeria_cta"><svg class="icon"><use href="#i-ig"/></svg>Ďalšie výsledky na Instagrame</a></p>
   </div>
 </section>
 
@@ -1042,7 +1238,7 @@ html.js .reveal.d1{transition-delay:.08s}html.js .reveal.d2{transition-delay:.16
     <div class="faq reveal">
       <details>
         <summary>Ako dlho trvá ošetrenie?</summary>
-        <p>Podľa typu ošetrenia približne 30 až 90 minút. Chemický peeling trvá okolo 30 minút, luxusné ošetrenia 2 v 1 do 90 minút. Presný čas vám poviem pri objednaní.</p>
+        <p>Podľa typu ošetrenia približne 30 až 90 minút. Chemický peeling trvá okolo 30 minút, luxusné ošetrenia 2 v 1 do 90 minút. Presný čas pri ošetreniach pleti a chemickom peelingu nájdete v cenníku. Pri obočí, mihalniciach a depilácii vám čas poviem pri objednaní.</p>
       </details>
       <details>
         <summary>Je ošetrenie bolestivé?</summary>
@@ -1289,7 +1485,7 @@ const OPENING_HOURS = [
         if (e.isIntersecting) navLinks.forEach(function (a) { a.classList.toggle('is-active', a.getAttribute('href') === '#' + e.target.id); });
       });
     }, { rootMargin: '-45% 0px -50% 0px' });
-    ['sluzby', 'o-mne', 'certifikaty', 'balicky', 'poukazka', 'recenzie', 'galeria', 'kontakt'].forEach(function (id) { const el = document.getElementById(id); el && secObs.observe(el); });
+    ['sluzby', 'o-mne', 'certifikaty', 'cennik', 'balicky', 'poukazka', 'recenzie', 'galeria', 'kontakt'].forEach(function (id) { const el = document.getElementById(id); el && secObs.observe(el); });
     if (!reduceMotion) {
       const rev = new IntersectionObserver(function (entries) {
         entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); rev.unobserve(e.target); } });
@@ -1464,6 +1660,9 @@ const OPENING_HOURS = [
 
   const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
 })();
+</script>
+<script>
+document.querySelectorAll('[data-slide]').forEach(function(b){b.addEventListener('click',function(){var r=document.getElementById(b.dataset.target);if(!r)return;var c=r.querySelector('.cert');var step=c?c.getBoundingClientRect().width+14:r.clientWidth*0.8;r.scrollBy({left:step*(+b.dataset.slide),behavior:'smooth'});});});
 </script>
 </body>
 </html>
