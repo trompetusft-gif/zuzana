@@ -60,6 +60,13 @@ footer a{color:#F6E2C6}
 </style>
 </head>
 <body>
+<!-- Lišta načítavania webu -->
+<div id="loadbar" aria-hidden="true"></div>
+<style>#loadbar{position:fixed;top:0;left:0;height:3px;width:0;z-index:10000;background:linear-gradient(90deg,#B98A4F,#E4C590,#74263A);box-shadow:0 0 10px rgba(185,138,79,.7);border-radius:0 3px 3px 0;transition:width .35s ease,opacity .4s ease;pointer-events:none}</style>
+<script>(function(){var b=document.getElementById('loadbar'),w=8,done=false;b.style.width=w+'%';
+(function step(){if(done)return;w+=(90-w)*.09;b.style.width=w+'%';setTimeout(step,160);})();
+function finish(){if(done)return;done=true;b.style.width='100%';setTimeout(function(){b.style.opacity='0';},350);setTimeout(function(){b.remove();},900);}
+if(document.readyState==='complete')finish();else window.addEventListener('load',finish);setTimeout(finish,12000);})();</script>
 <header class="top">
   <div class="top__in">
     <a class="brand" href="index.html"><img src="img/logo-mala.webp" width="46" height="46" alt="Logo Svet Krásy"><span>SVET KRÁSY</span></a>
