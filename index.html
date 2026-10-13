@@ -702,6 +702,22 @@ html.js .reveal.d1{transition-delay:.08s}html.js .reveal.d2{transition-delay:.16
 .gitem--cap figcaption{flex:1;display:flex;flex-direction:column;justify-content:center;min-height:62px;padding:10px 10px 12px}
 .gitem--cap figcaption strong{font-size:13.5px}
 .gitem--cap figcaption small{font-size:14px;margin-top:3px;font-style:italic}
+
+/* Mapa – karta s fotkou salónu, kým sa nenačíta Google mapa */
+.map__ph{position:relative!important;inset:auto!important;min-height:440px;height:100%;padding:0!important;background:#3E1019!important;overflow:hidden}
+.map__bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55;transform:scale(1.04)}
+.map__ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(62,16,25,.25) 0%,rgba(62,16,25,.82) 100%)}
+.map__card{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;padding:28px 22px;margin:20px;border-radius:20px;background:rgba(255,251,250,.94);box-shadow:0 30px 60px -30px rgba(0,0,0,.6);max-width:420px}
+.map__logo{width:64px;height:64px;border-radius:50%;box-shadow:0 0 0 2px rgba(185,138,79,.6);margin-top:-2px}
+.map__eyebrow{margin:0;display:flex;align-items:center;gap:6px;font-family:var(--f-display);font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-text)}
+.map__eyebrow .icon{width:16px;height:16px}
+.map__name{font-family:var(--f-display);font-weight:500;color:var(--wine);font-size:clamp(19px,2.2vw,23px);letter-spacing:.04em;line-height:1.25}
+.map__addr{margin:0;color:var(--text);font-size:17.5px;line-height:1.45}
+.map__addr span{color:var(--muted);font-size:15.5px}
+.map__btns{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:6px}
+.map__note{margin:2px 0 0;font-size:13.5px;color:var(--muted)}
+.map__open{position:absolute;left:12px;bottom:12px;z-index:2;box-shadow:0 10px 24px -10px rgba(62,16,25,.6)}
+.map iframe{display:block}
 </style>
 </head>
 <body>
@@ -1407,10 +1423,18 @@ if(document.readyState==='complete')finish();else window.addEventListener('load'
       </div>
       <div class="map reveal d1" id="map">
         <div class="map__ph" id="map-ph">
-          <span class="medal" aria-hidden="true"><svg class="icon"><use href="#i-pin"/></svg></span>
-          <strong>Mapa prevádzky</strong>
-          <p>Mapa sa načíta zo služby Google Maps (Google môže pri tom použiť vlastné cookies). Zobrazí sa po kliknutí alebo po súhlase s externým obsahom.</p>
-          <button class="btn btn--ghost btn--sm" type="button" id="map-load">Zobraziť mapu</button>
+          <img class="map__bg" src="img/salon-cakaren.webp" alt="" loading="lazy" decoding="async">
+          <div class="map__card">
+            <img class="map__logo" src="img/logo-mala.webp" width="64" height="64" alt="">
+            <p class="map__eyebrow"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Kde nás nájdete</p>
+            <strong class="map__name">Svet Krásy – kozmetický salón</strong>
+            <p class="map__addr">7. pešieho pluku 1415/2, 949 01 Nitra<br><span>Mestská tržnica, oproti Mlynom</span></p>
+            <div class="map__btns">
+              <a class="btn btn--primary btn--sm" href="https://www.google.com/maps/place/Svet+Kr%C3%A1sy+%E2%80%93+kozmetick%C3%BD+sal%C3%B3n/@48.307069,18.084813,404m/data=!3m1!1e3!4m10!1m2!2m1!1zU3ZldCBLcsOhc3kg4oCTIGtvem1ldGlja8O9IHNhbMOzbiwgNy4gcGXFoWllaG8gcGx1a3UgMTQxNS8yLCA5NDkgMDEgTml0cmE!3m6!1s0x476b3f30b5741e27:0xfb6a9cfa49fd1cb!8m2!3d48.307069!4d18.084813!15sCkpTdmV0IEtyw6FzeSDigJMga296bWV0aWNrw70gc2Fsw7NuLCA3LiBwZcWhaWVobyBwbHVrdSAxNDE1LzIsIDk0OSAwMSBOaXRyYZIBCmZhY2lhbF9zcGHgAQA!16s%2Fg%2F11s7gt0m35?hl=sk&amp;entry=ttu&amp;g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" data-loc="mapa_google"><svg class="icon"><use href="#i-pin"/></svg>Otvoriť v Google Mapách</a>
+              <button class="btn btn--ghost btn--sm map__load" type="button" id="map-load">Zobraziť mapu tu</button>
+            </div>
+            <p class="map__note">Mapa Google sa načíta až po kliknutí (môže použiť vlastné cookies).</p>
+          </div>
         </div>
       </div>
     </div>
@@ -1700,6 +1724,12 @@ const OPENING_HOURS = [
     f.allowFullscreen = true;
     $('#map').appendChild(f);
     $('#map-ph').remove();
+    const o = document.createElement('a');
+    o.className = 'btn btn--primary btn--sm map__open';
+    o.href = 'https://www.google.com/maps/place/Svet+Kr%C3%A1sy+%E2%80%93+kozmetick%C3%BD+sal%C3%B3n/@48.307069,18.084813,404m/data=!3m1!1e3!4m10!1m2!2m1!1zU3ZldCBLcsOhc3kg4oCTIGtvem1ldGlja8O9IHNhbMOzbiwgNy4gcGXFoWllaG8gcGx1a3UgMTQxNS8yLCA5NDkgMDEgTml0cmE!3m6!1s0x476b3f30b5741e27:0xfb6a9cfa49fd1cb!8m2!3d48.307069!4d18.084813!15sCkpTdmV0IEtyw6FzeSDigJMga296bWV0aWNrw70gc2Fsw7NuLCA3LiBwZcWhaWVobyBwbHVrdSAxNDE1LzIsIDk0OSAwMSBOaXRyYZIBCmZhY2lhbF9zcGHgAQA!16s%2Fg%2F11s7gt0m35?hl=sk&entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D';
+    o.target = '_blank'; o.rel = 'noopener';
+    o.textContent = 'Otvoriť v Google Mapách';
+    $('#map').appendChild(o);
   }
   $('#map-load').addEventListener('click', loadMap);
 
