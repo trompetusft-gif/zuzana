@@ -776,7 +776,7 @@ if(document.readyState==='complete')finish();else window.addEventListener('load'
         <li><a href="#kontakt">Kontakt</a></li>
       </ul>
     </nav>
-    <a class="btn btn--primary btn--sm header__cta" href="tel:+421918797408" data-booking data-loc="hlavicka"><svg class="icon"><use href="#i-cal"/></svg>Rezervovať</a>
+    <a class="btn btn--primary btn--sm header__cta" href="tel:+421918797408" data-booking data-loc="header"><svg class="icon"><use href="#i-cal"/></svg>Rezervovať</a>
     <button class="burger" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Otvoriť menu"><span></span></button>
   </div>
 </header>
@@ -791,8 +791,8 @@ if(document.readyState==='complete')finish();else window.addEventListener('load'
     <li><a href="#kontakt">Kontakt</a></li>
   </ul>
   <div class="mnav__foot">
-    <a class="btn btn--primary" href="tel:+421918797408" data-booking data-loc="mobilne_menu"><svg class="icon"><use href="#i-cal"/></svg>Rezervovať termín</a>
-    <a class="mnav__phone" href="tel:+421918797408" data-phone>0918&nbsp;797&nbsp;408</a>
+    <a class="btn btn--primary" href="tel:+421918797408" data-booking data-loc="mobil-menu"><svg class="icon"><use href="#i-cal"/></svg>Rezervovať termín</a>
+    <a class="mnav__phone" href="tel:+421918797408" data-phone data-loc="mobil-menu">0918&nbsp;797&nbsp;408</a>
   </div>
 </nav>
 
@@ -812,11 +812,11 @@ if(document.readyState==='complete')finish();else window.addEventListener('load'
       <p class="hero__text reveal d2">Profesionálne hĺbkové ošetrenia pleti pre ženy, ktoré chcú mať čistú, hydratovanú, hladšiu a viditeľne sviežejšiu pleť. Pomáham ženám dostať ich pleť do lepšej kondície a potom ju cielene omladzovať.</p>
       <div class="hero__ctas reveal d3">
         <a class="btn btn--primary" href="tel:+421918797408" data-booking data-loc="hero"><svg class="icon"><use href="#i-cal"/></svg>Rezervovať termín</a>
-        <a class="btn btn--ghost" href="tel:+421918797408" data-phone data-loc="hero_zavolat"><svg class="icon"><use href="#i-phone"/></svg>Zavolať</a>
+        <a class="btn btn--ghost" href="tel:+421918797408" data-phone data-loc="hero"><svg class="icon"><use href="#i-phone"/></svg>Zavolať</a>
       </div>
       <ul class="hero__info reveal d3">
         <li><svg class="icon"><use href="#i-pin"/></svg><span>7. pešieho pluku 1415/2, Nitra<small>Mestská tržnica, oproti Mlynom</small></span></li>
-        <li><svg class="icon"><use href="#i-phone"/></svg><a href="tel:+421918797408" data-phone>0918&nbsp;797&nbsp;408</a></li>
+        <li><svg class="icon"><use href="#i-phone"/></svg><a href="tel:+421918797408" data-phone data-loc="hero">0918&nbsp;797&nbsp;408</a></li>
       </ul>
     </div>
   </div>
@@ -988,7 +988,7 @@ if(document.readyState==='complete')finish();else window.addEventListener('load'
     </div>
     <p class="reviews__hint" aria-hidden="true">← potiahnite prstom pre ďalšie certifikáty →</p>
     <p class="center reveal">
-      <a class="btn btn--ghost" id="google-reviews" href="https://www.google.com/search?sca_esv=42b7bc95fdf18e3f&amp;sxsrf=APpeQnuMgw1oej3Nf3fsmNtbKUsJg9_l4A:1791026998066&amp;q=Svet+Kr%C3%A1sy+kozmetick%C3%BD+sal%C3%B3n+Nitra&amp;si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_84lEH3s6a43OeXeYuK90ZuIEVTy8EjIyalRY2wb3lctndTIGtiQetXO3pkWpZ98p-FQLFk%3D&amp;uds=AJ5uw195omnGJ76DOhPThDoE1qc-R4sjJjzkHozle2KJJik7AQ0ZrgvgR1tH6YZVPoBu0mmdQLG7qfwaFBAcWLNDBKZtpx_UPv3pBZh7op2g6Uc1daXmiU7GtbqsQtkqWDihw1C7DN7zly5SW-8S__0dEvzp3Rcc9w&amp;sa=X&amp;ved=2ahUKEwj2m4LA352XAxUWhP0HHYTEGNsQ3PALegQIHBAE&amp;biw=1920&amp;bih=945&amp;dpr=1#sv=CAESzQEKuQEStgEKd0FKaVQ0dEkxdy1BeXExTG5MclpYMmZWUjJVRDFqN0NpUW5mV19Udy1rcGgxMElSSkFyeXI2OUVFSHFBS2xSalBZMGZfc0ttTERpbEUyMks4MXhNamZ2MXNES1JBTGJYLS1CandTU1JjT3pETnRTZVhrVHItX3drEhdPdWZBYXNYek83bkJ3UEFQMi1lN2lRVRoiQURzcjlmVFBtaXpQYXFfdE8wajhxVTBsanBZTFljQ2Q2URIEODA1MRoBMyoAMAA4AUAAGAAgjZ6mowNKAhAB" target="_blank" rel="noopener"><svg class="icon icon--fill" style="color:var(--gold)"><use href="#i-star"/></svg>Recenzie na Google</a>
+      <a class="btn btn--ghost" id="google-reviews" data-reviews data-loc="recenzie" href="https://www.google.com/search?sca_esv=42b7bc95fdf18e3f&amp;sxsrf=APpeQnuMgw1oej3Nf3fsmNtbKUsJg9_l4A:1791026998066&amp;q=Svet+Kr%C3%A1sy+kozmetick%C3%BD+sal%C3%B3n+Nitra&amp;si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_84lEH3s6a43OeXeYuK90ZuIEVTy8EjIyalRY2wb3lctndTIGtiQetXO3pkWpZ98p-FQLFk%3D&amp;uds=AJ5uw195omnGJ76DOhPThDoE1qc-R4sjJjzkHozle2KJJik7AQ0ZrgvgR1tH6YZVPoBu0mmdQLG7qfwaFBAcWLNDBKZtpx_UPv3pBZh7op2g6Uc1daXmiU7GtbqsQtkqWDihw1C7DN7zly5SW-8S__0dEvzp3Rcc9w&amp;sa=X&amp;ved=2ahUKEwj2m4LA352XAxUWhP0HHYTEGNsQ3PALegQIHBAE&amp;biw=1920&amp;bih=945&amp;dpr=1#sv=CAESzQEKuQEStgEKd0FKaVQ0dEkxdy1BeXExTG5MclpYMmZWUjJVRDFqN0NpUW5mV19Udy1rcGgxMElSSkFyeXI2OUVFSHFBS2xSalBZMGZfc0ttTERpbEUyMks4MXhNamZ2MXNES1JBTGJYLS1CandTU1JjT3pETnRTZVhrVHItX3drEhdPdWZBYXNYek83bkJ3UEFQMi1lN2lRVRoiQURzcjlmVFBtaXpQYXFfdE8wajhxVTBsanBZTFljQ2Q2URIEODA1MRoBMyoAMAA4AUAAGAAgjZ6mowNKAhAB" target="_blank" rel="noopener"><svg class="icon icon--fill" style="color:var(--gold)"><use href="#i-star"/></svg>Recenzie na Google</a>
     </p>
   </div>
 </section>
@@ -1169,7 +1169,7 @@ if(document.readyState==='complete')finish();else window.addEventListener('load'
         </div>
 
         <div class="price-foot">
-          <div class="notice notice--cta"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><div><strong>Neviete, ktoré ošetrenie vybrať?</strong>Zavolajte, rada vám poradím, čo vaša pleť práve potrebuje. <a href="tel:+421918797408" data-phone>0918&nbsp;797&nbsp;408</a></div></div>
+          <div class="notice notice--cta"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><div><strong>Neviete, ktoré ošetrenie vybrať?</strong>Zavolajte, rada vám poradím, čo vaša pleť práve potrebuje. <a href="tel:+421918797408" data-phone data-loc="cennik">0918&nbsp;797&nbsp;408</a></div></div>
           <div class="notice"><svg class="icon" aria-hidden="true"><use href="#i-gift"/></svg><div><strong>Darčeková poukážka</strong>od 30 € – <a href="#poukazka">viac o poukážke</a></div></div>
           <div class="notice"><svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg><div><strong>Storno podmienky</strong><a href="#storno">Pozrieť storno podmienky v sekcii Kontakt</a></div></div>
         </div>
@@ -1225,7 +1225,7 @@ if(document.readyState==='complete')finish();else window.addEventListener('load'
         <p class="voucher__price">v hodnote od<strong>30 €</strong></p>
         <p>Darujte chvíľu starostlivosti a oddychu. O darčekovú poukážku sa informujte telefonicky alebo priamo v salóne.</p>
         <p class="voucher__valid">Platnosť poukážky: <strong>3 mesiace od zakúpenia</strong></p>
-        <a class="btn btn--ghost" href="tel:+421918797408" data-phone><svg class="icon"><use href="#i-phone"/></svg>0918&nbsp;797&nbsp;408</a>
+        <a class="btn btn--ghost" href="tel:+421918797408" data-phone data-loc="poukazka"><svg class="icon"><use href="#i-phone"/></svg>0918&nbsp;797&nbsp;408</a>
       </div>
     </div>
   </div>
@@ -1408,15 +1408,15 @@ if(document.readyState==='complete')finish();else window.addEventListener('load'
     <div class="contact">
       <div class="cbox reveal">
         <ul class="clist">
-          <li><span class="medal" aria-hidden="true"><svg class="icon"><use href="#i-pin"/></svg></span><div><h3>Adresa prevádzky</h3><p>7. pešieho pluku 1415/2<br>949 01 Nitra<br><small style="color:var(--muted)">Mestská tržnica, oproti Mlynom</small></p><p><a href="https://www.google.com/maps/place/Svet+Kr%C3%A1sy+%E2%80%93+kozmetick%C3%BD+sal%C3%B3n/@48.3070708,18.0835238,404m/data=!3m2!1e3!4b1!4m6!3m5!1s0x476b3f30b5741e27:0xfb6a9cfa49fd1cb!8m2!3d48.307069!4d18.084813!16s%2Fg%2F11s7gt0m35?hl=sk&amp;entry=ttu&amp;g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">Navigovať <span aria-hidden="true">→</span></a></p></div></li>
-          <li><span class="medal" aria-hidden="true"><svg class="icon"><use href="#i-phone"/></svg></span><div><h3>Telefón a rezervácie</h3><p><a href="tel:+421918797408" data-phone>0918&nbsp;797&nbsp;408</a></p><p style="margin-top:10px"><a class="btn btn--primary btn--sm" href="tel:+421918797408" data-booking data-loc="kontakt"><svg class="icon"><use href="#i-cal"/></svg>Rezervovať</a></p></div></li>
+          <li><span class="medal" aria-hidden="true"><svg class="icon"><use href="#i-pin"/></svg></span><div><h3>Adresa prevádzky</h3><p>7. pešieho pluku 1415/2<br>949 01 Nitra<br><small style="color:var(--muted)">Mestská tržnica, oproti Mlynom</small></p><p><a href="https://www.google.com/maps/place/Svet+Kr%C3%A1sy+%E2%80%93+kozmetick%C3%BD+sal%C3%B3n/@48.3070708,18.0835238,404m/data=!3m2!1e3!4b1!4m6!3m5!1s0x476b3f30b5741e27:0xfb6a9cfa49fd1cb!8m2!3d48.307069!4d18.084813!16s%2Fg%2F11s7gt0m35?hl=sk&amp;entry=ttu&amp;g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" data-maps data-loc="kontakt">Navigovať <span aria-hidden="true">→</span></a></p></div></li>
+          <li><span class="medal" aria-hidden="true"><svg class="icon"><use href="#i-phone"/></svg></span><div><h3>Telefón a rezervácie</h3><p><a href="tel:+421918797408" data-phone data-loc="kontakt">0918&nbsp;797&nbsp;408</a></p><p style="margin-top:10px"><a class="btn btn--primary btn--sm" href="tel:+421918797408" data-booking data-loc="kontakt"><svg class="icon"><use href="#i-cal"/></svg>Rezervovať</a></p></div></li>
           <li><span class="medal" aria-hidden="true"><svg class="icon"><use href="#i-clock"/></svg></span><div><h3>Otváracie hodiny</h3>
             <!-- Hodiny sa nastavujú v skripte na konci súboru: premenná OPENING_HOURS -->
             <table class="hours" id="hours"><tbody><tr><td>Po–Pi</td><td>na objednávku</td></tr><tr><td>So–Ne</td><td>zatvorené</td></tr></tbody></table></div></li>
           <li><span class="medal" aria-hidden="true"><svg class="icon"><use href="#i-sparkle"/></svg></span><div><h3>Sociálne siete</h3>
             <div class="social">
-              <a href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram"><svg class="icon"><use href="#i-ig"/></svg>Instagram</a>
-              <a href="https://www.facebook.com/kozmetikasvetkrasy/" target="_blank" rel="noopener" data-social="facebook"><svg class="icon"><use href="#i-fb"/></svg>Facebook</a>
+              <a href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="kontakt"><svg class="icon"><use href="#i-ig"/></svg>Instagram</a>
+              <a href="https://www.facebook.com/kozmetikasvetkrasy/" target="_blank" rel="noopener" data-social="facebook" data-loc="kontakt"><svg class="icon"><use href="#i-fb"/></svg>Facebook</a>
             </div></div></li>
         </ul>
         <div class="notice" id="storno" style="margin-top:24px"><svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg><div><strong>Storno podmienky</strong>75 % z ceny dohodnutého ošetrenia sa účtuje, ak termín zrušíte menej ako 24 h vopred, ak na termín vôbec neprídete alebo ak meškáte viac ako 15 minút. <a href="obchodne-podmienky.html">Celé obchodné podmienky</a></div></div>
@@ -1430,7 +1430,7 @@ if(document.readyState==='complete')finish();else window.addEventListener('load'
             <strong class="map__name">Svet Krásy – kozmetický salón</strong>
             <p class="map__addr">7. pešieho pluku 1415/2, 949 01 Nitra<br><span>Mestská tržnica, oproti Mlynom</span></p>
             <div class="map__btns">
-              <a class="btn btn--primary btn--sm" href="https://www.google.com/maps/place/Svet+Kr%C3%A1sy+%E2%80%93+kozmetick%C3%BD+sal%C3%B3n/@48.3070708,18.0835238,404m/data=!3m2!1e3!4b1!4m6!3m5!1s0x476b3f30b5741e27:0xfb6a9cfa49fd1cb!8m2!3d48.307069!4d18.084813!16s%2Fg%2F11s7gt0m35?hl=sk&amp;entry=ttu&amp;g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" data-loc="mapa_google"><svg class="icon"><use href="#i-pin"/></svg>Otvoriť v Google Mapách</a>
+              <a class="btn btn--primary btn--sm" href="https://www.google.com/maps/place/Svet+Kr%C3%A1sy+%E2%80%93+kozmetick%C3%BD+sal%C3%B3n/@48.3070708,18.0835238,404m/data=!3m2!1e3!4b1!4m6!3m5!1s0x476b3f30b5741e27:0xfb6a9cfa49fd1cb!8m2!3d48.307069!4d18.084813!16s%2Fg%2F11s7gt0m35?hl=sk&amp;entry=ttu&amp;g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" data-maps data-loc="mapa"><svg class="icon"><use href="#i-pin"/></svg>Otvoriť v Google Mapách</a>
               <button class="btn btn--ghost btn--sm map__load" type="button" id="map-load">Zobraziť mapu tu</button>
             </div>
             <p class="map__note">Mapa Google sa načíta až po kliknutí (môže použiť vlastné cookies).</p>
@@ -1453,11 +1453,11 @@ if(document.readyState==='complete')finish();else window.addEventListener('load'
       Miesto podnikania: Štiavnická 20, Nitra · IČO: 50367439<br>
       Zapísaná v Živnostenskom registri Okresného úradu Nitra, č. 430-49151<br>
       Prevádzka: 7. pešieho pluku 1415/2, 949 01 Nitra<br>
-      <a href="tel:+421918797408" data-phone>0918&nbsp;797&nbsp;408</a></p>
+      <a href="tel:+421918797408" data-phone data-loc="footer">0918&nbsp;797&nbsp;408</a></p>
     </div>
     <div class="social" style="justify-content:center">
-      <a href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" style="color:#F6E2C6;border-color:rgba(228,197,144,.4)"><svg class="icon"><use href="#i-ig"/></svg><span class="sr-only">Instagram</span></a>
-      <a href="https://www.facebook.com/kozmetikasvetkrasy/" target="_blank" rel="noopener" data-social="facebook" style="color:#F6E2C6;border-color:rgba(228,197,144,.4)"><svg class="icon"><use href="#i-fb"/></svg><span class="sr-only">Facebook</span></a>
+      <a href="https://www.instagram.com/kozmeticky_salon_svet_krasy/" target="_blank" rel="noopener" data-social="instagram" data-loc="footer" style="color:#F6E2C6;border-color:rgba(228,197,144,.4)"><svg class="icon"><use href="#i-ig"/></svg><span class="sr-only">Instagram</span></a>
+      <a href="https://www.facebook.com/kozmetikasvetkrasy/" target="_blank" rel="noopener" data-social="facebook" data-loc="footer" style="color:#F6E2C6;border-color:rgba(228,197,144,.4)"><svg class="icon"><use href="#i-fb"/></svg><span class="sr-only">Facebook</span></a>
     </div>
   </div>
   <div class="wrap" style="margin-top:30px;display:grid;justify-items:center;gap:18px">
@@ -1473,8 +1473,8 @@ if(document.readyState==='complete')finish();else window.addEventListener('load'
 
 <!-- Plávajúce tlačidlo na mobile -->
 <div class="fabbar" id="fab" aria-hidden="true">
-  <a class="btn btn--ghost" href="tel:+421918797408" data-phone tabindex="-1"><svg class="icon"><use href="#i-phone"/></svg>Zavolať</a>
-  <a class="btn btn--primary" href="tel:+421918797408" data-booking data-loc="plavajuce_tlacidlo" tabindex="-1"><svg class="icon"><use href="#i-cal"/></svg>Rezervovať</a>
+  <a class="btn btn--ghost" href="tel:+421918797408" data-phone data-loc="sticky-bar" tabindex="-1"><svg class="icon"><use href="#i-phone"/></svg>Zavolať</a>
+  <a class="btn btn--primary" href="tel:+421918797408" data-booking data-loc="sticky-bar" tabindex="-1"><svg class="icon"><use href="#i-cal"/></svg>Rezervovať</a>
 </div>
 
 <!-- Cookie lišta (zákon č. 452/2021 Z. z. § 109 ods. 8 + GDPR) -->
@@ -1528,6 +1528,17 @@ const OPENING_HOURS = [
   const $ = (s, c) => (c || document).querySelector(s);
   const $$ = (s, c) => Array.from((c || document).querySelectorAll(s));
 
+  /* ---------- Interná návštevnosť ---------- */
+  try {
+    if (new URLSearchParams(location.search).get('interne') === '1') {
+      localStorage.setItem('sk_interne', '1');
+    }
+  } catch (e) {}
+
+  function isInternal() {
+    try { return localStorage.getItem('sk_interne') === '1'; } catch (e) { return false; }
+  }
+
   /* ---------- Bezpečné úložisko ---------- */
   const store = {
     get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
@@ -1549,11 +1560,16 @@ const OPENING_HOURS = [
     s.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(GA_ID);
     document.head.appendChild(s);
     gtag('js', new Date());
-    gtag('config', GA_ID); // GA4 neukladá IP adresy
+    // DOČASNE – debug_mode po teste v GA DebugView zmazať (nechať len riadok pod ním bez debug_mode)
+    gtag('config', GA_ID, Object.assign(
+      { debug_mode: true },
+      isInternal() ? { traffic_type: 'internal' } : {}
+    )); // GA4 neukladá IP adresy
     // Kód Google tagu (gtag.js) sa načíta AŽ po súhlase – nevkladať ho natvrdo do <head> (§ 109 ods. 8 zák. 452/2021 Z. z.)
   }
   function track(name, params) {
-    if (gaLoaded) gtag('event', name, params || {});
+    if (!gaLoaded) return; // pred súhlasom sa nič neodosiela
+    gtag('event', name, Object.assign({ transport_type: 'beacon' }, params || {}));
   }
   function clearGACookies() {
     document.cookie.split(';').forEach(function (c) {
@@ -1577,10 +1593,25 @@ const OPENING_HOURS = [
     });
   });
   $$('[data-phone]').forEach(function (a) {
-    a.addEventListener('click', function () { track('klik_telefon', { umiestnenie: a.closest('section,header,footer,.mnav') ? (a.closest('section,header,footer,.mnav').id || a.closest('section,header,footer,.mnav').tagName.toLowerCase()) : 'nezname' }); });
+    a.addEventListener('click', function () { track('klik_telefon', { umiestnenie: a.dataset.loc || 'nezname' }); });
   });
   $$('[data-social]').forEach(function (a) {
     a.addEventListener('click', function () { track('klik_socialne_siete', { siet: a.dataset.social, umiestnenie: a.dataset.loc || 'nezname' }); });
+  });
+
+  /* ---------- Navigácia (Google Mapy) ---------- */
+  function bindMaps(a) {
+    a.addEventListener('click', function () {
+      track('klik_navigacia', { umiestnenie: a.dataset.loc || 'nezname' });
+    });
+  }
+  $$('[data-maps]').forEach(bindMaps);
+
+  /* ---------- Recenzie na Google ---------- */
+  $$('[data-reviews]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      track('klik_recenzie_google', { umiestnenie: a.dataset.loc || 'nezname' });
+    });
   });
 
   /* ---------- Hlavička a mobilné menu ---------- */
@@ -1729,6 +1760,9 @@ const OPENING_HOURS = [
     o.href = 'https://www.google.com/maps/place/Svet+Kr%C3%A1sy+%E2%80%93+kozmetick%C3%BD+sal%C3%B3n/@48.3070708,18.0835238,404m/data=!3m2!1e3!4b1!4m6!3m5!1s0x476b3f30b5741e27:0xfb6a9cfa49fd1cb!8m2!3d48.307069!4d18.084813!16s%2Fg%2F11s7gt0m35?hl=sk&entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D';
     o.target = '_blank'; o.rel = 'noopener';
     o.textContent = 'Otvoriť v Google Mapách';
+    o.setAttribute('data-maps', '');
+    o.dataset.loc = 'mapa-nacitana';
+    bindMaps(o);
     $('#map').appendChild(o);
   }
   $('#map-load').addEventListener('click', loadMap);
