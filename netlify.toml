@@ -1,0 +1,14 @@
+# Netlify: po každom commite (aj z administrácie /admin) spustí build a nasadí priečinok dist/
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Administrácia sa nemá ukladať do cache, aby sa vždy načítala aktuálna konfigurácia
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    Cache-Control = "no-cache"
+    X-Robots-Tag = "noindex"

@@ -1,0 +1,14 @@
+{
+  "name": "svet-krasy-web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/build.mjs --drafts && npx --yes serve@14.2.4 dist"
+  },
+  "dependencies": {
+    "gray-matter": "4.0.3",
+    "marked": "18.0.14"
+  },
+  "engines": { "node": ">=20" }
+}

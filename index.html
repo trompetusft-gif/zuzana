@@ -570,6 +570,78 @@ html.js .reveal.d1{transition-delay:.08s}html.js .reveal.d2{transition-delay:.16
   .reviews__hint{display:none}
 }
 @media (min-width:900px){.reviews{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}}
+
+/* ---------- Kalkulačka ---------- */
+html:not(.js) #kalkulacka{display:none}
+.calc{display:grid;gap:22px;max-width:1040px;margin:0 auto;align-items:start}
+.calc__pick,.calc__res{background:rgba(255,255,255,.96);border:1px solid rgba(185,138,79,.55);border-radius:22px;box-shadow:0 30px 60px -40px rgba(90,24,40,.6);padding:22px 18px}
+.calc__label{display:block;font-family:var(--f-display);font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--wine);margin:0 0 8px;font-weight:600}
+.calc__search{position:relative}
+.calc__search .icon{position:absolute;left:16px;top:50%;transform:translateY(-50%);width:20px;height:20px;color:var(--gold-text);pointer-events:none}
+.calc__search input{width:100%;min-height:52px;padding:10px 16px 10px 46px;border:1px solid var(--line);border-radius:14px;background:#FFF8F6;font:inherit;font-size:18px;color:var(--text)}
+.calc__search input:focus{outline:2px solid var(--wine-2);outline-offset:1px;background:#fff}
+.calc__groups{margin-top:16px;display:grid;gap:10px}
+.calc__grp{border:1px solid var(--line);border-radius:16px;background:#fff;overflow:hidden}
+.calc__grp summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;min-height:54px;font-family:var(--f-display);font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--wine);font-weight:600}
+.calc__grp summary::-webkit-details-marker{display:none}
+.calc__grp summary::after{content:"+";flex:none;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--gold);color:var(--gold-text);font-family:var(--f-serif);font-size:21px;line-height:1;transition:transform .3s}
+.calc__grp[open] summary::after{transform:rotate(45deg)}
+.calc__cnt{margin-left:auto;background:var(--wine);color:#fff;border-radius:999px;font-family:var(--f-serif);font-size:14px;letter-spacing:0;min-width:24px;height:24px;display:grid;place-items:center;padding:0 7px}
+.calc__cnt[hidden]{display:none}
+.calc__gnote{margin:-4px 16px 6px;font-style:italic;color:var(--gold-text);font-size:16px}
+.calc__list{list-style:none;margin:0;padding:0 8px 8px}
+.calc__item{border-top:1px dashed rgba(185,138,79,.35)}
+.calc__opt{display:grid;grid-template-columns:auto 1fr auto;gap:4px 12px;align-items:center;padding:11px 8px;cursor:pointer;border-radius:12px;line-height:1.3}
+.calc__opt:hover{background:#FFF6F4}
+.calc__opt input{width:22px;height:22px;margin:0;accent-color:var(--wine)}
+.calc__name{font-size:18px;color:var(--text)}
+.calc__name small{display:block;color:var(--muted);font-size:15px;margin-top:2px}
+.calc__price{font-weight:700;color:var(--wine);white-space:nowrap;font-size:18px}
+.calc__opt--extra{margin-left:34px;padding-top:4px}
+.calc__opt--extra .calc__name{font-size:16.5px;color:var(--muted)}
+.calc__opt--extra .calc__price{font-size:16.5px;color:var(--gold-text)}
+.calc__opt--extra:has(input:disabled){opacity:.45;cursor:not-allowed}
+.calc__empty[hidden],.calc__reset[hidden],.calc__grp[hidden],.calc__item[hidden]{display:none}
+@media (min-width:1080px) and (max-width:1239px){.nav ul{gap:0}.nav a{padding:10px 8px;letter-spacing:.1em;white-space:nowrap}.brand__name{white-space:nowrap}}
+.calc__none{margin:16px 0 0;text-align:center;color:var(--muted);font-style:italic}
+.calc__res h3{display:flex;align-items:center;gap:10px;margin:0 0 14px;font-family:var(--f-display);font-weight:600;font-size:16px;letter-spacing:.12em;text-transform:uppercase;color:var(--wine)}
+.calc__res h3 .icon{width:22px;height:22px;color:var(--gold-text)}
+.calc__empty{display:flex;gap:10px;align-items:flex-start;padding:12px 14px;border:1px solid var(--line);border-radius:14px;background:#FFF8F6;color:var(--muted);font-size:16.5px;line-height:1.4}
+.calc__empty .icon{width:20px;height:20px;margin-top:1px;color:var(--gold-text)}
+.calc__sel{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.calc__sel li{display:grid;grid-template-columns:1fr auto auto;gap:8px;align-items:center;padding:8px 0;border-bottom:1px dashed rgba(185,138,79,.4);font-size:16.5px;line-height:1.3}
+.calc__sel b{color:var(--wine);white-space:nowrap}
+.calc__x{width:32px;height:32px;border:1px solid var(--line);border-radius:50%;background:#fff;color:var(--wine);cursor:pointer;display:grid;place-items:center;font-size:18px;line-height:1}
+.calc__x:hover{background:var(--blush)}
+.calc__rows{margin:14px 0 0;display:grid;gap:6px}
+.calc__rows div{display:flex;justify-content:space-between;gap:12px;font-size:17px}
+.calc__rows dt{color:var(--muted)}
+.calc__rows dd{margin:0;font-weight:700;color:var(--text)}
+.calc__total{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:14px 0 18px;padding-top:14px;border-top:1px solid var(--gold)}
+.calc__total span{font-family:var(--f-display);font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--wine);font-weight:600}
+.calc__total strong{font-family:var(--f-display);font-size:34px;color:var(--wine);font-weight:600;line-height:1}
+.calc__btn{width:100%}
+.calc__reset{display:block;margin:12px auto 0;background:none;border:0;color:var(--wine-2);text-decoration:underline;text-underline-offset:3px;cursor:pointer;font-size:16.5px;padding:6px}
+.calc__note{display:flex;gap:8px;align-items:flex-start;margin:16px 0 0;font-size:15px;line-height:1.45;color:var(--muted)}
+.calc__note .icon{width:18px;height:18px;flex:none;margin-top:1px;color:var(--gold-text)}
+@media (min-width:900px){
+  .calc{grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:28px}
+  .calc__pick,.calc__res{padding:28px 26px}
+  .calc__res{position:sticky;top:calc(var(--header-h) + 18px)}
+}
+
+/* ---------- Blog na hlavnej stránke ---------- */
+.blogs{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),340px));justify-content:center;max-width:1080px;margin:0 auto 30px}
+.bcard{position:relative;background:#fff;border:1px solid rgba(185,138,79,.5);border-radius:20px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:transform .25s}
+.bcard:hover{transform:translateY(-3px)}
+.bcard img,.bcard__ph{aspect-ratio:16/10;width:100%;object-fit:cover;background:var(--blush) var(--marble) center/cover}
+.bcard__ph{display:block}
+.bcard__body{padding:18px 20px 22px}
+.bcard__meta{font-family:var(--f-display);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-text)}
+.bcard h3{margin:6px 0 6px;font-family:var(--f-display);font-weight:500;font-size:19px;line-height:1.3;letter-spacing:.03em;color:var(--wine)}
+.bcard h3 a{color:inherit;text-decoration:none}
+.bcard h3 a::after{content:"";position:absolute;inset:0}
+.bcard p{margin:0;color:var(--muted);font-size:17px;line-height:1.5}
 </style>
 </head>
 <body>
@@ -618,6 +690,7 @@ html.js .reveal.d1{transition-delay:.08s}html.js .reveal.d2{transition-delay:.16
         <li><a href="#o-mne">O mne</a></li>
         <li><a href="#cennik">Cenník</a></li>
         <li><a href="#balicky">Balíčky</a></li>
+        <li><a href="blog/">Blog</a></li>
         <li><a href="#kontakt">Kontakt</a></li>
       </ul>
     </nav>
@@ -633,6 +706,7 @@ html.js .reveal.d1{transition-delay:.08s}html.js .reveal.d2{transition-delay:.16
     <li><a href="#o-mne">O mne</a></li>
     <li><a href="#cennik">Cenník</a></li>
     <li><a href="#balicky">Balíčky</a></li>
+    <li><a href="blog/">Blog</a></li>
     <li><a href="#kontakt">Kontakt</a></li>
   </ul>
   <div class="mnav__foot">
@@ -998,11 +1072,52 @@ html.js .reveal.d1{transition-delay:.08s}html.js .reveal.d2{transition-delay:.16
         </div>
 
         <div class="price-foot">
+          <div class="notice notice--cta"><svg class="icon" aria-hidden="true"><use href="#i-sparkle"/></svg><div><strong>Kalkulačka ceny</strong>Vyberte si ošetrenia a hneď uvidíte celkovú cenu aj čas. <a href="#kalkulacka">Vypočítať cenu</a></div></div>
           <div class="notice notice--cta"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><div><strong>Neviete, ktoré ošetrenie vybrať?</strong>Zavolajte, rada vám poradím, čo vaša pleť práve potrebuje. <a href="tel:+421918797408" data-phone>0918&nbsp;797&nbsp;408</a></div></div>
           <div class="notice"><svg class="icon" aria-hidden="true"><use href="#i-gift"/></svg><div><strong>Darčeková poukážka</strong>od 30 € – <a href="#poukazka">viac o poukážke</a></div></div>
           <div class="notice"><svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg><div><strong>Storno podmienky</strong><a href="#storno">Pozrieť storno podmienky v sekcii Kontakt</a></div></div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= KALKULAČKA ================= -->
+<!-- Položky a ceny sa načítajú automaticky zo sekcie Cenník – stačí upravovať cenník. -->
+<section class="section section--blush" id="kalkulacka" aria-labelledby="kalk-title">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <p class="eyebrow">Kalkulačka</p>
+      <h2 class="h2" id="kalk-title">Vypočítajte si</h2>
+      <span class="script">cenu ošetrení</span>
+      <div class="ornament" aria-hidden="true"><svg><use href="#i-flourish"/></svg></div>
+      <p class="lead">Vyberte ošetrenia a doplnky. Kalkulačka spočíta celkovú cenu a približný čas návštevy.</p>
+    </header>
+
+    <div class="calc reveal">
+      <div class="calc__pick">
+        <label class="calc__label" for="calc-q">Ošetrenie alebo služba</label>
+        <div class="calc__search">
+          <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+          <input id="calc-q" type="search" placeholder="Hľadať, napr. peeling alebo obočie" autocomplete="off">
+        </div>
+        <div class="calc__groups" id="calc-groups"></div>
+        <p class="calc__none" id="calc-none" hidden>Nič sme nenašli. Skúste iné slovo.</p>
+      </div>
+
+      <aside class="calc__res" aria-labelledby="calc-res-title">
+        <h3 id="calc-res-title"><svg class="icon" aria-hidden="true"><use href="#i-cal"/></svg>Výsledok výpočtu</h3>
+        <div class="calc__empty" id="calc-empty"><svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg>Vyberte aspoň jedno ošetrenie zo zoznamu.</div>
+        <ul class="calc__sel" id="calc-sel" aria-live="polite"></ul>
+        <dl class="calc__rows">
+          <div><dt>Počet položiek</dt><dd id="calc-count">0</dd></div>
+          <div><dt>Približný čas</dt><dd id="calc-time">0 min</dd></div>
+        </dl>
+        <div class="calc__total"><span>Spolu</span><strong id="calc-total" aria-live="polite">0 €</strong></div>
+        <a class="btn btn--primary calc__btn" href="tel:+421918797408" data-booking data-loc="kalkulacka"><svg class="icon"><use href="#i-cal"/></svg>Rezervovať termín</a>
+        <button class="calc__reset" type="button" id="calc-reset" hidden>Vymazať výber</button>
+        <p class="calc__note"><svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg>Výpočet je orientačný. Konečnú cenu a postup vám potvrdím pri konzultácii podľa stavu vašej pleti.</p>
+      </aside>
     </div>
   </div>
 </section>
@@ -1168,6 +1283,23 @@ html.js .reveal.d1{transition-delay:.08s}html.js .reveal.d2{transition-delay:.16
 
 <!-- ================= ČASTÉ OTÁZKY ================= -->
 <!-- TODO: odpovede (bolestivosť, kontraindikácie, príprava, platba) dať odsúhlasiť klientke -->
+<!-- ================= BLOG ================= -->
+<!-- Články sa pridávajú v administrácii /admin. Build (npm run build) sem vloží 3 najnovšie a sekciu odkryje. -->
+<section class="section section--blush" id="blog" aria-labelledby="blog-title" hidden>
+  <div class="wrap">
+    <header class="section-head reveal">
+      <p class="eyebrow">Blog</p>
+      <h2 class="h2" id="blog-title">Rady a novinky</h2>
+      <span class="script">zo Sveta Krásy</span>
+      <div class="ornament" aria-hidden="true"><svg><use href="#i-flourish"/></svg></div>
+    </header>
+    <div class="blogs">
+<!-- BLOG:LATEST -->
+    </div>
+    <p class="center reveal"><a class="btn btn--ghost" href="blog/">Všetky články</a></p>
+  </div>
+</section>
+
 <section class="section" id="otazky" aria-labelledby="faq-title">
   <div class="wrap">
     <header class="section-head reveal">
@@ -1601,6 +1733,154 @@ const OPENING_HOURS = [
   }
 
   const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
+})();
+</script>
+<script>
+/* =========================================================
+   KALKULAČKA – položky číta zo sekcie Cenník (.pricebox .panel)
+   ========================================================= */
+(function () {
+  'use strict';
+  var root = document.getElementById('kalkulacka');
+  var box = document.querySelector('#cennik .pricebox');
+  if (!root || !box) return;
+
+  var clean = function (t) { return (t || '').replace(/\s+/g, ' ').trim(); };
+  var parsePrice = function (t) {
+    var m = (t || '').replace(/ /g, ' ').match(/(\d+(?:[.,]\d+)?)\s*€/);
+    return m ? parseFloat(m[1].replace(',', '.')) : null;
+  };
+  var eur = function (n) { return (Math.round(n * 100) / 100).toLocaleString('sk-SK') + ' €'; };
+  var norm = function (t) { return t.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase(); };
+
+  // 1) Načítanie cenníka
+  var groups = [], uid = 0;
+  box.querySelectorAll('.panel').forEach(function (panel) {
+    var cur = null;
+    Array.prototype.forEach.call(panel.children, function (el) {
+      if (el.tagName === 'H3') { cur = { name: clean(el.textContent), note: '', items: [] }; groups.push(cur); return; }
+      if (!cur) return;
+      if (el.classList.contains('panel__note')) { cur.note = clean(el.textContent); return; }
+      if (el.classList.contains('plist')) {
+        el.querySelectorAll('.pitem').forEach(function (li) {
+          var nameEl = li.querySelector('.pitem__name');
+          var price = parsePrice((li.querySelector('.pitem__price') || {}).textContent);
+          if (!nameEl || price === null) return;
+          var small = nameEl.querySelector('small');
+          var main = clean(small ? nameEl.textContent.replace(small.textContent, '') : nameEl.textContent);
+          var dur = parseInt(clean((li.querySelector('.dur') || {}).textContent), 10) || 0;
+          var item = { id: 'c' + (uid++), name: main, sub: small ? clean(small.textContent) : '', price: price, dur: dur, extras: [] };
+          li.querySelectorAll('.extra').forEach(function (ex) {
+            var t = clean(ex.textContent), p = parsePrice(t);
+            if (p === null) return;
+            var label = t.replace(/^.*?\+?\s*\d+(?:[.,]\d+)?\s*€\s*/, '');
+            item.extras.push({ id: 'c' + (uid++), name: label.charAt(0).toUpperCase() + label.slice(1), price: p, dur: 0, parent: item.id });
+          });
+          cur.items.push(item);
+        });
+      }
+      if (el.classList.contains('dots')) {
+        el.querySelectorAll('li').forEach(function (li) {
+          var n = li.querySelector('.n'), pEl = li.querySelector('.p');
+          var price = parsePrice(pEl && pEl.textContent);
+          if (!n || price === null) return;
+          var small = n.querySelector('small');
+          cur.items.push({
+            id: 'c' + (uid++),
+            name: clean(small ? n.textContent.replace(small.textContent, '') : n.textContent),
+            sub: small ? clean(small.textContent).replace(/^\(|\)$/g, '') : '',
+            price: price, dur: 0, extras: []
+          });
+        });
+      }
+    });
+  });
+  groups = groups.filter(function (g) { return g.items.length; });
+  if (!groups.length) { root.hidden = true; return; }
+
+  // 2) Vykreslenie zoznamu
+  var wrap = document.getElementById('calc-groups');
+  var all = {};
+  var opt = function (it, extra) {
+    all[it.id] = it;
+    var meta = [];
+    if (it.sub) meta.push(it.sub);
+    if (it.dur) meta.push(it.dur + ' min');
+    return '<label class="calc__opt' + (extra ? ' calc__opt--extra' : '') + '">' +
+      '<input type="checkbox" value="' + it.id + '"' + (extra ? ' disabled data-parent="' + it.parent + '"' : '') + '>' +
+      '<span class="calc__name">' + (extra ? 'príplatok: ' : '') + it.name + (meta.length ? '<small>' + meta.join(' · ') + '</small>' : '') + '</span>' +
+      '<span class="calc__price">' + (extra ? '+' : '') + eur(it.price) + '</span></label>';
+  };
+  var esc = function (t) { var d = document.createElement('div'); d.textContent = t; return d.innerHTML; };
+  wrap.innerHTML = groups.map(function (g, i) {
+    return '<details class="calc__grp"' + (i === 0 ? ' open' : '') + '><summary>' + esc(g.name) + '<span class="calc__cnt" hidden>0</span></summary>' +
+      (g.note ? '<p class="calc__gnote">' + esc(g.note) + '</p>' : '') +
+      '<ul class="calc__list">' + g.items.map(function (it) {
+        var key = esc(norm(g.name + ' ' + it.name + ' ' + it.sub));
+        it.name = esc(it.name); it.sub = esc(it.sub);
+        it.extras.forEach(function (x) { x.name = esc(x.name); });
+        return '<li class="calc__item" data-q="' + key + '">' + opt(it) + it.extras.map(function (x) { return opt(x, true); }).join('') + '</li>';
+      }).join('') + '</ul></details>';
+  }).join('');
+
+  // 3) Prepočet
+  var sel = document.getElementById('calc-sel');
+  var out = {
+    empty: document.getElementById('calc-empty'), count: document.getElementById('calc-count'),
+    time: document.getElementById('calc-time'), total: document.getElementById('calc-total'),
+    reset: document.getElementById('calc-reset')
+  };
+  var boxes = function () { return Array.prototype.slice.call(wrap.querySelectorAll('input[type=checkbox]')); };
+
+  function update() {
+    var total = 0, time = 0, picked = [];
+    boxes().forEach(function (cb) {
+      if (cb.dataset.parent) {
+        var parent = wrap.querySelector('input[value="' + cb.dataset.parent + '"]');
+        cb.disabled = !parent.checked;
+        if (!parent.checked) cb.checked = false;
+      }
+      if (cb.checked) { var it = all[cb.value]; picked.push(it); total += it.price; time += it.dur; }
+    });
+    sel.innerHTML = picked.map(function (it) {
+      return '<li><span>' + (it.parent ? '+ ' : '') + it.name + '</span><b>' + eur(it.price) + '</b><button class="calc__x" type="button" data-rm="' + it.id + '" aria-label="Odobrať: ' + it.name.replace(/"/g, '&quot;') + '">×</button></li>';
+    }).join('');
+    out.empty.hidden = picked.length > 0;
+    out.reset.hidden = picked.length === 0;
+    out.count.textContent = picked.length;
+    out.time.textContent = time ? (time >= 60 ? Math.floor(time / 60) + ' h' + (time % 60 ? ' ' + (time % 60) + ' min' : '') : time + ' min') : '–';
+    out.total.textContent = eur(total);
+    wrap.querySelectorAll('.calc__grp').forEach(function (g) {
+      var n = g.querySelectorAll('input:checked').length, c = g.querySelector('.calc__cnt');
+      c.textContent = n; c.hidden = !n;
+    });
+  }
+  wrap.addEventListener('change', update);
+  sel.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-rm]');
+    if (!b) return;
+    var cb = wrap.querySelector('input[value="' + b.dataset.rm + '"]');
+    if (cb) { cb.checked = false; update(); }
+  });
+  out.reset.addEventListener('click', function () { boxes().forEach(function (cb) { cb.checked = false; }); update(); });
+
+  // 4) Vyhľadávanie
+  var q = document.getElementById('calc-q'), none = document.getElementById('calc-none');
+  q.addEventListener('input', function () {
+    var v = norm(q.value.trim()), any = false;
+    wrap.querySelectorAll('.calc__grp').forEach(function (g, i) {
+      var hit = 0;
+      g.querySelectorAll('.calc__item').forEach(function (li) {
+        var ok = !v || li.dataset.q.indexOf(v) > -1;
+        li.hidden = !ok; if (ok) hit++;
+      });
+      g.hidden = !hit;
+      g.open = v ? hit > 0 : i === 0 || g.open;
+      if (hit) any = true;
+    });
+    none.hidden = any;
+  });
+  update();
 })();
 </script>
 </body>

@@ -1,0 +1,48 @@
+# Administrácia blogu (Decap CMS) – https://decapcms.org/docs/
+# Článok uložený tu sa zapíše do GitHub repozitára a Netlify web automaticky prebuilduje (asi 1 – 2 min).
+
+backend:
+  name: github
+  repo: trompetusft-gif/zuzana
+  branch: main
+  commit_messages:
+    create: 'Blog: nový článok „{{slug}}“'
+    update: 'Blog: úprava článku „{{slug}}“'
+    delete: 'Blog: zmazaný článok „{{slug}}“'
+    uploadMedia: 'Blog: nahraný obrázok „{{path}}“'
+    deleteMedia: 'Blog: zmazaný obrázok „{{path}}“'
+
+locale: sk
+site_url: https://svetkrasy.netlify.app
+display_url: https://svetkrasy.netlify.app
+logo_url: /img/logo-mala.webp
+
+media_folder: img/blog
+public_folder: /img/blog
+
+collections:
+  - name: blog
+    label: Blog
+    label_singular: článok
+    description: Články sa po uložení zobrazia na /blog/ a 3 najnovšie aj na hlavnej stránke.
+    folder: content/blog
+    create: true
+    slug: '{{slug}}'
+    summary: "{{title}} – {{date | date('D. M. YYYY')}}{{draft | ternary(' (koncept)', '')}}"
+    sortable_fields: [date, title]
+    view_filters:
+      - label: Koncepty
+        field: draft
+        pattern: true
+    fields:
+      - { label: Názov článku, name: title, widget: string }
+      - { label: Dátum publikovania, name: date, widget: datetime, format: 'YYYY-MM-DD', date_format: 'D. M. YYYY', time_format: false }
+      - label: Krátky popis (perex)
+        name: description
+        widget: text
+        required: false
+        hint: 1 – 2 vety. Zobrazí sa v náhľade článku a vo výsledkoch Googlu (ideálne do 160 znakov).
+      - { label: Úvodná fotka, name: image, widget: image, required: false, hint: 'Ideálne na šírku (16:9), aspoň 1200 px.' }
+      - { label: Popis fotky (pre nevidiacich a Google), name: image_alt, widget: string, required: false }
+      - { label: Koncept (nezverejňovať), name: draft, widget: boolean, default: false, hint: 'Zapnuté = článok sa na webe nezobrazí.' }
+      - { label: Text článku, name: body, widget: markdown }
