@@ -23,7 +23,8 @@ Použité src: 0,55–6,30 | 6,80–11,00 | 11,38–15,30 | 16,10–23,85 | 24,5
 Oprava titulku „nehanbí“ → „nehanbi“. Stabilizácia + priblíženie 1,07×.
 Texty: „Máš mladú priateľku?“ (0–2,2 s).
 
-## Mezoterapia (zrýchlenie 1,15×)
+## Mezoterapia (zvuk zrýchlený 1,15×, obraz normálnou rýchlosťou)
+Obraz sa znova synchronizuje so zvukom na začiatku každej frázy (úseky najviac ~2 s), skoky sú maskované striedaním priblíženia.
 Použité src: 7,20–12,55 | 13,00–15,80 | 16,30–19,15 | 20,50–29,40 | 31,50–37,60. Vystrihnuté: 0–7,20, pauzy, 29,40–31,50, 37,60–koniec.
 Titulok „ju, vypínia vrásky a“ prekrytý výrezmi zo snímok 28,90 s a 31,80 s.
 Texty: „Netúži vyzerať na 30“ (0–2,3 s), menovka „Lux Skin Ritual 3 Mesotherapy“ (2,4–7,0 s).
