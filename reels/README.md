@@ -4,7 +4,7 @@
 |---|---|---|---|
 | svetkrasy_dermaneoxin.mp4 | 24,5 s | −14,3 LUFS | −3,0 dBTP |
 | svetkrasy_mladapriatelka.mp4 | 25,6 s | −14,2 LUFS | −2,6 dBTP |
-| svetkrasy_mezoterapia.mp4 | 24,9 s | −14,2 LUFS | −1,7 dBTP |
+| svetkrasy_mezoterapia.mp4 | 24,0 s | −14,2 LUFS | −2,3 dBTP |
 
 Všetky: H.264 High, 1080x1920, 30 fps, yuv420p, AAC 48 kHz stereo 192 kb/s, +faststart.
 Kontrola: OCR každej snímky (tesseract, slk) – „vrásky“ ani „botox“ sa nevyskytuje; žiadne čierne okraje; texty v bezpečnej zóne (200 px hore, 250 px dole).
@@ -23,8 +23,8 @@ Použité src: 0,55–6,30 | 6,80–11,00 | 11,38–15,30 | 16,10–23,85 | 24,5
 Oprava titulku „nehanbí“ → „nehanbi“. Stabilizácia + priblíženie 1,07×.
 Texty: „Máš mladú priateľku?“ (0–2,2 s).
 
-## Mezoterapia (zvuk zrýchlený 1,15×, obraz normálnou rýchlosťou)
-Obraz sa znova synchronizuje so zvukom na začiatku každej frázy (úseky najviac ~2 s), skoky sú maskované striedaním priblíženia.
+## Mezoterapia (zvuk zrýchlený 1,20×, obraz plynulo normálnou rýchlosťou)
+Obraz bez skokov; reč sa voči perám rozchádza najviac o ~1,5 s v najdlhšom úseku.
 Použité src: 7,20–12,55 | 13,00–15,80 | 16,30–19,15 | 20,50–29,40 | 31,50–37,60. Vystrihnuté: 0–7,20, pauzy, 29,40–31,50, 37,60–koniec.
 Titulok „ju, vypínia vrásky a“ prekrytý výrezmi zo snímok 28,90 s a 31,80 s.
 Texty: „Netúži vyzerať na 30“ (0–2,3 s), menovka „Lux Skin Ritual 3 Mesotherapy“ (2,4–7,0 s).
