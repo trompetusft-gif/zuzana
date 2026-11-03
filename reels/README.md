@@ -9,6 +9,7 @@
 Všetky: H.264 High, 1080x1920, 30 fps, yuv420p, AAC 48 kHz stereo 192 kb/s, +faststart.
 Kontrola: OCR každej snímky (tesseract, slk) – „vrásky“ ani „botox“ sa nevyskytuje; žiadne čierne okraje; texty v bezpečnej zóne (200 px hore, 250 px dole).
 Obraz rozjasnený (stredné tóny a tiene, slabšia vinetácia).
+Titulky: pôvodné vpálené titulky sú úplne prekryté novými (Inter ExtraBold, tmavý box, aktívne slovo zlaté), časovanie fráz prevzaté z pôvodných. Opravy textu: „máš“ → „Máš“, „Mesotherapy,ktoré“ → „Mesotherapy, ktoré“, doplnené „spevnia ju,“, „nehanbí“ → „nehanbi“.
 Hudba a zvukové efekty sú vlastná syntéza (bez licencií tretích strán).
 
 ## Dermaneoxin (zrýchlenie 1,08×)
