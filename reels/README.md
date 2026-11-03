@@ -2,12 +2,13 @@
 
 | Súbor | Dĺžka | Hlasitosť | True peak |
 |---|---|---|---|
-| svetkrasy_dermaneoxin.mp4 | 26,5 s | −14,2 LUFS | −1,7 dBTP |
-| svetkrasy_mladapriatelka.mp4 | 27,6 s | −14,3 LUFS | −1,5 dBTP |
-| svetkrasy_mezoterapia.mp4 | 26,9 s | −14,2 LUFS | −1,9 dBTP |
+| svetkrasy_dermaneoxin.mp4 | 24,5 s | −14,3 LUFS | −3,0 dBTP |
+| svetkrasy_mladapriatelka.mp4 | 25,6 s | −14,2 LUFS | −2,6 dBTP |
+| svetkrasy_mezoterapia.mp4 | 24,9 s | −14,2 LUFS | −1,7 dBTP |
 
 Všetky: H.264 High, 1080x1920, 30 fps, yuv420p, AAC 48 kHz stereo 192 kb/s, +faststart.
 Kontrola: OCR každej snímky (tesseract, slk) – „vrásky“ ani „botox“ sa nevyskytuje; žiadne čierne okraje; texty v bezpečnej zóne (200 px hore, 250 px dole).
+Obraz rozjasnený (stredné tóny a tiene, slabšia vinetácia).
 Hudba a zvukové efekty sú vlastná syntéza (bez licencií tretích strán).
 
 ## Dermaneoxin (zrýchlenie 1,08×)
@@ -25,7 +26,7 @@ Použité src: 7,20–12,55 | 13,00–15,80 | 16,30–19,15 | 20,50–29,40 | 31
 Titulok „ju, vypínia vrásky a“ prekrytý výrezmi zo snímok 28,90 s a 31,80 s.
 Texty: „Netúži vyzerať na 30“ (0–2,3 s), menovka „Lux Skin Ritual 3 Mesotherapy“ (2,4–7,0 s).
 
-## Záverečná karta (5 s, #1B2023)
+## Záverečná karta (3 s, #1B2023)
 1. Do Vianoc s rozžiarenou pleťou
 2. Dermaneoxin: „1. ošetrenie 110 € namiesto 123 € (akcia počas novembra)“ · Mladá priateľka: „Lux Skin Ritual Hydra + Dermaneoxin 2 v 1: 1. ošetrenie 110 € namiesto 123 €“ · Mezoterapia: „Mezoterapia 110 €“
 3. Napíšte mi alebo sa rezervujte cez Notino
