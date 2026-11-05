@@ -15,7 +15,7 @@ H.264 High, 30 fps, AAC 48 kHz stereo 192 kb/s, +faststart.
 - Dermaneoxin a Mezoterapia: obraz 1,0× (kozmetička hovorí mimo záberu).
 - Mladá priateľka: obraz aj zvuk 1,2× (hovorí do kamery, pery sedia s rečou).
 - Strihy podľa presných časov slov (faster-whisper), s rezervou po každom slove. Titulky časované podľa reči (90 % slov do 0,1 s).
-- Whoosh pri prechodoch o 4 dB tichší.
+- Whoosh pri prechodoch o 7 dB tichší ako pôvodne (−4 dB a potom ešte o 30 %).
 
 ## Scenár
 1. Hook 0–2,4 s (glitch/pop-in, iskričky, impact):
