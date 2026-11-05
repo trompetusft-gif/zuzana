@@ -11,11 +11,11 @@ H.264 High, 30 fps, AAC 48 kHz stereo 192 kb/s, +faststart.
 | svetkrasy_mezoterapia.mp3 | 20,9 s | zvuk z videa, MP3 320 kb/s | |
 
 ## Tempo
-- Zvuk vo všetkých videách rovnako 1,2× (atempo, výška hlasu zachovaná).
-- Dermaneoxin a Mezoterapia: obraz 1,0× (kozmetička hovorí mimo záberu).
-- Mladá priateľka: obraz aj zvuk 1,2× (hovorí do kamery, pery sedia s rečou).
-- Strihy podľa presných časov slov (faster-whisper), s rezervou po každom slove. Titulky časované podľa reči (90 % slov do 0,1 s).
-- Whoosh pri prechodoch o 7 dB tichší ako pôvodne (−4 dB a potom ešte o 30 %).
+- Všetky tri videá: obraz aj zvuk 1,08× (výška hlasu zachovaná, reč sedí s perami).
+- Aktuálne sú len verzie 9:16: dermaneoxin 22,3 s, mladá priateľka 18,7 s, mezoterapia 22,9 s.
+- Súbory *_1x1.mp4 a svetkrasy_mezoterapia.mp3 sú zo staršej verzie (1,2×).
+- Strihy podľa presných časov slov (faster-whisper), s rezervou po každom slove. Titulky časované podľa reči.
+- Whoosh pri prechodoch o 7 dB tichší ako pôvodne.
 
 ## Scenár
 1. Hook 0–2,4 s (glitch/pop-in, iskričky, impact):
