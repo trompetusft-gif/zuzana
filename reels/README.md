@@ -5,15 +5,17 @@ H.264 High, 30 fps, AAC 48 kHz stereo 192 kb/s, +faststart.
 
 | Súbor | Dĺžka | Hlasitosť | True peak |
 |---|---|---|---|
-| svetkrasy_dermaneoxin.mp4 / _1x1.mp4 | 21,0 s | −14,1 LUFS | −2,8 dBTP |
-| svetkrasy_mladapriatelka.mp4 / _1x1.mp4 | 18,5 s | −14,2 LUFS | −2,8 dBTP |
-| svetkrasy_mezoterapia.mp4 / _1x1.mp4 | 19,3 s | −14,3 LUFS | −2,7 dBTP |
-| svetkrasy_mezoterapia.mp3 | 19,3 s | zvuk z videa, MP3 320 kb/s | |
+| svetkrasy_dermaneoxin.mp4 / _1x1.mp4 | 20,2 s | −14,1 LUFS | −2,8 dBTP |
+| svetkrasy_mladapriatelka.mp4 / _1x1.mp4 | 17,1 s | −14,2 LUFS | −2,9 dBTP |
+| svetkrasy_mezoterapia.mp4 / _1x1.mp4 | 20,9 s | −14,3 LUFS | −3,1 dBTP |
+| svetkrasy_mezoterapia.mp3 | 20,9 s | zvuk z videa, MP3 320 kb/s | |
 
 ## Tempo
-- Obraz vždy v pôvodnej rýchlosti.
-- Dermaneoxin a Mezoterapia: kozmetička hovorí mimo záberu → zvuk zrýchlený 1,2× (atempo, výška hlasu zachovaná).
-- Mladá priateľka: hovorí priamo do kamery → zvuk 1,0× (inak by reč nesedela s perami), tempo získané strihom.
+- Zvuk vo všetkých videách rovnako 1,2× (atempo, výška hlasu zachovaná).
+- Dermaneoxin a Mezoterapia: obraz 1,0× (kozmetička hovorí mimo záberu).
+- Mladá priateľka: obraz aj zvuk 1,2× (hovorí do kamery, pery sedia s rečou).
+- Strihy podľa presných časov slov (faster-whisper), s rezervou po každom slove. Titulky časované podľa reči (90 % slov do 0,1 s).
+- Whoosh pri prechodoch o 4 dB tichší.
 
 ## Scenár
 1. Hook 0–2,4 s (glitch/pop-in, iskričky, impact):
@@ -25,10 +27,10 @@ H.264 High, 30 fps, AAC 48 kHz stereo 192 kb/s, +faststart.
 4. CTA 3 s: „Rezervuj si termín“ (animované tlačidlo), 0918 797 408, www.svetkrasy.sk, @kozmeticky_salon_svet_krasy, facebook kozmetikasvetkrasy, Rezervácia aj cez Notino.
 
 ## Strihy (časy v pôvodnom súbore)
-- Dermaneoxin: 1,05–6,40 | 31,45–36,55 | 37,15–41,70 | 41,75–48,15 | výsledok 49,30–50,80 (bez hlasu). Vystrihnuté vety o botoxe a mimických vráskach.
-- Mladá priateľka: 0,62–1,80 | 3,50–5,85 | 6,85–10,85 | 11,55–15,15 | 16,15–17,55 | 24,55–28,90. Vystrihnuté „alebo frajerku, partnerku“, „po ktorom sa budeš nielen cítiť, ale dokonca aj vyzerať minimálne o 10 rokov mladšie“, pauzy a koniec.
-- Mezoterapia: 7,20–8,95 | 9,65–12,05 | 20,50–29,40 | 31,50–37,65 | výsledok 49,35–51,00 (bez hlasu). Vystrihnuté vety o zrelej pleti a vráskach, „vypínia vrásky a“, „Vie, že jej už nezaberú…“, leták.
+- Dermaneoxin: 1,05–3,95 | 4,62–6,95 | 31,55–36,85 | 37,50–41,80 | 42,50–48,35 | výsledok 49,35–50,85 (bez hlasu).
+- Mladá priateľka: 0,62–1,86 | 4,20–6,55 | 6,85–11,15 | 11,60–15,75 | 16,15–17,85 | 24,40–29,12.
+- Mezoterapia: 7,25–9,15 | 9,42–12,80 | 20,42–29,45 | 31,55–38,35 | výsledok 49,40–51,00 (bez hlasu).
 
 ## Kontrola
-OCR každej snímky: „vrásky“ ani „botox“ sa nevyskytuje. Bez čiernych okrajov. Titulky a texty v bezpečnej zóne (hore 14 %, dole 20 %); výnimka: 7 snímok počas 0,2 s rozmazaného zoom prechodu vo videu Mladá priateľka.
+OCR každej snímky: „vrásky“ ani „botox“ sa nevyskytuje. Bez čiernych okrajov. Titulky a texty v bezpečnej zóne (hore 14 %, dole 20 %); výnimkou môžu byť jednotlivé snímky počas 0,2 s rozmazaného zoom prechodu.
 Hudba a zvukové efekty: vlastná syntéza (bez licencií tretích strán).
