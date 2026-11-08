@@ -12,7 +12,8 @@ H.264 High, 30 fps, AAC 48 kHz stereo 192 kb/s, +faststart.
 
 ## Tempo
 - Všetky tri videá: obraz aj zvuk 1,08× (výška hlasu zachovaná, reč sedí s perami).
-- Aktuálne sú len verzie 9:16: dermaneoxin 22,3 s, mladá priateľka 24,4 s, mezoterapia 22,9 s.
+- Aktuálne sú len verzie 9:16: dermaneoxin 22,3 s, mladá priateľka 27,7 s, mezoterapia 28,5 s.
+- Tenšie titulky (Inter Medium, menšie). Vrátená reč: v Mladej priateľke „frajerku, partnerku“ a „Teším sa na teba.“, v Mezoterapii „Vie, že jej už nezaberú slabé koktaily. Potrebuje preto skutočne silné koncentráty.“
 - Úprava podľa klientky a koučky: pokojnejšie titulky (menšie, Inter SemiBold, biele, aktívne slovo jemne zlaté, bez rámčekov), hook menší a bez glitch efektu; v Mladej priateľke bez hook textu, štítky presunuté pod tvár a vrátená veta „Mám pre teba riešenie, po ktorom sa budeš nielen cítiť, ale dokonca aj vyzerať minimálne o 10 rokov mladšie.“
 - Súbory *_1x1.mp4 a svetkrasy_mezoterapia.mp3 sú zo staršej verzie (1,2×).
 - Strihy podľa presných časov slov (faster-whisper), s rezervou po každom slove. Titulky časované podľa reči.
