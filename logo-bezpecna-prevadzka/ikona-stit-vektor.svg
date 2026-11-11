@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="168 68 688 952"><defs><linearGradient id="copper" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d49a68"/><stop offset=".55" stop-color="#c0814f"/><stop offset="1" stop-color="#9c6438"/></linearGradient></defs><g id="shield">
+  <!-- vonkajší štít -->
+  <path d="M512 88 C 440 150 340 195 238 212 L 238 540 C 238 760 380 920 512 1000 C 644 920 786 760 786 540 L 786 212 C 684 195 584 150 512 88 Z" fill="url(#copper)"/>
+  <path d="M512 122 C 446 176 356 218 268 234 L 268 540 C 268 742 396 890 512 962 C 628 890 756 742 756 540 L 756 234 C 668 218 578 176 512 122 Z" fill="#fffdf9"/>
+  <path d="M512 150 C 452 198 374 236 294 252 L 294 540 C 294 726 408 864 512 930 C 616 864 730 726 730 540 L 730 252 C 650 236 572 198 512 150 Z" fill="#f2e5d7"/>
+  <!-- podložka -->
+  <rect x="384" y="318" width="262" height="448" rx="26" fill="#fbf5ee" stroke="#54391e" stroke-width="22"/>
+  <circle cx="512" cy="284" r="30" fill="none" stroke="#54391e" stroke-width="20"/>
+  <rect x="452" y="290" width="120" height="62" rx="10" fill="#54391e"/>
+  <circle cx="512" cy="284" r="11" fill="#fbf5ee"/>
+  <g fill="none" stroke="#54391e" stroke-width="15" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M422 448 l20 22 l32 -42"/><path d="M500 452 h96"/>
+    <path d="M422 540 l20 22 l32 -42"/><path d="M500 544 h96"/>
+    <path d="M422 632 l20 22 l32 -42"/><path d="M500 636 h80"/>
+  </g>
+  <!-- veľká fajka -->
+  <path d="M452 726 C 488 700 520 708 538 748 L 556 790 C 620 650 700 540 812 478 C 708 580 632 700 566 880 C 560 896 536 898 528 882 Z" fill="#54391e" stroke="#fffdf9" stroke-width="16" stroke-linejoin="round" paint-order="stroke"/>
+</g>
+</svg>
